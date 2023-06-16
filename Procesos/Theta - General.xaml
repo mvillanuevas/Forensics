@@ -762,7 +762,7 @@
                         <OutArgument x:TypeArguments="x:String">[RutaSubstring]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[ruta + NombreID_URL + "\" + "0 " + Busqueda2]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[ruta + NombreID_URL + "\" + Busqueda + "\" + "0 " + Busqueda2]</InArgument>
                       </Assign.Value>
                     </Assign>
                     <If Condition="[Not System.IO.File.Exists(RutaSubstring+ &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="1756,1349" sap2010:WorkflowViewState.IdRef="If_50">
@@ -826,9 +826,15 @@
                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="532,92" sap2010:WorkflowViewState.IdRef="LogMessage_36" Message="[&quot;Ruta Excel: &quot; + rutaTemp]" />
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="532,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="Ruta">[RutaSubstring]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Url">
+                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Ruta">
+                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaSubstring" />
+                              </InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
+                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; + Busqueda" />
+                              </InArgument>
                             </ui:InvokeWorkflowFile.Arguments>
                           </ui:InvokeWorkflowFile>
                         </Sequence>
@@ -1477,7 +1483,7 @@
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <d:DownloadFile Result="{x:Null}" DisplayName="Download file" FileURL="[row.Item(1).ToString]" sap:VirtualizedContainerService.HintSize="484,239" sap2010:WorkflowViewState.IdRef="DownloadFile_5" LocalFilePath="[ruta + NombreID_URL + &quot;\&quot; + Busqueda2 + &quot;\&quot; + Busqueda2 + &quot; - &quot; + NombreUrl +  TipoNombreUrl]" UseBrowserAuthentication="False" UseDefaultProxy="True">
+                                                      <d:DownloadFile Result="{x:Null}" DisplayName="Download file" FileURL="[row.Item(1).ToString]" sap:VirtualizedContainerService.HintSize="484,239" sap2010:WorkflowViewState.IdRef="DownloadFile_5" LocalFilePath="[ruta + NombreID_URL + &quot;\&quot; + Busqueda +&quot;\&quot; +  TipoNombreUrl]" UseBrowserAuthentication="False" UseDefaultProxy="True">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1485,7 +1491,7 @@
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </d:DownloadFile>
-                                                      <If Condition="[System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; + Busqueda2 + &quot; - &quot; + KeywordSinCar + &quot;\&quot; + Busqueda2 + &quot; - &quot; + NombreUrl +  TipoNombreUrl)]" sap:VirtualizedContainerService.HintSize="484,373" sap2010:WorkflowViewState.IdRef="If_56">
+                                                      <If Condition="[System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; + Busqueda +&quot;\&quot; +  TipoNombreUrl)]" sap:VirtualizedContainerService.HintSize="484,373" sap2010:WorkflowViewState.IdRef="If_56">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1493,7 +1499,7 @@
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                         <If.Then>
-                                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,Encontrado,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + &quot;Test Forensics\3.- Completados\&quot; + rutaResultados + NombreID_URL + &quot;\&quot; + Busqueda2 + &quot;\&quot; + Busqueda2 + &quot; - &quot; + NombreUrl +  TipoNombreUrl + Chr(34) + &quot;)&quot;}]" DataTable="[EncontradoDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_10" />
+                                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,Encontrado,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + &quot;Test Forensics\3.- Completados\&quot; + rutaResultados + NombreID_URL + &quot;\&quot; + Busqueda + &quot; \ &quot; + TipoNombreUrl + Chr(34) + &quot;)&quot;}]" DataTable="[EncontradoDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_10" />
                                                         </If.Then>
                                                         <If.Else>
                                                           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_100">
@@ -1829,9 +1835,15 @@
                                                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="713,92" sap2010:WorkflowViewState.IdRef="LogMessage_31" Message="[&quot;2.- NombreURL: &quot; + NombreUrl]" />
                                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="True" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="713,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                                                   <ui:InvokeWorkflowFile.Arguments>
-                                                    <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
-                                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">[RutaSubstring]</InArgument>
-                                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                                                    <InArgument x:TypeArguments="x:String" x:Key="Url">
+                                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
+                                                    </InArgument>
+                                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">
+                                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaSubstring" />
+                                                    </InArgument>
+                                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
+                                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; + Busqueda" />
+                                                    </InArgument>
                                                   </ui:InvokeWorkflowFile.Arguments>
                                                 </ui:InvokeWorkflowFile>
                                                 <If Condition="[System.IO.File.Exists(RutaSubstring +  &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="713,344" sap2010:WorkflowViewState.IdRef="If_63">
