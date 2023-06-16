@@ -1,0 +1,23 @@
+Sub Ordenamiento(ByVal OrderToFind As String)
+
+    LastRow = ActiveSheet.UsedRange.SpecialCells(xlCellTypeLastCell).Row
+    
+    ActiveWorkbook.Worksheets("Resultados").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Resultados").Sort.SortFields.Add2 Key:=Range( _
+        "K10:K" & LastRow), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:= _
+        xlSortNormal
+
+     ActiveWorkbook.Worksheets("Resultados").Sort.SortFields.Add2 Key:=Range( _
+        "G10:G" & LastRow), SortOn:=xlSortOnValues, Order:=xlAscending, CustomOrder:= _
+        "Alpha,Beta,Gamma,Delta,Epsilon,Zeta,Eta,Theta,Iota,Kappa,Lambda,Mu,Un,Xi,Omicron,Pi,Rho,Sigma,Tau,Upsilon,Phi,Chi,Psi,Omega,Alfabeta" _
+        , DataOption:=xlSortNormal
+
+    With ActiveWorkbook.Worksheets("Resultados").Sort
+        .SetRange Range("G9:L" & LastRow)
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
