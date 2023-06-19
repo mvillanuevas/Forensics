@@ -12,7 +12,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1218,1285</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1481,7282</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Kappa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -83,9 +83,10 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Kappa" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Kappa" sap:VirtualizedContainerService.HintSize="1491,7217" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="existeEmis" />
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
@@ -100,18 +101,18 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1429,7106" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:String" Name="FilePath" />
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_21">
+        <Sequence sap:VirtualizedContainerService.HintSize="1391,6878" sap2010:WorkflowViewState.IdRef="Sequence_21">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="EMISExist" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -952,7 +953,7 @@
                   </ui:UiElementExists>
                   <If Condition="[Resultado]" sap:VirtualizedContainerService.HintSize="1233,373" sap2010:WorkflowViewState.IdRef="If_11">
                     <If.Then>
-                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;No&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta + NombreID_URL + &quot;\&quot; &amp; &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;No&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta.Replace(&quot;C:\Users\&quot; +System.Environment.UserName + &quot;\OneDrive - EY\&quot;,&quot;&quot;) + NombreID_URL + &quot;\&quot; &amp; &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                     </If.Then>
                   </If>
                   <ui:UiElementExists DisplayName="Element Exists 'A  #/'" Exists="[existeEmis]" sap:VirtualizedContainerService.HintSize="1233,107" sap2010:WorkflowViewState.IdRef="UiElementExists_9">
@@ -1178,7 +1179,7 @@
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b141031-76f0-455e-a75c-d2fddb301009" InformativeScreenshot="feb00003dbb6f41981098a2bf32f67ed" Selector="&lt;wnd app='iexplore.exe' cls='IEFrame' omit:title='Search - Internet Explorer' /&gt;&lt;wnd aaname='Notification' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='Save' role='split button' /&gt;" TimeoutMS="3000" WaitForReady="COMPLETE" />
                                     </ui:UiElementExists.Target>
                                   </ui:UiElementExists>
-                                  <If Condition="[existeDescarga = True]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_4">
+                                  <If Condition="[existeDescarga = True]" sap:VirtualizedContainerService.HintSize="1041,1404" sap2010:WorkflowViewState.IdRef="If_4">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1361,7 +1362,7 @@
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="546,1242" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="546,1244" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:Int32" Name="longitudRuta" />
                                           <Variable x:TypeArguments="x:Int32" Name="longitudNombre" />
@@ -1412,7 +1413,7 @@
                                         </Assign>
                                         <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[longitudRuta &gt; 256]" DisplayName="While" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                                           <ui:InterruptibleWhile.Body>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,437" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,435" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1458,9 +1459,9 @@
                                             <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
                                           </ui:InvokeWorkflowFile.Arguments>
                                         </ui:InvokeWorkflowFile>
-                                        <If Condition="[System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="484,373" sap2010:WorkflowViewState.IdRef="If_12">
+                                        <If Condition="[System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="484,375" sap2010:WorkflowViewState.IdRef="If_12">
                                           <If.Then>
-                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;Si&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;Si&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta.Replace(&quot;C:\Users\&quot; +System.Environment.UserName + &quot;\OneDrive - EY\&quot;,&quot;&quot;) + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
                                           </If.Then>
                                           <If.Else>
                                             <Sequence sap2010:WorkflowViewState.IdRef="Sequence_35">
@@ -1532,10 +1533,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1395,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -1543,7 +1544,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="496,877" sap2010:WorkflowViewState.IdRef="Sequence_27">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,857" sap2010:WorkflowViewState.IdRef="Sequence_27">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
