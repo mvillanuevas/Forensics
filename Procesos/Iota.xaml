@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1435,10331</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1485,9100</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Kappa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -89,7 +89,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="1445,10266" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="1495,9035" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:Boolean" Name="existeArticulo" />
@@ -110,9 +110,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1383,10155" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1433,8924" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1345,9927" sap2010:WorkflowViewState.IdRef="Sequence_39">
+        <Sequence sap:VirtualizedContainerService.HintSize="1395,8696" sap2010:WorkflowViewState.IdRef="Sequence_39">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="ButtonBuscar" />
           </Sequence.Variables>
@@ -122,7 +122,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="1283,82" sap2010:WorkflowViewState.IdRef="Assign_15">
+          <Assign sap:VirtualizedContainerService.HintSize="1333,82" sap2010:WorkflowViewState.IdRef="Assign_15">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -130,7 +130,7 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1283,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Iota&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1333,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Iota&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -138,7 +138,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:UiElementExists DisplayName="Element Exists 'INPUT'" Exists="[ButtonBuscar]" sap:VirtualizedContainerService.HintSize="1283,107" sap2010:WorkflowViewState.IdRef="UiElementExists_26">
+          <ui:UiElementExists DisplayName="Element Exists 'INPUT'" Exists="[ButtonBuscar]" sap:VirtualizedContainerService.HintSize="1333,107" sap2010:WorkflowViewState.IdRef="UiElementExists_26">
             <ui:UiElementExists.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bf77a14b-1200-478e-9cc1-82043f96df63" InformativeScreenshot="86a7b7daf0d1f7454ae01d4143b16c75" Selector="&lt;html app='msedge.exe' title='Factiva' /&gt;&lt;webctrl tag='INPUT' type='button' /&gt;" TimeoutMS="3000">
                 <ui:Target.WaitForReady>
@@ -147,7 +147,7 @@
               </ui:Target>
             </ui:UiElementExists.Target>
           </ui:UiElementExists>
-          <If Condition="[Not ButtonBuscar]" sap:VirtualizedContainerService.HintSize="1283,2659" sap2010:WorkflowViewState.IdRef="If_24">
+          <If Condition="[Not ButtonBuscar]" sap:VirtualizedContainerService.HintSize="1333,1087" sap2010:WorkflowViewState.IdRef="If_24">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -155,13 +155,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="1199,2470" sap2010:WorkflowViewState.IdRef="Sequence_62">
+              <Sequence sap:VirtualizedContainerService.HintSize="546,898" sap2010:WorkflowViewState.IdRef="Sequence_62">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1137,52" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -194,7 +194,7 @@
                     </Catch>
                   </TryCatch.Catches>
                 </TryCatch>
-                <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1137,52" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[idNavegador]" Url="https://go.ey.com/DE_Factiva">
+                <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[idNavegador]" Url="https://go.ey.com/DE_Factiva">
                   <ui:OpenBrowser.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -218,7 +218,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:OpenBrowser>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1137,52" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Opne Factiva page&quot;]">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Opne Factiva page&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -226,7 +226,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:LogMessage>
-                <ui:CommentOut DisplayName="Sign in" sap:VirtualizedContainerService.HintSize="1137,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut DisplayName="Sign in" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="546,767" sap2010:WorkflowViewState.IdRef="Sequence_40">
                       <sap:WorkflowViewStateService.ViewState>
@@ -331,13 +331,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CommentOut>
-                <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Browser="[idNavegador]" BrowserType="Edge" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="1137,1991" sap2010:WorkflowViewState.IdRef="BrowserScope_2" UiBrowser="[idNavegador]">
+                <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Browser="[idNavegador]" BrowserType="Edge" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="484,419" sap2010:WorkflowViewState.IdRef="BrowserScope_2" UiBrowser="[idNavegador]">
                   <ui:BrowserScope.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1103,1882" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,310" sap2010:WorkflowViewState.IdRef="Sequence_61">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Boolean" Name="existePopUp" />
                           <Variable x:TypeArguments="x:Boolean" Name="existeFactiva" />
@@ -349,15 +349,15 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:UiElementExists DisplayName="Element Exists 'INPUT  atx_proxy'" Exists="[existeFactiva]" sap:VirtualizedContainerService.HintSize="1041,107" sap2010:WorkflowViewState.IdRef="UiElementExists_27">
+                        <ui:UiElementExists DisplayName="Element Exists 'INPUT  atx_proxy'" Exists="[existeFactiva]" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="UiElementExists_27">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0cd0e506-7b86-4825-93f2-727d65778d63" InformativeScreenshot="cccbb5317ae0f475bc0dd653a8ba3a93" Selector="&lt;html app='msedge.exe' title='Factiva* (website access) | Data Explorer' /&gt;&lt;webctrl aaname='Access*' tag='BUTTON' type='button' /&gt;" TimeoutMS="5000" WaitForReady="COMPLETE" />
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[existeFactiva]" DisplayName="Abrir factiva si no existe" sap:VirtualizedContainerService.HintSize="1041,1624" sap2010:WorkflowViewState.IdRef="If_23">
+                        <If Condition="[existeFactiva]" DisplayName="Abrir factiva si no existe" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_23">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -905,13 +905,13 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Browser="[idNavegador]" BrowserType="Edge" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="1283,6756" sap2010:WorkflowViewState.IdRef="BrowserScope_1" UiBrowser="[idNavegador]">
+          <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Browser="[idNavegador]" BrowserType="Edge" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="1333,7097" sap2010:WorkflowViewState.IdRef="BrowserScope_1" UiBrowser="[idNavegador]">
             <ui:BrowserScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1249,6647" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1299,6988" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="existePopUp" />
                     <Variable x:TypeArguments="x:Boolean" Name="existeFactiva" />
@@ -923,7 +923,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="1187,82" sap2010:WorkflowViewState.IdRef="Assign_13">
+                  <Assign sap:VirtualizedContainerService.HintSize="1237,82" sap2010:WorkflowViewState.IdRef="Assign_13">
                     <Assign.To>
                       <OutArgument x:TypeArguments="s:String[]">[BusquedaString]</OutArgument>
                     </Assign.To>
@@ -931,13 +931,13 @@
                       <InArgument x:TypeArguments="s:String[]" xml:space="preserve">[{"AND soborn* OR gob* OR secretaria OR escandalo OR organismo OR delegacion OR fraud* OR investiga* OR  litigio OR criminal OR arrest* OR presunt* OR culpa* OR  ilegal OR indiciad* OR terror* OR contraband* OR corrup* OR testif* OR incrimina* OR mafia OR acusa* OR lavado de dinero OR defraud* OR controver* OR estaf* OR evasion OR neglig* OR robo OR viola* OR pago OR soborn* OR bancarrota OR descalific* OR  malversa* OR sancion* OR pena* OR manipul* OR prohib*","AND brib* OR govern* OR minist* OR secretar* OR scandal* OR agency OR department OR fraud* OR investigat* OR litigat* OR lawsuit* OR crim* OR arrest* OR alleg* OR guilt* OR illegal* OR indict* OR terror* OR smuggl* OR corrupt* OR testif* OR racketeering OR incriminat* OR mob OR mafia OR convict* OR accus* OR moneylaunder* OR defraud* OR controvers* OR scam* OR evasion* OR neglig* OR steal* OR stole OR breach OR punish* OR violat* OR payment* OR barred bribe* OR bankrupt* OR disqualif* OR embezzle* OR sanction* OR penalty OR manipula* OR prohibit* OR malpractice OR suspen*"}]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1187,6414" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[BusquedaString]">
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1237,6755" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[BusquedaString]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:String">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:String" Name="bString" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1151,6290" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1201,6631" sap2010:WorkflowViewState.IdRef="Sequence_44">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:Boolean" Name="Resultado" />
                           </Sequence.Variables>
@@ -946,7 +946,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" CursorMotionType="Instant" DelayBefore="1500" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1089,107" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" CursorMotionType="Instant" DelayBefore="1500" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1139,107" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -965,8 +965,8 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1089,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Options&quot;]" />
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1089,107" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1139,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Options&quot;]" />
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1139,107" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -988,7 +988,7 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'LI'" sap:VirtualizedContainerService.HintSize="1089,107" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'LI'" sap:VirtualizedContainerService.HintSize="1139,107" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -1010,7 +1010,7 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  atx_proxy'" sap:VirtualizedContainerService.HintSize="1089,135" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[Chr(34) &amp; Busqueda &amp; Chr(34) + &quot; &quot; + bString]">
+                          <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  atx_proxy'" sap:VirtualizedContainerService.HintSize="1139,155" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[Chr(34) &amp; Busqueda &amp; Chr(34) + &quot; &quot; + bString]">
                             <ui:SetValue.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="68c025a2-e9df-4bf6-a05f-ed6ef9830890" InformativeScreenshot="6a00d928326c5b5840bd4f345415a096" Selector="&lt;html app='msedge.exe' title='Factiva' /&gt;&lt;webctrl id='atx_proxy' tag='INPUT' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1022,8 +1022,8 @@
                               </ui:Target>
                             </ui:SetValue.Target>
                           </ui:SetValue>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1089,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[Busqueda]" />
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="1089,107" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1139,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[Busqueda]" />
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="1139,107" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -1042,8 +1042,8 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1089,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Search&quot;]" />
-                          <ui:UiElementExists DisplayName="Element Exists 'P'" Exists="[Resultado]" sap:VirtualizedContainerService.HintSize="1089,107" sap2010:WorkflowViewState.IdRef="UiElementExists_33">
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1139,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Search&quot;]" />
+                          <ui:UiElementExists DisplayName="Element Exists 'P'" Exists="[Resultado]" sap:VirtualizedContainerService.HintSize="1139,107" sap2010:WorkflowViewState.IdRef="UiElementExists_33">
                             <ui:UiElementExists.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bb7fc255-dfab-4472-bda5-7632cdade6b2" InformativeScreenshot="c04712128b356bc92e2c291f00a0bad7" Selector="&lt;html app='msedge.exe' title='Factiva' /&gt;&lt;webctrl tag='P' aaname='*Sorry there are no results for*' innertext='*Sorry there are no results for*' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1055,17 +1055,17 @@
                               </ui:Target>
                             </ui:UiElementExists.Target>
                           </ui:UiElementExists>
-                          <If Condition="[Resultado]" sap:VirtualizedContainerService.HintSize="1089,373" sap2010:WorkflowViewState.IdRef="If_26">
+                          <If Condition="[Resultado]" sap:VirtualizedContainerService.HintSize="1139,373" sap2010:WorkflowViewState.IdRef="If_26">
                             <If.Then>
-                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;No&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta.Replace(&quot;C:\Users\&quot; +System.Environment.UserName + &quot;\OneDrive - EY\&quot;,&quot;&quot;) + NombreID_URL + &quot;\&quot; + Busqueda +&quot;\&quot; &amp; &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;No&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta.Replace(&quot;C:\Users\&quot; +System.Environment.UserName + &quot;\OneDrive - EY\&quot;,&quot;&quot;) + NombreID_URL + &quot;\&quot; &amp; &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
                             </If.Then>
                           </If>
-                          <ui:UiElementExists DisplayName="Element Exists 'INPUT'" Exists="[existeBusqueda]" sap:VirtualizedContainerService.HintSize="1089,107" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
+                          <ui:UiElementExists DisplayName="Element Exists 'INPUT'" Exists="[existeBusqueda]" sap:VirtualizedContainerService.HintSize="1139,107" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
                             <ui:UiElementExists.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7e4199df-a933-403b-93bd-66cab44c1278" InformativeScreenshot="d4738b03c259cbe29fedd8b2c66f991e" Selector="&lt;html app='msedge.exe' title='Factiva' /&gt;&lt;webctrl parentid='dj_search-results-container' tag='INPUT' type='button' /&gt;" TimeoutMS="5000" WaitForReady="COMPLETE" />
                             </ui:UiElementExists.Target>
                           </ui:UiElementExists>
-                          <If Condition="[existeBusqueda]" sap:VirtualizedContainerService.HintSize="1089,4166" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If Condition="[existeBusqueda]" sap:VirtualizedContainerService.HintSize="1139,4487" sap2010:WorkflowViewState.IdRef="If_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1073,7 +1073,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="594,4008" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <Sequence sap:VirtualizedContainerService.HintSize="644,4329" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Name="existeBoton" />
                                   <Variable x:TypeArguments="x:Int32" Name="salir" />
@@ -1084,7 +1084,7 @@
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="532,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                                <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="582,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                                   <ui:InterruptibleWhile.Body>
                                     <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,740" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -1144,8 +1144,8 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:InterruptibleWhile>
-                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="532,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                                <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="text" DisplayName="Get Attribute 'AddressDisplay Control'" sap:VirtualizedContainerService.HintSize="532,203" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="582,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="text" DisplayName="Get Attribute 'AddressDisplay Control'" sap:VirtualizedContainerService.HintSize="582,203" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
                                   <ui:GetAttribute.Result>
                                     <OutArgument x:TypeArguments="x:String">[Url]</OutArgument>
                                   </ui:GetAttribute.Result>
@@ -1160,14 +1160,20 @@
                                     </ui:Target>
                                   </ui:GetAttribute.Target>
                                 </ui:GetAttribute>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="532,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="582,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "-ENCONTRADO" + "\" + Busqueda +"\" &amp; "0-Search Result - " &amp; Busqueda &amp; ".pdf"]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL + "-ENCONTRADO" + "\" + Busqueda]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Url">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot; +&quot;\&quot; &amp; &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot;" />
+                                    </InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
-                                <Assign sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign sap:VirtualizedContainerService.HintSize="582,82" sap2010:WorkflowViewState.IdRef="Assign_1">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
                                   </Assign.To>
@@ -1175,7 +1181,7 @@
                                     <InArgument x:TypeArguments="x:Int32">1</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign sap:VirtualizedContainerService.HintSize="582,82" sap2010:WorkflowViewState.IdRef="Assign_3">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Int32">[salir]</OutArgument>
                                   </Assign.To>
@@ -1183,9 +1189,9 @@
                                     <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="532,3100" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="582,3421" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                                   <ui:InterruptibleDoWhile.Body>
-                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,2934" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,3255" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:Boolean" Name="existeRegresar" />
                                         <Variable x:TypeArguments="x:String" Name="variable1" />
@@ -1200,7 +1206,7 @@
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="GetValue_3">
+                                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="484,107" sap2010:WorkflowViewState.IdRef="GetValue_3">
                                         <ui:GetValue.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="44804452-1a73-42e8-b8a2-e4ed7e75b905" InformativeScreenshot="dc5c34eaae0b7f8dfb8e55144903c573" Selector="[string.Format(&quot;&lt;html app='msedge.exe' idx='*' /&gt;&lt;webctrl parentid='ssResultsHeadlinesPHL' tag='A' idx='{0}' /&gt;&quot;, contador)]">
                                             <ui:Target.TimeoutMS>
@@ -1215,7 +1221,7 @@
                                           <OutArgument x:TypeArguments="x:String">[titulo]</OutArgument>
                                         </ui:GetValue.Value>
                                       </ui:GetValue>
-                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                      <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_12">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[tmpTitulo]</OutArgument>
                                         </Assign.To>
@@ -1223,7 +1229,7 @@
                                           <InArgument x:TypeArguments="x:String">[titulo]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                      <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_6">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[titulo]</OutArgument>
                                         </Assign.To>
@@ -1231,7 +1237,7 @@
                                           <InArgument x:TypeArguments="x:String">[titulo.Replace(":","").Replace(",","").Replace(".","").Replace(";","").Replace("@","").Replace(Chr(10),"").Replace(Chr(13),"").Replace(Chr(32),"").Replace(Chr(39),"")]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Click_26" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                      <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="484,107" sap2010:WorkflowViewState.IdRef="Click_26" KeyModifiers="None" MouseButton="BTN_LEFT">
                                         <ui:Click.CursorPosition>
                                           <ui:CursorPosition Position="Center">
                                             <ui:CursorPosition.OffsetX>
@@ -1253,8 +1259,8 @@
                                           </ui:Target>
                                         </ui:Click.Target>
                                       </ui:Click>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Clic link&quot;]" />
-                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Clic link&quot;]" />
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1302,8 +1308,8 @@
                                           </Catch>
                                         </TryCatch.Catches>
                                       </TryCatch>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[titulo]" />
-                                      <ui:UiElementExists DisplayName="Element Exists 'A  javascript:void(0)'" Exists="[existeRegresar]" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="UiElementExists_21">
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[titulo]" />
+                                      <ui:UiElementExists DisplayName="Element Exists 'A  javascript:void(0)'" Exists="[existeRegresar]" sap:VirtualizedContainerService.HintSize="484,107" sap2010:WorkflowViewState.IdRef="UiElementExists_21">
                                         <ui:UiElementExists.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3ffc957-7d10-4970-96f4-cbfc9a4fe959" InformativeScreenshot="94c54c68cbf0adbe0f458e15bed6ea03" Selector="&lt;html app='msedge.exe' title='Factiva' /&gt;&lt;webctrl aaname='*es' parentid='PageBaseForm' tag='A' /&gt;">
                                             <ui:Target.TimeoutMS>
@@ -1315,7 +1321,7 @@
                                           </ui:Target>
                                         </ui:UiElementExists.Target>
                                       </ui:UiElementExists>
-                                      <If Condition="[existeRegresar = True]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_5">
+                                      <If Condition="[existeRegresar = True]" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="If_5">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1390,7 +1396,7 @@
                                           </Sequence>
                                         </If.Else>
                                       </If>
-                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                      <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_8">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Int32">[longitudRuta]</OutArgument>
                                         </Assign.To>
@@ -1398,7 +1404,7 @@
                                           <InArgument x:TypeArguments="x:Int32">[Len(ruta + NombreID_URL + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; " - " &amp; titulo &amp; ".pdf")]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                      <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_10">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Int32">[longitudNombre]</OutArgument>
                                         </Assign.To>
@@ -1406,7 +1412,7 @@
                                           <InArgument x:TypeArguments="x:Int32">[Len(titulo)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[longitudRuta &gt; 256]" DisplayName="While" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[longitudRuta &gt; 256]" DisplayName="While" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
                                         <ui:InterruptibleWhile.Body>
                                           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,435" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -1447,22 +1453,28 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:InterruptibleWhile>
-                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
+                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="484,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
-                                          <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "-ENCONTRADO" + "\" + Busqueda + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; " - " &amp; titulo &amp; ".pdf"]</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL + "-ENCONTRADO" + "\" + Busqueda]</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="Url">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="Ruta">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot; + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot;" />
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot;" />
+                                          </InArgument>
                                         </ui:InvokeWorkflowFile.Arguments>
                                       </ui:InvokeWorkflowFile>
-                                      <If Condition="[System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="484,375" sap2010:WorkflowViewState.IdRef="If_25">
+                                      <If Condition="[System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="484,373" sap2010:WorkflowViewState.IdRef="If_25">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
-                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;Si&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta.Replace(&quot;C:\Users\&quot; +System.Environment.UserName + &quot;\OneDrive - EY\&quot;,&quot;&quot;) + NombreID_URL + &quot;-ENCONTRADO&quot; + &quot;\&quot; + Busqueda + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Realizado&quot;,&quot;Si&quot;,NombrePersonaFisica,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + ruta.Replace(&quot;C:\Users\&quot; +System.Environment.UserName + &quot;\OneDrive - EY\&quot;,&quot;&quot;) + NombreID_URL + &quot;-ENCONTRADO&quot; + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                                         </If.Then>
                                         <If.Else>
                                           <Sequence sap2010:WorkflowViewState.IdRef="Sequence_64">
@@ -1474,7 +1486,7 @@
                                           </Sequence>
                                         </If.Else>
                                       </If>
-                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey '0DirectUIHWND'" sap:VirtualizedContainerService.HintSize="434,153" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="home" KeyModifiers="None" SpecialKey="True">
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey '0DirectUIHWND'" sap:VirtualizedContainerService.HintSize="484,153" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="home" KeyModifiers="None" SpecialKey="True">
                                         <ui:SendHotkey.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="27548d6f-87f4-45aa-a72a-1fb0af06d43f" InformativeScreenshot="89ae490f8b3ba98fa2e35cf4d49301f3" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Microsoft​ Edge*' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
                                             <ui:Target.TimeoutMS>
@@ -1486,7 +1498,7 @@
                                           </ui:Target>
                                         </ui:SendHotkey.Target>
                                       </ui:SendHotkey>
-                                      <ui:UiElementExists DisplayName="Element Exists 'A  javascript:void(0)'" Exists="[existeRegresar]" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="UiElementExists_22">
+                                      <ui:UiElementExists DisplayName="Element Exists 'A  javascript:void(0)'" Exists="[existeRegresar]" sap:VirtualizedContainerService.HintSize="484,107" sap2010:WorkflowViewState.IdRef="UiElementExists_22">
                                         <ui:UiElementExists.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3ffc957-7d10-4970-96f4-cbfc9a4fe959" InformativeScreenshot="94c54c68cbf0adbe0f458e15bed6ea03" Selector="&lt;html app='msedge.exe' title='Factiva' /&gt;&lt;webctrl aaname='*es' parentid='PageBaseForm' tag='A' /&gt;">
                                             <ui:Target.TimeoutMS>
@@ -1498,7 +1510,7 @@
                                           </ui:Target>
                                         </ui:UiElementExists.Target>
                                       </ui:UiElementExists>
-                                      <If Condition="[existeRegresar = True]" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_6">
+                                      <If Condition="[existeRegresar = True]" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="If_6">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1567,7 +1579,7 @@
                                           </Sequence>
                                         </If.Else>
                                       </If>
-                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                      <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
                                         </Assign.To>
@@ -1575,7 +1587,7 @@
                                           <InArgument x:TypeArguments="x:Int32">[contador + 1]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:UiElementExists DisplayName="Element Exists 'A  javascript:void(0)'" Exists="[existeArticulo]" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="UiElementExists_23">
+                                      <ui:UiElementExists DisplayName="Element Exists 'A  javascript:void(0)'" Exists="[existeArticulo]" sap:VirtualizedContainerService.HintSize="484,107" sap2010:WorkflowViewState.IdRef="UiElementExists_23">
                                         <ui:UiElementExists.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0092c471-d109-4465-a558-a9948c52fb7f" InformativeScreenshot="396276ba2e9dc088c7463a2b9acbd7a4" Selector="[string.Format(&quot;&lt;html app='msedge.exe' idx='*' /&gt;&lt;webctrl parentid='ssResultsHeadlinesPHL' tag='A' idx='{0}' /&gt;&quot;, contador)]">
                                             <ui:Target.TimeoutMS>
@@ -1680,9 +1692,15 @@
                                 </ui:GetAttribute>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" + Busqueda+ "\" + "0-Search Result - " &amp; Busqueda &amp; ".pdf"]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL + "\" + Busqueda]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Url">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; + &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL" />
+                                    </InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
