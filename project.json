@@ -16,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.4.0.0",
-  "projectVersion": "1.0.7-alpha.101",
+  "projectVersion": "1.0.7-alpha.102",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
