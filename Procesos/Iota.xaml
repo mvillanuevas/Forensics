@@ -8,6 +8,7 @@
     <x:Property Name="LogProcesos" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="NombrePersonaFisica" Type="InArgument(x:String)" />
     <x:Property Name="TaskConfirmation" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="ExceptionPath" Type="InArgument(x:String)" />
   </x:Members>
   <this:Kappa.idNavegador>
     <InArgument x:TypeArguments="ui:Browser" />
@@ -15,7 +16,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1485,9100</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1218,1285</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Kappa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -86,10 +87,9 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="1495,9035" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:Boolean" Name="existeArticulo" />
@@ -110,15 +110,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1433,8924" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1395,8696" sap2010:WorkflowViewState.IdRef="Sequence_39">
+        <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_39">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="ButtonBuscar" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -1162,15 +1162,9 @@
                                 </ui:GetAttribute>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="582,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Url">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot; +&quot;\&quot; &amp; &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot;" />
-                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "-ENCONTRADO" +"\" &amp; "0-Search Result - " &amp; Busqueda &amp; ".pdf"]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL + "-ENCONTRADO"]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                                 <Assign sap:VirtualizedContainerService.HintSize="582,82" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -1455,15 +1449,9 @@
                                       </ui:InterruptibleWhile>
                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="484,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
-                                          <InArgument x:TypeArguments="x:String" x:Key="Url">
-                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
-                                          </InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="Ruta">
-                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot; + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot;" />
-                                          </InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
-                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;-ENCONTRADO&quot;" />
-                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "-ENCONTRADO" + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; " - " &amp; titulo &amp; ".pdf"]</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL + "-ENCONTRADO"]</InArgument>
                                         </ui:InvokeWorkflowFile.Arguments>
                                       </ui:InvokeWorkflowFile>
                                       <If Condition="[System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot; - &quot; &amp; titulo &amp; &quot;.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="484,373" sap2010:WorkflowViewState.IdRef="If_25">
@@ -1692,15 +1680,9 @@
                                 </ui:GetAttribute>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Url">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; + &quot;0-Search Result - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL" />
-                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" + "0-Search Result - " &amp; Busqueda &amp; ".pdf"]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1757,10 +1739,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1349,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -1768,17 +1750,17 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="496,857" sap2010:WorkflowViewState.IdRef="Sequence_42">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,877" sap2010:WorkflowViewState.IdRef="Sequence_42">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[exception]" />
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Error de búsqueda&quot;,&quot;No&quot;,&quot;&quot;,&quot;=HYPERLINK(REPLACE(INFO(&quot; + Chr(34) +&quot;DIRECTORY&quot; + Chr(34) + &quot;)&quot; + Chr(44) +&quot;FIND(&quot; + Chr(34) + &quot;Documents&quot; + Chr(34) + Chr(44) +&quot;INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))&quot; + Chr(44) +&quot;LEN(INFO(&quot;+Chr(34) +&quot;DIRECTORY&quot; + Chr(34) +&quot;))-11&quot; + Chr(44) + Chr(34) + Chr(34) + &quot;) &quot; + Chr(38) +  Chr(34) + &quot;Test Forensics\5.- Exception_Screenshots\&quot; + Chr(34) + &quot;)&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Frameworks\TakeScreenshot.xaml">
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Error de búsqueda&quot;,&quot;No&quot;,&quot;&quot;,&quot;\\5.- Exception_Screenshots&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Frameworks\TakeScreenshot.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_Folder">["C:\Users\" &amp; System.Environment.UserName &amp; "\OneDrive - EY\Test Forensics\5.- Exception_Screenshots"]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Folder">[ExceptionPath + "\5.- Exception_Screenshots"]</InArgument>
                   <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[FilePath]</InOutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
