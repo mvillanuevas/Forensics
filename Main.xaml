@@ -843,9 +843,9 @@
                             <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="EstadoInicializacion = &quot;Completado&quot;" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
                           </Transition.Condition>
                           <Transition.To>
-                            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Tarea que ejecuta cada sub-proceso dependiendo de las personas físicas o morales" DisplayName="Procesamiento" sap:VirtualizedContainerService.HintSize="1028,6621" sap2010:WorkflowViewState.IdRef="State_3">
+                            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Tarea que ejecuta cada sub-proceso dependiendo de las personas físicas o morales" DisplayName="Procesamiento" sap:VirtualizedContainerService.HintSize="1028,5451" sap2010:WorkflowViewState.IdRef="State_3">
                               <State.Entry>
-                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="982,6202" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="982,5032" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                   <TryCatch.Variables>
                                     <Variable x:TypeArguments="x:String" Name="URL_Proceso" />
                                     <Variable x:TypeArguments="x:String" Name="CarpetaDestino" />
@@ -860,7 +860,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="944,5930" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="944,4760" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -940,13 +940,13 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:BuildDataTable>
-                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtConfiguracion]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="882,4630" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtConfiguracion]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="882,3460" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                         <ui:ForEachRow.Body>
                                           <ActivityAction x:TypeArguments="sd:DataRow">
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                                             </ActivityAction.Argument>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="844,4513" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="844,3343" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -974,7 +974,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:LogMessage>
-                                              <If Condition="[row.item(0).ToString &lt;&gt; &quot;&quot; AND String.IsNullOrEmpty(row.Item(5).ToString.Trim)]" sap:VirtualizedContainerService.HintSize="782,4006" sap2010:WorkflowViewState.IdRef="If_4">
+                                              <If Condition="[row.item(0).ToString &lt;&gt; &quot;&quot; AND String.IsNullOrEmpty(row.Item(5).ToString.Trim)]" sap:VirtualizedContainerService.HintSize="782,2836" sap2010:WorkflowViewState.IdRef="If_4">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -982,7 +982,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <If.Then>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="746,3817" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="746,2647" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                                     <Sequence.Variables>
                                                       <Variable x:TypeArguments="x:String" Name="Keywords" />
                                                     </Sequence.Variables>
@@ -1000,14 +1000,14 @@
                                                         <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                                       </Assign.Value>
                                                     </Assign>
-                                                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[row.item(0).ToString]" sap:VirtualizedContainerService.HintSize="684,3584" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                                                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[row.item(0).ToString]" sap:VirtualizedContainerService.HintSize="684,2414" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <Sequence x:Key="Alpha" sap:VirtualizedContainerService.HintSize="644,1811" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                                      <Sequence x:Key="Alpha" sap:VirtualizedContainerService.HintSize="644,904" sap2010:WorkflowViewState.IdRef="Sequence_128">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1197,39 +1197,17 @@
                                                                       </If>
                                                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_75" UnSafe="False" WorkflowFileName="Procesos\Alpha.xaml">
                                                                         <ui:InvokeWorkflowFile.Arguments>
-                                                                          <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">
-                                                                            <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="idNavegador2" />
-                                                                          </InOutArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="Busqueda">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(2).ToString" />
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="ruta">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania + &quot;\&quot; + rowV.Item(1).ToString + &quot;\&quot; + CarpetaDestino + &quot;\&quot;" />
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="rol">
-                                                                            <Literal x:TypeArguments="x:String">Compañia</Literal>
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NombreID_URL" />
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="URL_Proceso" />
-                                                                          </InArgument>
-                                                                          <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">
-                                                                            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Encontrado" />
-                                                                          </OutArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="LogFile">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LogFile" />
-                                                                          </InArgument>
-                                                                          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="LogProcesos">
-                                                                            <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="LogProcesos" />
-                                                                          </InOutArgument>
-                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">
-                                                                            <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="TaskConfirmation" />
-                                                                          </OutArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania" />
-                                                                          </InArgument>
+                                                                          <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">[idNavegador2]</InOutArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="Busqueda">[rowV.Item(2).ToString]</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="ruta">[RutaCompletados + "\" + NombreCompania + "\" + rowV.Item(1).ToString + "\" + CarpetaDestino + "\"]</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="rol">Compañia</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">[NombreID_URL]</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">[URL_Proceso]</InArgument>
+                                                                          <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">[Encontrado]</OutArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="LogFile">[LogFile]</InArgument>
+                                                                          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="LogProcesos">[LogProcesos]</InOutArgument>
+                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">[TaskConfirmation]</OutArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">[RutaCompletados + "\" + NombreCompania]</InArgument>
                                                                         </ui:InvokeWorkflowFile.Arguments>
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1325,7 +1303,7 @@
                                                               <ActivityAction.Argument>
                                                                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowV" />
                                                               </ActivityAction.Argument>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548,830" sap2010:WorkflowViewState.IdRef="Sequence_127">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="548,828" sap2010:WorkflowViewState.IdRef="Sequence_127">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1349,39 +1327,17 @@
                                                                       </sap:WorkflowViewStateService.ViewState>
                                                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_48" UnSafe="False" WorkflowFileName="Procesos\Alpha.xaml">
                                                                         <ui:InvokeWorkflowFile.Arguments>
-                                                                          <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">
-                                                                            <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="idNavegador2" />
-                                                                          </InOutArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="Busqueda">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(2).ToString.Replace(Chr(34),&quot;&quot;).Replace(Chr(47),&quot;&quot;).Replace(Chr(42),&quot;&quot;).Replace(Chr(60),&quot;&quot;).Replace(Chr(62),&quot;&quot;).Replace(Chr(124),&quot;&quot;)" />
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="ruta">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania + &quot;\&quot; + rowV.Item(1).ToString + &quot;\&quot; + CarpetaDestino + &quot;\&quot;" />
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="rol">
-                                                                            <Literal x:TypeArguments="x:String">Contacto</Literal>
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NombreID_URL" />
-                                                                          </InArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="URL_Proceso" />
-                                                                          </InArgument>
-                                                                          <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">
-                                                                            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Encontrado" />
-                                                                          </OutArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="LogFile">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LogFile" />
-                                                                          </InArgument>
-                                                                          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="LogProcesos">
-                                                                            <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="LogProcesos" />
-                                                                          </InOutArgument>
-                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">
-                                                                            <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="TaskConfirmation" />
-                                                                          </OutArgument>
-                                                                          <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">
-                                                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania" />
-                                                                          </InArgument>
+                                                                          <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">[idNavegador2]</InOutArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="Busqueda">[rowV.Item(2).ToString.Replace(Chr(34),"").Replace(Chr(47),"").Replace(Chr(42),"").Replace(Chr(60),"").Replace(Chr(62),"").Replace(Chr(124),"")]</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="ruta">[RutaCompletados + "\" + NombreCompania + "\" + rowV.Item(1).ToString + "\" + CarpetaDestino + "\"]</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="rol">Contacto</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">[NombreID_URL]</InArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">[URL_Proceso]</InArgument>
+                                                                          <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">[Encontrado]</OutArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="LogFile">[LogFile]</InArgument>
+                                                                          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="LogProcesos">[LogProcesos]</InOutArgument>
+                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">[TaskConfirmation]</OutArgument>
+                                                                          <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">[RutaCompletados + "\" + NombreCompania]</InArgument>
                                                                         </ui:InvokeWorkflowFile.Arguments>
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -2161,39 +2117,17 @@
                                                         </ui:ForEachRow>
                                                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_66" UnSafe="False" WorkflowFileName="Procesos\Gamma.xaml">
                                                           <ui:InvokeWorkflowFile.Arguments>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">
-                                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="URL_Proceso" />
-                                                            </InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">
-                                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NombreID_URL" />
-                                                            </InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="ruta">
-                                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania + &quot;\&quot;" />
-                                                            </InArgument>
-                                                            <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">
-                                                              <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="idNavegador2" />
-                                                            </InOutArgument>
-                                                            <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">
-                                                              <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Encontrado" />
-                                                            </OutArgument>
-                                                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="EncontradoDT">
-                                                              <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="EncontradoDT" />
-                                                            </InOutArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="CarpetaDestino">
-                                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CarpetaDestino" />
-                                                            </InArgument>
-                                                            <InArgument x:TypeArguments="sd:DataTable" x:Key="VariacionesPCAOB">
-                                                              <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="VariacionesPCAOB" />
-                                                            </InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="rutaResultados">
-                                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Pais + &quot;\&quot; + NombreCompania + &quot;\&quot;" />
-                                                            </InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="LogFile">
-                                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LogFile" />
-                                                            </InArgument>
-                                                            <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">
-                                                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania" />
-                                                            </InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">[URL_Proceso]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">[NombreID_URL]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="ruta">[RutaCompletados + "\" + NombreCompania + "\"]</InArgument>
+                                                            <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">[idNavegador2]</InOutArgument>
+                                                            <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">[Encontrado]</OutArgument>
+                                                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="EncontradoDT">[EncontradoDT]</InOutArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="CarpetaDestino">[CarpetaDestino]</InArgument>
+                                                            <InArgument x:TypeArguments="sd:DataTable" x:Key="VariacionesPCAOB">[VariacionesPCAOB]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="rutaResultados">[Pais + "\" + NombreCompania + "\"]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="LogFile">[LogFile]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">[RutaCompletados + "\" + NombreCompania]</InArgument>
                                                           </ui:InvokeWorkflowFile.Arguments>
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -3726,51 +3660,21 @@
                                                                             </ui:LogMessage>
                                                                             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Theta - General.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_98" UnSafe="False" WorkflowFileName="Procesos\Theta - General.xaml">
                                                                               <ui:InvokeWorkflowFile.Arguments>
-                                                                                <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="idNavegador2" />
-                                                                                </InOutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(2).ToString.Replace(Chr(34),&quot;&quot;).Replace(Chr(47),&quot;&quot;).Replace(Chr(42),&quot;&quot;).Replace(Chr(60),&quot;&quot;).Replace(Chr(62),&quot;&quot;).Replace(Chr(124),&quot;&quot;)" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="ruta">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania + &quot;\&quot; + rowV.Item(1).ToString + &quot;\&quot; + CarpetaDestino + &quot;\&quot;" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="rol">
-                                                                                  <Literal x:TypeArguments="x:String">Contacto</Literal>
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NombreID_URL.Replace(Chr(34),&quot;&quot;).Replace(Chr(47),&quot;&quot;).Replace(Chr(42),&quot;&quot;).Replace(Chr(60),&quot;&quot;).Replace(Chr(62),&quot;&quot;).Replace(Chr(124),&quot;&quot;)" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="URL_Proceso" />
-                                                                                </InArgument>
-                                                                                <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Encontrado" />
-                                                                                </OutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="Keywords">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Keywords" />
-                                                                                </InArgument>
-                                                                                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="EncontradoDT">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="EncontradoDT" />
-                                                                                </InOutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombrePersonaFisica">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(1).ToString" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="rutaResultados">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Pais + &quot;\&quot; + NombreCompania + &quot;\&quot; + rowV.Item(1).ToString + &quot;\&quot; + CarpetaDestino + &quot;\&quot;" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda2">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(2).ToString.Replace(Chr(34),&quot;&quot;).Replace(Chr(47),&quot;&quot;).Replace(Chr(42),&quot;&quot;).Replace(Chr(60),&quot;&quot;).Replace(Chr(62),&quot;&quot;).Replace(Chr(124),&quot;&quot;)" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="LogFile">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LogFile" />
-                                                                                </InArgument>
-                                                                                <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="TaskConfirmation" />
-                                                                                </OutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania" />
-                                                                                </InArgument>
+                                                                                <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">[idNavegador2]</InOutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda">[rowV.Item(2).ToString.Replace(Chr(34),"").Replace(Chr(47),"").Replace(Chr(42),"").Replace(Chr(60),"").Replace(Chr(62),"").Replace(Chr(124),"")]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="ruta">[RutaCompletados + "\" + NombreCompania + "\" + rowV.Item(1).ToString + "\" + CarpetaDestino + "\"]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="rol">Contacto</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">[NombreID_URL.Replace(Chr(34),"").Replace(Chr(47),"").Replace(Chr(42),"").Replace(Chr(60),"").Replace(Chr(62),"").Replace(Chr(124),"")]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">[URL_Proceso]</InArgument>
+                                                                                <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">[Encontrado]</OutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Keywords">[Keywords]</InArgument>
+                                                                                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="EncontradoDT">[EncontradoDT]</InOutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombrePersonaFisica">[rowV.Item(1).ToString]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="rutaResultados">[Pais + "\" + NombreCompania + "\" + rowV.Item(1).ToString + "\" + CarpetaDestino + "\"]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda2">[rowV.Item(2).ToString.Replace(Chr(34),"").Replace(Chr(47),"").Replace(Chr(42),"").Replace(Chr(60),"").Replace(Chr(62),"").Replace(Chr(124),"")]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="LogFile">[LogFile]</InArgument>
+                                                                                <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">[TaskConfirmation]</OutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">[RutaCompletados + "\" + NombreCompania]</InArgument>
                                                                               </ui:InvokeWorkflowFile.Arguments>
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -3950,51 +3854,21 @@
                                                                             </ui:LogMessage>
                                                                             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Theta - General.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_97" UnSafe="False" WorkflowFileName="Procesos\Theta - General.xaml">
                                                                               <ui:InvokeWorkflowFile.Arguments>
-                                                                                <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="idNavegador2" />
-                                                                                </InOutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(2).ToString.Replace(Chr(34),&quot;&quot;).Replace(Chr(47),&quot;&quot;).Replace(Chr(42),&quot;&quot;).Replace(Chr(60),&quot;&quot;).Replace(Chr(62),&quot;&quot;).Replace(Chr(124),&quot;&quot;)" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="ruta">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania + &quot;\&quot; + rowV.Item(1).ToString + &quot;\&quot; + CarpetaDestino + &quot;\&quot;" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="rol">
-                                                                                  <Literal x:TypeArguments="x:String">Contacto</Literal>
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NombreID_URL.Replace(Chr(34),&quot;&quot;).Replace(Chr(47),&quot;&quot;).Replace(Chr(42),&quot;&quot;).Replace(Chr(60),&quot;&quot;).Replace(Chr(62),&quot;&quot;).Replace(Chr(124),&quot;&quot;)" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="URL_Proceso" />
-                                                                                </InArgument>
-                                                                                <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Encontrado" />
-                                                                                </OutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="Keywords">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Keywords" />
-                                                                                </InArgument>
-                                                                                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="EncontradoDT">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="EncontradoDT" />
-                                                                                </InOutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombrePersonaFisica">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(1).ToString" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="rutaResultados">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Pais + &quot;\&quot; + NombreCompania + &quot;\&quot; + rowV.Item(1).ToString + &quot;\&quot; + CarpetaDestino + &quot;\&quot;" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda2">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rowV.Item(2).ToString.Replace(Chr(34),&quot;&quot;).Replace(Chr(47),&quot;&quot;).Replace(Chr(42),&quot;&quot;).Replace(Chr(60),&quot;&quot;).Replace(Chr(62),&quot;&quot;).Replace(Chr(124),&quot;&quot;)" />
-                                                                                </InArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="LogFile">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LogFile" />
-                                                                                </InArgument>
-                                                                                <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">
-                                                                                  <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="TaskConfirmation" />
-                                                                                </OutArgument>
-                                                                                <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">
-                                                                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="RutaCompletados + &quot;\&quot; + NombreCompania" />
-                                                                                </InArgument>
+                                                                                <InOutArgument x:TypeArguments="ui:Browser" x:Key="idNavegador">[idNavegador2]</InOutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda">[rowV.Item(2).ToString.Replace(Chr(34),"").Replace(Chr(47),"").Replace(Chr(42),"").Replace(Chr(60),"").Replace(Chr(62),"").Replace(Chr(124),"")]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="ruta">[RutaCompletados + "\" + NombreCompania + "\" + rowV.Item(1).ToString + "\" + CarpetaDestino + "\"]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="rol">Contacto</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombreID_URL">[NombreID_URL.Replace(Chr(34),"").Replace(Chr(47),"").Replace(Chr(42),"").Replace(Chr(60),"").Replace(Chr(62),"").Replace(Chr(124),"")]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="URL_Proceso">[URL_Proceso]</InArgument>
+                                                                                <OutArgument x:TypeArguments="x:String" x:Key="Encontrado">[Encontrado]</OutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Keywords">[Keywords]</InArgument>
+                                                                                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="EncontradoDT">[EncontradoDT]</InOutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="NombrePersonaFisica">[rowV.Item(1).ToString]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="rutaResultados">[Pais + "\" + NombreCompania + "\" + rowV.Item(1).ToString + "\" + CarpetaDestino + "\"]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="Busqueda2">[rowV.Item(2).ToString.Replace(Chr(34),"").Replace(Chr(47),"").Replace(Chr(42),"").Replace(Chr(60),"").Replace(Chr(62),"").Replace(Chr(124),"")]</InArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="LogFile">[LogFile]</InArgument>
+                                                                                <OutArgument x:TypeArguments="x:Boolean" x:Key="TaskConfirmation">[TaskConfirmation]</OutArgument>
+                                                                                <InArgument x:TypeArguments="x:String" x:Key="ExceptionPath">[RutaCompletados + "\" + NombreCompania]</InArgument>
                                                                               </ui:InvokeWorkflowFile.Arguments>
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -7214,7 +7088,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:MultipleAssign>
-                                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCompañia]" DisplayName="Persona Moral" sap:VirtualizedContainerService.HintSize="582,1222" sap2010:WorkflowViewState.IdRef="ForEachRow_31">
+                                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCompañia]" DisplayName="Persona Moral" sap:VirtualizedContainerService.HintSize="582,1221" sap2010:WorkflowViewState.IdRef="ForEachRow_31">
                                                           <ui:ForEachRow.Body>
                                                             <ActivityAction x:TypeArguments="sd:DataRow">
                                                               <ActivityAction.Argument>
@@ -7375,7 +7249,7 @@
                                                                     </Sequence>
                                                                   </If.Then>
                                                                 </If>
-                                                                <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_58">
+                                                                <Assign sap:VirtualizedContainerService.HintSize="486,81" sap2010:WorkflowViewState.IdRef="Assign_58">
                                                                   <Assign.To>
                                                                     <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
                                                                   </Assign.To>
@@ -7954,14 +7828,14 @@
                                                           </Assign.Value>
                                                         </Assign>
                                                       </Sequence>
-                                                      <Sequence x:Key="Tau" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                                      <Sequence x:Key="Tau" sap:VirtualizedContainerService.HintSize="644,1700" sap2010:WorkflowViewState.IdRef="Sequence_80">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <If Condition="[counterException &gt; 2]" DisplayName="If Exception" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="If_216">
+                                                        <If Condition="[counterException &gt; 2]" DisplayName="If Exception" sap:VirtualizedContainerService.HintSize="582,52" sap2010:WorkflowViewState.IdRef="If_216">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -7996,7 +7870,7 @@
                                                             </Sequence>
                                                           </If.Then>
                                                         </If>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_65">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="582,82" sap2010:WorkflowViewState.IdRef="Assign_65">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
                                                           </Assign.To>
@@ -8004,7 +7878,7 @@
                                                             <InArgument x:TypeArguments="x:Int32">1</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="582,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                                                           <ui:MultipleAssign.AssignOperations>
                                                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
@@ -8040,7 +7914,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:MultipleAssign>
-                                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCompañia]" DisplayName="Persona Moral" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="ForEachRow_35">
+                                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCompañia]" DisplayName="Persona Moral" sap:VirtualizedContainerService.HintSize="582,52" sap2010:WorkflowViewState.IdRef="ForEachRow_80">
                                                           <ui:ForEachRow.Body>
                                                             <ActivityAction x:TypeArguments="sd:DataRow">
                                                               <ActivityAction.Argument>
@@ -8243,7 +8117,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:ForEachRow>
-                                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtVariaciones]" DisplayName="Persona Fisica" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="ForEachRow_36">
+                                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtVariaciones]" DisplayName="Persona Fisica" sap:VirtualizedContainerService.HintSize="582,947" sap2010:WorkflowViewState.IdRef="ForEachRow_36">
                                                           <ui:ForEachRow.Body>
                                                             <ActivityAction x:TypeArguments="sd:DataRow">
                                                               <ActivityAction.Argument>
@@ -8353,12 +8227,12 @@
                                                           </ui:ForEachRow.Body>
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:ForEachRow>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_168">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="582,82" sap2010:WorkflowViewState.IdRef="Assign_168">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Object">[row.Item(5)]</OutArgument>
                                                           </Assign.To>
@@ -8366,7 +8240,7 @@
                                                             <InArgument x:TypeArguments="x:Object">["OK"]</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_195">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="582,82" sap2010:WorkflowViewState.IdRef="Assign_195">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Int32">[counterException]</OutArgument>
                                                           </Assign.To>
@@ -9753,7 +9627,7 @@
                                                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <If Condition="[rowV.Item(0).ToString.Contains(&quot;Accionista&quot;)  and rowV.Item(3).ToString.Contains(&quot;N+SN+AP+AM&quot;)  and rowV.Item(row.Item(0).ToString &amp; &quot;Estatus&quot;).ToString = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="486,597" sap2010:WorkflowViewState.IdRef="If_68">
+                                                                <If Condition="[rowV.Item(3).ToString.Contains(&quot; N+SN+AP+AM&quot;)  And rowV.Item(row.Item(0).ToString &amp; &quot;Estatus&quot;).ToString = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="486,597" sap2010:WorkflowViewState.IdRef="If_68">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
