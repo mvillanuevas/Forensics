@@ -358,7 +358,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="548,1385" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                              <Sequence sap:VirtualizedContainerService.HintSize="548,1153" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -397,7 +397,7 @@
                                     </Catch>
                                   </TryCatch.Catches>
                                 </TryCatch>
-                                <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Scripts\DeleteCacheIE.ps1" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="486,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_3">
+                                <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="Scripts\DeleteCacheIE.ps1" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="486,79" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_3">
                                   <ui:InvokePowerShell.PowerShellVariables>
                                     <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                   </ui:InvokePowerShell.PowerShellVariables>
@@ -408,7 +408,7 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:InvokePowerShell>
                                 <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="486,25" sap2010:WorkflowViewState.IdRef="Delay_5" />
-                                <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="486,303" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="True" Private="True" UiBrowser="[idNavegador]" Url="https://www.google.com.mx/">
+                                <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="486,52" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="True" UiBrowser="[idNavegador]" Url="https://www.google.com.mx/">
                                   <ui:OpenBrowser.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
@@ -428,7 +428,8 @@
                                   </ui:OpenBrowser.Body>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:OpenBrowser>
