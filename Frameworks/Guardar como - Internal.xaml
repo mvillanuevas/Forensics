@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1868,7195</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1868,7826</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Guardar_como_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -105,7 +105,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Guardar_como" sap:VirtualizedContainerService.HintSize="1701,7130" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Guardar_como" sap:VirtualizedContainerService.HintSize="1701,7761" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="nombre" />
       <Variable x:TypeArguments="x:Boolean" Name="sobrescribir" />
@@ -184,27 +184,27 @@
       </If.Else>
     </If>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1639,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;0. Ruta: &quot; + Ruta]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use browser from arguments" sap:VirtualizedContainerService.HintSize="1639,6371" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[BrowserID]" ScopeGuid="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use browser from arguments" sap:VirtualizedContainerService.HintSize="1639,7002" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[BrowserID]" ScopeGuid="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="1605,6234" sap2010:WorkflowViewState.IdRef="Sequence_51">
+          <Sequence sap:VirtualizedContainerService.HintSize="1605,6865" sap2010:WorkflowViewState.IdRef="Sequence_51">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1543,6119" sap2010:WorkflowViewState.IdRef="Sequence_46">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1543,6750" sap2010:WorkflowViewState.IdRef="Sequence_46">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Close restore button" sap:VirtualizedContainerService.HintSize="1481,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Timeout="3" Version="V3">
+              <uix:NCheckState DisplayName="Close restore button" sap:VirtualizedContainerService.HintSize="1481,489" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Timeout="3" Version="V3">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_47">
                     <sap:WorkflowViewStateService.ViewState>
@@ -233,12 +233,12 @@
                 </uix:NCheckState.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <If Condition="[Not System.IO.File.Exists(Ruta)]" DisplayName="If file non-existent" sap:VirtualizedContainerService.HintSize="1481,5912" sap2010:WorkflowViewState.IdRef="If_7">
+              <If Condition="[Not System.IO.File.Exists(Ruta)]" DisplayName="If file non-existent" sap:VirtualizedContainerService.HintSize="1481,6106" sap2010:WorkflowViewState.IdRef="If_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -246,7 +246,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence DisplayName="Print and Save attempts" sap:VirtualizedContainerService.HintSize="1445,5723" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Print and Save attempts" sap:VirtualizedContainerService.HintSize="1445,5917" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -254,16 +254,16 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1383,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Start printing attempts&quot;]" />
-                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[intentos &lt;= 5]" DisplayName="While (print attempts)" sap:VirtualizedContainerService.HintSize="1383,2197" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[intentos &lt;= 5]" DisplayName="While (print attempts)" sap:VirtualizedContainerService.HintSize="1383,2391" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                       <ui:InterruptibleWhile.Body>
-                        <Sequence DisplayName="Print Attempts" sap:VirtualizedContainerService.HintSize="1208,2031" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <Sequence DisplayName="Print Attempts" sap:VirtualizedContainerService.HintSize="1208,2225" sap2010:WorkflowViewState.IdRef="Sequence_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1146,1920" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1146,2114" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -271,7 +271,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <Sequence DisplayName="Print attempt" sap:VirtualizedContainerService.HintSize="1108,1670" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                              <Sequence DisplayName="Print attempt" sap:VirtualizedContainerService.HintSize="1108,1864" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Name="WindowSaveAs" />
                                   <Variable x:TypeArguments="x:Boolean" Name="WindowImprimir" />
@@ -293,14 +293,14 @@
                                       </sap:WorkflowViewStateService.ViewState>
                                       <uix:NCheckState DisplayName="Close print dialog if open" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
                                         <uix:NCheckState.IfExists>
-                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,407" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,404" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Trace" Message="[&quot;Found Print... dialog open. Closing&quot;]" />
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Trace" Message="[&quot;Found Print... dialog open. Closing&quot;]" />
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="428, 1, 34, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="d2ecd847-cefa-4042-8ce4-69250ba36e2f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAcCAYAAAAN3M1lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVFhH7dRrCsMgEEbR+Ke0mzG+978AF+MOpnyhQqA2VDuFSesFSYIBD0ayaK1J0ogxUkqJFhIUYCEEmTDv/bZrImHYNXEw55xcGHZNHMxa+8MwpRTlnB9Pz2EO77wbYMaY7XN+BMPCl+utiTuaexUbDLUAIyjECkN7yCgKVRjOGdvhr6BRFAJsXdc/gFUUrvv73lhhLcgojg12BBjBscG+8YNlP/wcTVhvE9bbhPV2DlgphaSME8As3QGlMhUhmfJn4gAAAABJRU5ErkJggg==" InformativeScreenshot="f09f303bd86503a366b170b5372432cf.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Print' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                               </uix:NClick.Target>
@@ -308,7 +308,7 @@
                                           </Sequence>
                                         </uix:NCheckState.IfExists>
                                         <uix:NCheckState.IfNotExists>
-                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -335,24 +335,24 @@
                                     </Sequence>
                                   </ui:CommentOut.Body>
                                 </ui:CommentOut>
-                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1046,243" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1046,242" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                                   <ui:CommentOut.Body>
-                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_67">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NCheckState DisplayName="Close 'Save As' dialog if open" sap:VirtualizedContainerService.HintSize="388,53" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
+                                      <uix:NCheckState DisplayName="Close 'Save As' dialog if open" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
                                         <uix:NCheckState.IfExists>
-                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,407" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,404" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Trace" Message="[&quot;Found Save As... dialog open. Closing&quot;]" />
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Trace" Message="[&quot;Found Save As... dialog open. Closing&quot;]" />
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="919, 1, 34, 30" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="f9fc14c9-ef27-427a-8331-327eaeab774e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAhCAYAAAC1ONkWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADGSURBVFhH7dRhCsIwDIbhXcK1xeoVFO8z7zs8kOKf2G9QmBDLUgKN2sG7rTSwhzE2kNFjSAdOJjqfLuTdgYI/Ys0Ptcg8zFuEuTEuuLTmh1rUYdIyzNmE7RMsYs0PtQiwEbD01tKaH9rSbZ7pOk3sHsIeZrg9rgW2U4Dhwc/HncWV9j6lBkMcoAaFVGFoDalFIXUYyqBaFPofWEbhur7nZkv9/sdfAtTg1GBmf7DadZi0DpPWYdI6TFqHSXuDhRDISl8Ai/QCdLfmuNauDs8AAAAASUVORK5CYII=" InformativeScreenshot="71ad7bac7aa9e4c8a34cd554ea89a258.png" ScopeSelectorArgument="&lt;wnd app='pdfsaver.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                               </uix:NClick.Target>
@@ -360,7 +360,7 @@
                                           </Sequence>
                                         </uix:NCheckState.IfExists>
                                         <uix:NCheckState.IfNotExists>
-                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_55">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -397,16 +397,16 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:LogMessage>
-                                <uix:NCheckState DisplayName="Check 'Print' dialog shows up" sap:VirtualizedContainerService.HintSize="1046,678" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
+                                <uix:NCheckState DisplayName="Check 'Print' dialog shows up" sap:VirtualizedContainerService.HintSize="1046,873" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
                                   <uix:NCheckState.IfExists>
-                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,461" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,656" sap2010:WorkflowViewState.IdRef="Sequence_56">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_20">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Boolean">[PrintRequestSuccess]</OutArgument>
                                         </Assign.To>
@@ -414,23 +414,28 @@
                                           <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'PDF-XChange Standard'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PDF-XChange Standard'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable DesignTimeRectangle="38, 105, 244, 17" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'PDF-XChange Standard'" FullSelectorArgument="&lt;wnd cls='#32770' title='General' /&gt;&lt;wnd ctrlid='1' title='FolderView' /&gt;&lt;ctrl name='Folder View' role='list' /&gt;&lt;ctrl name='PDF-XChange Standard' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='#32770' title='General' /&gt;&lt;wnd ctrlid='1' title='FolderView' /&gt;&lt;ctrl name='Folder View' role='list' /&gt;&lt;ctrl name='PDF-XChange Standard' role='list item' automationid='' check:text='PDF-XChange Standard' /&gt;" Guid="b3504fc7-8898-4846-ac70-31b776f9be33" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAAVCAYAAABrCyNXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASuSURBVHhe7ZnPixRHFMfTLLvKwoYEkXgJ+Qv2lMDCNvkLYlgMRIQVdRgnve4Ksz8UgyJEkksQpA9BNDloTDyGkMuQk8H8ILLoJZclmZh1l1GzxFUvIp6e9V79mKrq6t4ZmMF28j7y6K1fr15Pv29XVfsKKG79K+3tXRFfX5prA76D3+DYjU778/X/ctVkBM7Gxvbym8YInGGYwYMFzjADDAucYQaYXIEnl26SRUvKvpmSpsoMw5QfI/ClEydhrj4P1doMfPDhXvjkdyCLzim7WZWmyu+9PwX7pvfDgUNVqM3MKS9IA5IogshYDGlTNWXaIojbjYKt2i0aCURxCs7oxO/fhDS2/Jn+OI8dVwnA+zH3nYgI+0Uv7r2Evx8TxAj8aH0BPvv8LCwePwEfzc7BxT+A7J2rAMeuA/z59L7qKbmztgZ7xL/jH5+C/QcrqhZxH34zjQuEhWWR0IlO5+4SBwVthjZTiG3BY1n4Nu2IqEupXLIEpVgtUfc1zl74LNnvx+RiBN5o/Ahr6y1YvbMO/6yuwd+3V+Gv5m3478EmPH7yGI5cmIU3a2/Bq9Ov0RXLWN+6ew8uf31FeUH8h2+XA4nhJHeXiYNjlagdsauV2xG3Q8kSNLAbkfQjzl74LNnvx+RSKPC79+6TiOOT78Lo4hgMnd8uzuEjMPTFdhhdGKN6bL927SflBfEfvl0OJYYtxu4TB3cIcSx2Cbaa/RUxg5qnIVd5/yiALwuzXTZ+1Zi0vZV2jgM0p65P3fuw2sLbb/TtHy9knZ5Lx9Hr2Ir8JYn4XXW8RffHlJagwMfHx8lWVlZopUZxR9+OkLijK8Iuj8DrV3fC6PwYtW9uPlReEJVs6uEXb9ERX+BWwgkzOZdLwCcmY3BF1Kh5dB86/+YJT/tWY3RAzhjZppvonp1xVnxinCtkTft7QfuevbEOvYjNJuuvHWenPpiyERT4xMQEGYLbcb1ya3FXfqnCo2ePYMf5N6jdRSWbMVs4dhJpMLHtxAokTsEKSFvzRCS0LWjqHxKsxp/HK5NA9Hx5sVnlzAvFazO+lLUVnEX1l138OQW9jI2KHfjbygdTWoICn5ycVLVAZ24U9/frP0Dl18MkbqRyvQrRV8PU7lL08ANtlND2atNF4mByUuL5Z26/7OPPY5WdeIpePt6YQoEXvWyy0ApJwXtz9jW2An9FPphSYwReOzIHp898CjNH63CwWlO1agUXZ24Ut0aLe+jctpwVPO/h+21YtoXYTeLYCYlFT0hqZXJELvqEv05bZfPSEJBP3a9gDP3dniu7RffP1x4NEZdpli8n2d+bs9exdeUv7/6YMmMEXl9cgsMzszB94BDsntoDrVaL6ukMviDO4JeGofJz1Yg7+nIYRuvyDL6xsUF9JX5y2MhEyW4JNUVjXejjkKPeQB0lrTWfWYVCCazLUmCyfwJJJ6skFeULBa34I5swL27pK9xuPoJRXa9j69SfoOj+mNJiBO6zvLwMzWaz/RV9fgyG0m1m5UZx66/ojAcJurttOcP0g1yB26CIcaXG7bj//+BMFlp1nTMrw7wYOhI4sxXWVpeMV2+mHLDAGWaAYYEzzADDAmeYgQXgOegH30kheJ/vAAAAAElFTkSuQmCC" InformativeScreenshot="4c41b05310751e67fbebf3f8f9a0d4ab.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Print' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="218, 387, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Print' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Print' check:text='unchecked' /&gt;" Guid="974fffab-dfcf-453b-bb7f-d0e931c5c701" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAbCAYAAAA9K9JnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADySURBVGhD7dXBEYMgEIXh0BPdUElulEIrVJEzHdDBRsUwawbG4CbOmnmH/8CKB78Z5JZzJnQs4AkCnqANnrk/0E7cC3iDca8mXkoJvQU8QcATBDxBevCiJ2sMmZolFxr7FKULz3qKvXVvxtt7/uX04qVAzjgKfM9ewCvrGFxZL3NHztlynNnMv2bLEY/k7XrkTwLUhVf/dzPAhBNfc0t+wqnA62wGW97dQJ8DN6cLr/XhfM7x+N7e/McBTxDwBP0X3nRDl0tj8JY+mB68C6YGr96yjVr7NaQG74oBT9DHeKgf9wLeYNxrg4fGAp4g4B0u0xMF/jOffsSdbQAAAABJRU5ErkJggg==" InformativeScreenshot="20dfafed50f912d6531e6fb99f054bd1.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Print' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                         </uix:NClick.Target>
                                       </uix:NClick>
                                       <ui:Break sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Break_1" />
                                     </Sequence>
                                   </uix:NCheckState.IfExists>
                                   <uix:NCheckState.IfNotExists>
-                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,198" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_57">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_21">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Int32">[intentos]</OutArgument>
                                         </Assign.To>
