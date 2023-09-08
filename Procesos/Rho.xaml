@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1272,2466</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1868,2409</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Rho_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -102,15 +102,11 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Rho" sap:VirtualizedContainerService.HintSize="1282,2401" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Rho" sap:VirtualizedContainerService.HintSize="1282,2344" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaAfirmativa" />
       <Variable x:TypeArguments="x:String" Name="Url" />
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:String" Name="PaginaActual" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -118,9 +114,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2290" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2233" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1182,2062" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence sap:VirtualizedContainerService.HintSize="1182,2005" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
+          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -143,21 +142,21 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Procurement - World Bank Listing of Ineligible Firms and Individuals" sap:VirtualizedContainerService.HintSize="1120,1737" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c1abe230-d190-4935-a426-60a31daaea44" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Procurement - World Bank Listing of Ineligible Firms and Individuals" sap:VirtualizedContainerService.HintSize="1120,1680" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="c1abe230-d190-4935-a426-60a31daaea44" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1086,1480" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1086,1463" sap2010:WorkflowViewState.IdRef="Sequence_17">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State 'Debarred Firms'" sap:VirtualizedContainerService.HintSize="1024,422" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c1abe230-d190-4935-a426-60a31daaea44" Timeout="10" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State 'Debarred Firms'" sap:VirtualizedContainerService.HintSize="1024,384" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c1abe230-d190-4935-a426-60a31daaea44" Timeout="10" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,165" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="Sequence_22">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -195,14 +194,14 @@
                     <uix:NCheckState.Target>
                       <uix:TargetAnchorable BrowserURL="https://projects.worldbank.org/en/projects-operations/procurement/debarred-firms" CvTextArea="921, 815, 71, 12" CvTextArgument="FIRM NAME" CvType="Text" DesignTimeRectangle="902, 781, 117, 80" DesignTimeScaleFactor="1" FriendlyName="'Firm Name'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='k-header' aaname='' check:innerText='FIRM NAME' /&gt;" Guid="5d5df6f9-a85d-4084-ab2f-99a58776c99c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHkAAABUCAYAAACmyJihAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR2SURBVHhe7ZVLbhtHEIZ5ihyKA2aRZXY5QRDY4eMEQTbecZgD6AYkvYkXgiwYtCNHFg0E8EIiKYmUqLd0gcr0q7p7OBaMhBKkrp/Ah2ZX9Yv9qVo1wif5DyQL+LDku7s7kCgs+fb2FiQKJAsAkgUAyQJgyTc3NyBRIFkALPn6+loHVOtAP40+KlkAUSUrrq6u+HsVyD+//IpkkB6QLABIFgBLVm85SBNIFgAkCwCSBcCSLy8vdUC1DvTT6EeSQZqw5IuLCx1QrQP9NPqoZAFElQzSBJIFAMkCgGQBsOTz83OQKJAsAEgWACQLgCWfnZ3pgGod6KfRjySDNGHJy+VSB9Cm16KSBQDJAoiea5AmkCyAB5Q8pE6tRrWIDg2L3Oc/Mt3vvDZjXT/E5eJ8Rr1dH18uP1PvezunNQzijuAMUd7Gy3Ned+w+8f5fX6eA5/izDVt2bEC83uPCkk9PT9fMgNrqBzZyGpdy456R1h6u9gdNdzEZ5btxXpH1xn6t3ZwyG681Bz7O2DNo/HocL83xe5dz4TptGlTO8eubWLhficUxzabz6tz0kGaLivj/4MlJ1mOGbd13Qk0+o6wRr6fjjTa1Vfw+yY1ibnSWKsk+ZiSFMuN1+Jw23m6q836j5MWM/tzYpO86byn/MAtyJ/Tlww791HlD2cY/axX9rCTnPRV3lz+mXMstJKt97pPM4twePs5jgz1XzsPjc70nvyZ6TlZItueLJIeEwuf0ZWtE2Ys3xdO/RflIiS4Ej3box1YRe7FJv20d2LHr4eElh1jh90n2F+QriSUPzfOs59mnuj2sEMYEOfe06zOszomqz43lvB+vx9nf4b4P3Pm+SbKiEL09oh9eFlJfblJ74x1/f7U9CcatB5Z8cnKiA+tr++ZiGl19IWE+lBr2PW3qr4yvFxc1pq59mvfyuh1n92n2K87h5cT7xvHKP0iNO0cwfmCqt/u32bee7wXnM/sayb6/ei7VLorq/ctU7y+mql+NJveM/+9tJHm9eMl7pZwRVFz2oKKvL1FdaL80vl5crP9e17LVGC/ZjfeUc7YfzS/ibs8KzBnDdcz3emP1TOq7Wq9vJbv+1ylEv/9IP/++Td2daUV+PbDkxWKhA+tr7cVYyWE+lFrVN5dUzptLW3zsUl2ty3m7z69GmBrv2z61VK7Z5/gnu5fGxsv76fn9lhmj143XcePVb/tU9KPzhfmAVj881+O2T6+S9Rg718bCS/Q585Ryv+mqNaQqt2eefI6X1yvNLf1LUDl3XvVU+365kmP8b3t8HlAyeCpEzzVIE0gWACQLAJIFwJLn8zlIFJZ8fHwMEgWVLICoklUAbXotnmsBsOSjoyMdQJtei0oWACQLIHquQZpAsgAgWQCQLACWfHh4CBKFJc9mM5AoqGQBRJWsAmjTa/FcC4AlT6dTHUCbXotKFgAkCyB6rkGaQLIAIFkAkCwAljyZTECisOSDgwOQKKhkAUSVrAJo02vxXAtgRfL+/n40oAzyzy/PkvFJ9wPJyX+I/gUVryr4rNAWkQAAAABJRU5ErkJggg==" InformativeScreenshot="5d589787e7f33096819e3959c5b58d54.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Procurement - World Bank Listing of Ineligible Firms and Individuals' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target DesignTimeRectangle="902, 675, 653, 40" FriendlyName="'Debarred Firms'" FullSelectorArgument="&lt;webctrl class='debarred-firm-header' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='debarred-firm-header' tag='DIV' type='' aaname=' ' check:innerText='Debarred Firms and Individuals&amp;#xD;&amp;#xA;This list updates every 3 hours' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAApEAAAAsCAYAAAA94ONJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAzwSURBVHhe7ZzNa1RJF8b9V/InzHK2Ll2+S7cuXQ0u3Y67MKuAm+yG4GJwGIQgA6OIEIcgiSKhyRiJJmqaJh83NE3a0DTnra9Tn+d2V8fEcZLngR/at259napb9eTevn2NIAiCIAiCIGhGwURCEARBEARBM8ubyGs//QUAAAAAAMBEWDCRAAAAAACgGhZMJAAAAAAAqIYFEwkAAAAAAKphwUQCAAAAAIBqWDCRAAAAAACgGhZMJAAAAAAAqIYFEwkAAAAAAKphwUQCAAAAAIBqWDCRAAAAAACgGhZMJAAAAAAAqIYFEwkAAAAAAKphwUQCAAAAAIBqWDCRAAAAAACgGta/bCI/U8fUPqBFMf07YnVgWkonR3RHSp/IDr0Y6cwjevJYSr8c3NkynSTqfRbTz41iLGaP7/yHsSmi2Xonpl/76S09OTGnUGdVSj8rXK5q6x9SOgAAAPB9wzqTiVzsuUys8Ziapk9Lv6+K57dziUzkH0fU2DMSNVtvVfo7axzGp/TwgZD3kjDVRHIMv9ZkFmMxe3zvurZ233TEdJhIAK460/cnXvPsOi+fI8F7KK8t+efvDt7fLvoGwZXiP+R/BFhfZyJHYxp+UTjvoHZxdRG8EvPIXE4TaWLi2N7YLM+9pPx7JvIigIkE4FLT8oe/kVlbvlMTada/b7xnnsFEmj5dQdPp90GvtrUeJjKa8Ct0+43bcemElu7z8VW6/XJADcd0PKLtrR264cviIJ7Q8usBDe0TRhr2enT7njvn/nta3julxqVpNYdHNL/IZbhNuX9Atx4d0PYXfYYdFDuYp7T84C0tH9oCuM1zv+7Qk8Mw2MPBgJZ+W3FlqvTfutRxXoW+nNCTLde/aSZSTBeMgzNC689e0cJuvBC5mOz1aF7V6WMy6NPCr7ofoc3N7kcfS9veKEijEXVVrH/0bQjcWj2m7ezczstNmuNzXNs6r3WMwnnNXjeMi+LG0yMXbyUVv+XdU/v/ahPp4jI4ogU9T7gqHe+n4Y+R6WORxvdWJ7TD9+l+j7bNQT0fpMX/VRLvZu+A1vv2//lCH28YxbHa+RrNBRNH1yUjNx5cBwDgAuA1W1KliTwrM5nGDJv3ezeRLnZXzkTynMkk+oKLm1/fAtY5mUgNb45E26/XzLFbG24zH53S+lbYKLsb/AgxCrg2mL3TYJq2+btqHVpWm/mwGVBnbxA22/0uXU/qje+IxiZS5R2FHb3zt8pzb4fW3bnN/hE9UeZnqD+M+jRvTNI7esHmSLWr612w0jmbyLhtzT/aOMQxGVP3MMTESMWyExnJzqo2vhsmRlrNoY1TV7W/25Ef1c4976syVbzVeR0dc5NzTC/4+4Rs9rS+pPV132zYc+53nSlTUud0Y1M6q4nUUtl123W7jfRYmHNqxiKL74MD6poT1Dxwpvf6mqtI/bFxU33OTaRPVxo2ygRG1cxkIqvnK88FNRdN6NRY93SeE2VAx7T+PPxBAwC4WOQ9za3Fap1ZjO8uRWt88ceoYEwlo5jXV9Qfr8FGdr3g84IEAyIYPm5nWp/KG7c32buitVmpo/bvtMw03cjnF4xU1Ja0D9GeWKQpJW2KyOPM5Rd7jHCsLa/Cxkm3ifug/r/j8sdtkeoR4XIkozh9fml47Fjx/pOPaxgXrs/Vodrpy3Ftro51C6xzNJHhuO1kmGTW6KhzeHP3jeUAKwPzpy1DGxx7iE1ExiM3AXwZoZ7hfo9u/xLO9UEbndDD6PuaczwBfBkrtPDJHjJt/fPYGSuVz91BuvHGGeK2QEcTMzzOPqHl33U6tzG6YPwiMaIXzzbCHbPoAmQjcf01X618l3elNdbNhx26Gd0tnM4KLe3bvMUCpsZgwZX1s3sRhSegb9OXY/rZnLNC87vpOQXFhRfa7Q2vv2PoYlU1Fnl8g6m2c2/N93F7zf6Bw3PDxm+NHh6ajzT88N6Ohf5Dw5nXdOFNL2LpWELrfOW2hmtg+80m/ZDnBwBcOPKeFtbiXHy9p+tIWM90OTZNMg9lfelnrteuESbNrx+cJpdr4L0oWoe5nXl9hVwev3fmKsrU7Yj2H14HW0yWr9ccT/vp85i+2jRxXfV7rc3n25qUGeKTxHZiXqnfcf94zc7HqySPr3wet7VUPr9y5emhfG4r97+sw+StjfUEWBdoIrnxY+p0urT0UnMc7hCZPOWABxPhjv2ySUu76Z0hI2lTfuTKcHCA8+D4gekfu3Z1ablnDVASYHfXyuTjyefrzYhMZBBPunIS+jr2u5GB1HBMlGFkM5gMuD2W9+0OP8LVGitDstVmJlfo5rMD8+g7ucOp5MdTaJuPWX6xfdpx5Ub5soWjPV0aO+6/ixXnmTgWZXz9ncVPH2nuXhRT91WLNH6cX3+9wNWhyOd5Or9bjs0yX01b12hxLxqIsX2UDTMJwLdD3tOytUgdK9bdlnWkdZ9wtK0t9jPXq1SspZwW7Zk5vD5Gebmdcn1RHtPucj2VykzI08W9QGi7O8/Ej/MopeOQko9BiLstN+1rWmdt3nz80nzTx4DjaxXFMYHLaZtfE8bBtS/tqybtT6gji2llrCfBOkcT+d4/drSPs0PjS+UdjAYjMZHhDtKwUYbvr026+fQ4CaIYaEc5YdLjksy5VcYlY2K60EbxItMIMeFzo7LLvq3Q9UddWo++jDfc++weoUY85jt7yqx0PtLdpQ162HYnUliE+Jj/fF4m0o9ddmFxnhlNpH/cru+mRvXmpji9WL/WRJ51vq7Srefa2OvjVs0/oQ4AwMUi72ntazGvAeU6nO17LftF29ri6+c1juXXTKFNOZw3Woe5na31JeUKdQhlchmJOF3aC/I+RcrjyUrHwyLWa+TaG7c1G69pecvxZFxM9HhmZU6GYxmv93laFOekbCE9O5aPa9hfOI9UhqUm1pNgnZOJXPU/maKi7O72cGf0o+q273dxB8e0/tSec+Ol283N4+xQxvpTm8c/7p64KVvaJoR/nH3Yi17yieBHqGPVl1kfZ4vpQhuli8zQPrHistO+rdBcdNfxh2d9237/vcIILqvhvtvv8Gn58RTa5iecO+YfZ+s2ffXj7HjsuP/uWNVYSOXwI3/9PUrbrvh7hmn8wuNs/bn1cfae/Tzc3SnOseWcZb7GY7dCN7lvanz+Z44BAC6ack/TtK/FvKe07THhOpfSyvrk+jXcBk4T2pQj7EVT60vyCOspp7u1O98P8nRpD6lqO8P5J5gfKa4Wbr/+zr/+N/RjWt5J6TZmI2ry2ExEiKVn2vyaMA5ubMv25mVWxHxCrCfB+ioT6X/ix9/8Sn/i54ZqnDUA7iUO/aLBYEzdosNK+rcmB25iKtkXa8J324Z9funAfp5sICytE+KeyuPiZsvVk+1Ulc1BTF/m2NYvlhT1ZggXbkBoo3iRadonVlx22jfbn8a9zNHpu8YqI+Lv3jHKYFq5MeFzlfyCIrSN6/PHshdrtuPXkYs+OYpypbHj/vOxmrGQ54A3cFrZd2zzuZG+WHMSXvBR4rjE5zSHai66kGjZcs4yX1V/9dx3L0TxizjaqHJbAQAXi2zi2tdiXjeKdVhfv2Z94+s8L9My2dTZem2Z+XoYyrWSNn7OUyqvr5Bbm/16nytPN5+j+nht5/2Q5Y6Hem27bTmuDya2rp/CnueJyo5jxGNi4PxacRlT8ub7QkJbmTF5v70mjdP0+ZXLty9uUyIuU6jD56uI9QRYX2ciWXoT7B3RYvFj4yt0+2WfuvGkH41o/W/3hi93cL9H853451XCT8nM+Z/tUVImYv35pn1k2LopByZOiMUdWu6NggHWfWgO6K5Lz39WZvmx+qz/P23yiOlCG3ng+KLztE+suOy0bxu0FPdFKf1ZmZjwk0Jaw8MDuuPu9vnFTmibn8zRsfQnfvq0oD6bGBR9chTlSmPH/Q/Hpo9Fyxy499G9+az6+eF9OK4o50b2Ez+7H9Vne07YBPLYqRir+a3F5cw+X9+pPwCigdPzMPspJQDAxZKbOkv9Jm8/87UdqWUtzOtLP3O9QWGdUvA6apSZg7Zz3P5U1NeLzkv2rrQvnVXXJt+ftI2dVXd+1N/EJ0TH/V7i5fqQtFkrW88TpsQoSk/HNE1jyeOZ5wsxKct0sA9I1DJGvh3t80uTxytvWx5nez6XKdShmSnWMqwzmUgAAAAA/DfJTSyogU1kmym8WrBgIgEAAIArBEzkLKR3LuW7lFcPFkwkAAAAcIWAiZyFyES2fD3hKsKCiQQAAAAAANWwYCIBAAAAAEA1LJhIAAAAAABQDQsmEgAAAAAAVMOCiQQAAAAAANWwYCIBAAAAAEA1LJhIAAAAAABQDQsmEgAAAAAAVMOCiQQAAAAAANWwYCIBAAAAAEA1LJhIAAAAAABQDQsmEgAAAAAAVMPyJhKCIAiCIAiCagUTCUEQBEEQBM0oov8Dy0J5T/qKTgAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
                     </uix:NCheckState.Target>
                   </uix:NCheckState>
-                  <uix:NCheckState DisplayName="Check for results" sap:VirtualizedContainerService.HintSize="1024,535" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="c1abe230-d190-4935-a426-60a31daaea44" Version="V3">
+                  <uix:NCheckState DisplayName="Check for results" sap:VirtualizedContainerService.HintSize="1024,495" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="c1abe230-d190-4935-a426-60a31daaea44" Version="V3">
                     <uix:NCheckState.IfExists>
                       <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="485,247" sap2010:WorkflowViewState.IdRef="Sequence_18">
                         <sap:WorkflowViewStateService.ViewState>
@@ -297,15 +296,24 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetUrl>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Save as..." sap:VirtualizedContainerService.HintSize="1024,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Frameworks/Guardar como - Internal.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Save as..." sap:VirtualizedContainerService.HintSize="1024,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Frameworks/Guardar como - Internal.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; ".pdf"]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Url">
+                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">
+                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
+                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">
+                        <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="BrowserID" />
+                      </InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
