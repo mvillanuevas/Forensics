@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Psi" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Psi" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="idNavegador" Type="InOutArgument(ui:Browser)" />
     <x:Property Name="ruta" Type="InArgument(x:String)" />
@@ -17,7 +17,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1218,1285</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1753,4934</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Psi_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -50,42 +50,59 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
-      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-      <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>PresentationCore</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
-      <AssemblyReference>UiPath.CV</AssemblyReference>
-      <AssemblyReference>System.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Psi" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Psi" sap:VirtualizedContainerService.HintSize="1763,4869" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="PaginaActual" />
     </Sequence.Variables>
@@ -94,24 +111,29 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1701,4758" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
+        <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
+        <Variable x:TypeArguments="x:String" Name="Url" />
+      </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="496,81" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence sap:VirtualizedContainerService.HintSize="1663,4530" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Psi&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1601,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Psi&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+          <Assign sap:VirtualizedContainerService.HintSize="1601,82" sap2010:WorkflowViewState.IdRef="Assign_7">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -119,15 +141,15 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1601,361" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="msedge" />
+              <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="msedge" />
             </TryCatch.Try>
             <TryCatch.Catches>
               <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
@@ -145,135 +167,144 @@
               </Catch>
             </TryCatch.Catches>
           </TryCatch>
-          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" UiBrowser="[idNavegador]" Url="https://www.google.com/">
-            <ui:OpenBrowser.Body>
+          <Assign sap:VirtualizedContainerService.HintSize="1601,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[RFC_NIT]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">8999990681</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="1601,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[DigVerificacion]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">1</InArgument>
+            </Assign.Value>
+          </Assign>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: DIAN - MUISCA" sap:VirtualizedContainerService.HintSize="1601,3520" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="39af79bb-c7bb-4b71-961c-124db3a4c273" Version="V2">
+            <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,154" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="338,32" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                </Sequence>
-              </ActivityAction>
-            </ui:OpenBrowser.Body>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:OpenBrowser>
-          <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Browser="[idNavegador]" BrowserType="IE" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="BrowserScope_2" UiBrowser="[idNavegador]">
-            <ui:BrowserScope.Body>
-              <ActivityAction x:TypeArguments="x:Object">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1231,3036" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
-                    <Variable x:TypeArguments="x:String" Name="Url" />
-                  </Sequence.Variables>
+                <Sequence DisplayName="Sequencia DIAN colombia" sap:VirtualizedContainerService.HintSize="1567,3263" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'AddressDisplay Control'" sap:VirtualizedContainerService.HintSize="1169,116" sap2010:WorkflowViewState.IdRef="GetValue_3">
-                    <ui:GetValue.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="94c8f214-ea88-47ec-a4d3-9bb233e8e676" InformativeScreenshot="63cb7f55944999483f8bbe226db46fbe" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;&lt;ctrl role='pane' idx='*' /&gt;&lt;ctrl role='pane' idx='*' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" WaitForReady="COMPLETE">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                      </ui:Target>
-                    </ui:GetValue.Target>
-                    <ui:GetValue.Value>
-                      <OutArgument x:TypeArguments="x:String">[PaginaActual]</OutArgument>
-                    </ui:GetValue.Value>
-                  </ui:GetValue>
-                  <If Condition="[PaginaActual = URL_Proceso]" sap:VirtualizedContainerService.HintSize="1169,237" sap2010:WorkflowViewState.IdRef="If_5">
-                    <If.Else>
-                      <ui:NavigateTo Browser="[idNavegador]" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,69" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[URL_Proceso]" />
-                    </If.Else>
-                  </If>
-                  <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'IMG '" sap:VirtualizedContainerService.HintSize="1169,116" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
-                    <ui:UiElementExists.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ffe3e2cd-c84e-419a-94d4-4acf4a3a7285" InformativeScreenshot="225e3a6e0bb16c91505f0c9b75364f1a" Selector="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" WaitForReady="COMPLETE">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                      </ui:Target>
-                    </ui:UiElementExists.Target>
-                  </ui:UiElementExists>
-                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="1000" DelayBefore="1000" DisplayName="Set Text 'INPUT '" sap:VirtualizedContainerService.HintSize="1169,164" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[RFC_NIT]">
-                    <ui:SetValue.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a75a5d5-431e-4d55-b837-75badaa4a1a0" InformativeScreenshot="bc6771a3b20b985c7c0da482b7ac6609" Selector="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:numNit' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                      </ui:Target>
-                    </ui:SetValue.Target>
-                  </ui:SetValue>
-                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1036,116" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="tab" KeyModifiers="None" SpecialKey="True">
-                    <ui:SendHotkey.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="5621dc21-a349-4a32-bad3-2424a74a9de2">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:SendHotkey.Target>
-                  </ui:SendHotkey>
-                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="1036,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT '" sap:VirtualizedContainerService.HintSize="1036,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[DigVerificacion]">
-                    <ui:TypeInto.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e1de30ca-20f6-48bc-b2d6-d6820c4a4028" InformativeScreenshot="d6be8aa81f87cf96252bbb6bfe3d69e6" Selector="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:dv' tag='INPUT' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:TypeInto.Target>
-                  </ui:TypeInto>
-                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT '" sap:VirtualizedContainerService.HintSize="1169,116" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
-                    <ui:Click.CursorPosition>
-                      <ui:CursorPosition Position="Center">
-                        <ui:CursorPosition.OffsetX>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:CursorPosition.OffsetX>
-                        <ui:CursorPosition.OffsetY>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:CursorPosition.OffsetY>
-                      </ui:CursorPosition>
-                    </ui:Click.CursorPosition>
-                    <ui:Click.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8d2b826e-d969-46be-8504-545ac2f8ff72" InformativeScreenshot="fa472bef7b9dd0bfbab8bec0b70ca977" Selector="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:btnBusc*' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                      </ui:Target>
-                    </ui:Click.Target>
-                  </ui:Click>
-                  <ui:UiElementExists DisplayName="Element Exists 'FONT'" Exists="[BusquedaNegativa]" sap:VirtualizedContainerService.HintSize="1169,116" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
-                    <ui:UiElementExists.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="194e70c0-d9e0-4224-9547-2240d6a944c2" InformativeScreenshot="df9d1b98094397ff1553ca9af35a5914" Selector="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;&lt;webctrl tableCol='2' tag='STRONG' innertext='Error en Dígito de Verificación' /&gt;" WaitForReady="COMPLETE">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                      </ui:Target>
-                    </ui:UiElementExists.Target>
-                  </ui:UiElementExists>
-                  <If Condition="[BusquedaNegativa = True]" sap:VirtualizedContainerService.HintSize="1169,877" sap2010:WorkflowViewState.IdRef="If_7">
+                  <uix:NGetUrl CurrentUrl="[URL_Proceso]" DisplayName="Get URL- Obtener URL" sap:VirtualizedContainerService.HintSize="1505,87" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1505,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;NIT --&gt; &quot;+ RFC_NIT]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into: Ingresar  'NIT' " EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1505,217" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="39af79bb-c7bb-4b71-961c-124db3a4c273" Text="[RFC_NIT]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://muisca.dian.gov.co/WebGestionmasiva/DefSelPublicacionesExterna.faces;jsessionid=0BE2B04BB6AFA2B69E76A08F3B216E64" DesignTimeRectangle="438, 405, 138, 19" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tableRow='3' tag='TABLE' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:numNit' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tag='TABLE' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:numNit' type='text' tag='INPUT' class='textPlano' aaname='' /&gt;" Guid="30a5cf34-b483-41a2-8d4c-a1507f877306" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI4AAAAXCAYAAADdlHeDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVGhD7dKxDQAhEMCw33/dGwA6GpontS1lg3wzs6TXjKPUGQf+MA6JcUiMQ2IcEuOQGIfEOCTGITEOiXFIjENiHBLjkBiHxDgkxiExDolxSK5xpJeMo9CsDWlIfVddy0TTAAAAAElFTkSuQmCC" InformativeScreenshot="e40c20b3ed34b048348d24906f71995e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="256, 409, 20, 11" CvTextArgument="NIT" CvType="Text" DesignTimeRectangle="243, 400, 187, 29" ElementType="Text" FriendlyName="'NIT'" FullSelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='fondoTituloLeftAjustado' aaname='NIT' check:innerText='NIT' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL8AAAAhCAYAAACIhno1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEZSURBVHhe7dahDcJQGEVhFmILVmACHAtUYxmgsraSCTAoBiBB4uowXeCnF0qbgn2QB/fc5EvIeymYE9JZMGY64me2G+KfLxcTTXsF/pZG/LCkET8sacQPSxrxw5JG/LCkET8sacQPSxrxw5JG/LCkET8saUni35d6Zhv7l7PV7jzel4dojtu333mYPgt8mpYw/jH259lb/P3d6z3wbVq6+Ms6qmId1WU8I37kSksYf/9a00dO/MiZljb+++fHvz/xI2da8vibSx2ronsFIn5kTEsff+e0W9+/g/iRK+0j8TftITbEj4xpSeIHfo1G/LCkET8sacQPSxrxw5JG/LCkET8sacQPSxrxw5JG/LCkDfEz5jbiZ6aLuAHxCzGnHnzaXwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1505,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Digito Verificación --&gt; &quot;+ DigVerificacion]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into: Ingresar campo 'Dígito de Verificación'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1505,217" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="39af79bb-c7bb-4b71-961c-124db3a4c273" Text="[DigVerificacion]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://muisca.dian.gov.co/WebGestionmasiva/DefSelPublicacionesExterna.faces;jsessionid=0BE2B04BB6AFA2B69E76A08F3B216E64" CvElementArea="761, 432, 59, 24" CvType="InputBox" DesignTimeRectangle="765, 436, 54, 19" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tableRow='3' tag='TABLE' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:dv' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tag='TABLE' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:dv' type='text' tag='INPUT' class='textPlano' aaname='' /&gt;" Guid="e2bcd614-19eb-4707-baa1-9a1b050c398d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAXCAYAAABaiVzAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA7SURBVFhH7c8BEQAACINA+9ddAA1gAwZ3BPhJsg33QakJpSWUllBaQmkJpSWUllBaQmkJpfWg9Eug2QPydJkF3WQeagAAAABJRU5ErkJggg==" InformativeScreenshot="e899a877299bf08d910dfd9a13904ba7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="584, 439, 105, 13" CvTextArgument="Digito de Verificacion" CvType="Text" DesignTimeRectangle="571, 431, 187, 29" ElementType="Text" FriendlyName="'Dígito de Verificación'" FullSelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='fondoTituloLeftAjustado' aaname='Dígito de Verificación' check:innerText='Dígito de Verificación' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL8AAAAhCAYAAACIhno1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALjSURBVHhe7Zc9bmIxFIVnQ+wiW8gK6NgA0yKlYgGUtCkjTZ+GKgtASkk33TSzAY//jt+5fibkAXmRxudKn4Les+/1z2cTfjiFotOQ/Ipuo8i/eHww/P77R4j/EoTkF92BkPyiOxCSX3QHQvKL7kBIftEdCMkvugMh+UV3ICS/6A6E5BfdgZhH/tOzWz6u3P7UeCemo/W8CcTt8seNsH0X62d3pDbHl5XbvFGfmrdt6RPaLnaHdruLHNzm01K8u/36wS1f3qvn03Ngbq+7PP+nn6M1uB5bI3BxPcWHIO4kv5UlSkCbfzzVgp0n9p1Ffg8dOjyLh+8qcSfWvoEp6ynGIL5EfitC+Lx1r/lduR3XW7fBjQYJw99cP91s6dZLz86JRW12Pie1iyLnfO0DVQtrvw3KWD3lGyKONY19sfuVb2Uep58rHyr+ZqRDxbljn8ZzXoNy09MaDXNK89jsMN9zayUCiC+SnzeM5I8blz9nKYz8/jnf/PzZ9CXMTR3b5LFQzpFARKhRxI5jSjXsv190SLjGaJ517fSeD1P6fPAHJPSpcvAcy1jovVlrzh1q2zrtwy4CiFnlt5tSbfpIfs6BPO06RV5qY2590BKChGPh4ziq/rEOCzqaZy1/a8wDXCPksAcOtNcpvBvahzrDWrXzCICY9d+e2eX/lAAQx9YL4xjyEveQP64Z8g85JP88IGb4wRs2JsvC4mQB6k3lA2IOi5FuIG40asU2JGAZV31ILCnHyi1rsUo9ksuM45L8tm6ZT5z7mXUwz0M+qmHWmnNL/ikg7iS/7cu3k5HfEwWIbRo/eP37JB02Mm1wyotNr6E2k3/wZvIc6sNRxsrvJsmP58hj+8Vnvt3e10F+HnN6xjVybuQrc5L8U0DcLv+1mFtMiPlAzCs/31qe+qYVYg4Q33fzC/FNICS/6A6E5BfdgZD8ojsQkl90B0Lyi+5ASH7RHQjJL7oDUeRXKHoLya/oNJz7B+JkfL22rcu/AAAAAElFTkSuQmCC" SearchSteps="Selector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Buscar" sap:VirtualizedContainerService.HintSize="1505,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="39af79bb-c7bb-4b71-961c-124db3a4c273" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://muisca.dian.gov.co/WebGestionmasiva/DefSelPublicacionesExterna.faces;jsessionid=0BE2B04BB6AFA2B69E76A08F3B216E64" DesignTimeRectangle="482, 467, 72, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl class='center' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tableRow='3' tag='TABLE' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:btnBuscar' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='center' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tag='TABLE' /&gt;&lt;webctrl id='vistaSelPublicacionesExterna:formSelPublicacionesExterna:btnBuscar' type='image' tag='INPUT' class='' aaname='' /&gt;" Guid="095ed581-3ca4-4f74-b316-498c5f230b91" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAYCAYAAABQiBvKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO7SURBVFhH7Zj5TxNBFID5K9UQjQrKIRgiKIIieBZCNDEKErAgCMghNygWJIEiVYggYAMiGJBSilWuclX44dn32Lfuzh5QYgyb8CUvc70OO1/2mCECjgiLI2FhsqewpJRL8Ox5GfS5XOCZ80AwGKTAOvbhWEpaKkTFnrd8nIo6I63aGENhsYkXoPxFBXi8c7C9syPHUF6Eqo2xuhaAielv0D3gsmQ0OV5BaXUl2B7kQkxCPMXG1iatDeES0RUWHRcDPb1OXTlGfb+3t2FtY53aVqayoRbSMjPg+MlIqUeNRhguvtfVp5LBdbN28HcQpr2z1LY6rV0OuHH3FhyLPCH1/EW1OkyobagzlWRUR2HY7h3qh1mfV5rRuuBjmpKeqpGmEpZ89TIs+P0aYRjcJ5bKwL6ewQ/geN9D7wCrY68og7Mx0VJrF1nY6XNR0NjarFq8UsZegfnLgVVwjXwEe2MVuKe+SDNbE1wTCsu4nUVuGFkYflZFSco21sUQ8/Cu+jQ+Su2GrnZpZmuTX1xIbhhZWNzFBFheXdHIYCHh9BXWVUBu6ROa92mhXRNK9MbEHCViDv9OL/7FeFVTHblhZGFJV5I1i1dKUI5xKMe4dE9NwKOqEkjMyaB5+Q8zZm2uizlKxByzXOSg49yPX0x0w8jCcO+hlMFhJItDOU5fyvHPkFOSD/G2azSveEFmba6LOUrEHCyNgsfNMBrn/i6Xk9wwsrAs2x35juFgIXuFXl5mwX2aV7wgszbX7UXFVOrBOeI8IuHkGQXS+a6b3DCyMDwWeOa98t1ykPD6F6DG0QJRN1PoS4nwH2bEi1KOc10cF4NzuDSK/Y7rwf34SKIbRiVsZNytkaC8g8xK/EIOjo2CrfgxCXOGNrBWBteEGApDWjraYSsYpGSO/QjD/15MeWagvK2eZKG0pdAX1+oMht7HNc0NUmsXlbA3PV2h86CHDtIc+xGGsurfvoaE7OskDHf7ZuDvDjt4jQPuYXKiRCUMGZpww6x/ng7SfJjGHTyWLJDPjfjOwhLvLJb1srNNmsnaTPpCaw+5ENEIQ7MzP33w1TNNB2kUgscdLHGPhSVuHbDEFzyWKIplrW9uSDPtD77bDtNd5wsskQO9a9IIYxbWlsD9fZIO0vjFK6qvpB08bkpxn5X68J4sCt9Zez2GVuHH+jKt3QhDYYgvsAhzS37oHxuG6o5WyC7Jox18vC0dMvJzoaCuHBz9TpgJPcIrW+sHiuXNNd3+/x2LmwH4tbFKazbDVNgRWo6EhQXAH94BMLBNGHuHAAAAAElFTkSuQmCC" InformativeScreenshot="0dfbb83a149b9ddb588af56e76f163a6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="243, 432, 187, 29" ElementType="Text" FriendlyName="'Dígito de Verificación'" FullSelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='espaciado' parentid='vistaSelPublicacionesExterna:formSelPublicacionesExterna' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='fondoTituloLeftAjustado' aaname='Dígito de Verificación' check:innerText='Dígito de Verificación' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL8AAAAhCAYAAACIhno1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVHhe7Zc9bhsxFIRzId8iV/AJhDQqk8K1Wh1ApVuX6g24EVzoAAJUqkuXJhdgdh7/htwVpLVkGghngA+WueR7j+SQK31zktSpZH6pWyXzPzx+L/j9948Q/y2QzC+6BJL5RZdAMr/oEkjmF10CyfyiSyCZX3QJJPOLLoFkftElkMwvugRqZv63zRB3s5t8Juaj9bwN6C7mt42oxq/23GfnVk8v7kBjSo7u+SmOGfo+Lt3zqe5zHYft8npT7NdDrWv3VrXPjhHndnpxC5v/D/fzV70GN8A5jEvrKS4B3c/8bJZggrT5p+P1G2VjG5m/OHQRHL6PGXde7huYs55iEuhzzD/ARsDnxfbon6XbcTDYJt5o0YT+r9UQbza7nUPbOWOlPsshJhvQGzk+mzpQI8Py24BqzW+IUCtqR8zXMAeqc7F9Lw4VvxnzhcCxMWa8PsUapJue1ojm5OexzvM9t1bCgD7N/Lxh2fx+4+JG2zjrE80/jOObnz9XYzN8UwdjWC0UE/0KAxGWI3/1QU0+R/n1Kx8SzjE8q+Y5ym2Hgg+T/3zY73ItKUY5x1QL5SjWmmJb7iJPrl2Mgdqav96UatNH5qcY6J/NFcbHGGTe3Idv/ciUIdhwZHirox6PPKVB63nW5p+sOcI5LEZ54BJT62TPcn/Lk9bqTByRgNp+7Wlu/usMkIzD+ayOHDdzH/PbmsX4KYbM3wqoyQ9ebIw3S2kcG1dvKpu/OCyV6RLY6JjL92EDprqqQzKOMdQYa0htOV82V1XHBfMXeWk+mPu5dSjaEY9yFGtNsWX+eUD3M381PpuIzT/8Hw6G9Rn94EV/b7q0kbbBIW7c9JrUZ/4P3oifQ3U4qNb8bKb5Y3uIU4wLbast8sT4XHNooxzpUNvzPCeZfx7QXcz/UYpbTIiGQI3Nz7cWqG5aIRoBfenNL8RXAcn8oksgmV90CSTziy6BZH7RJZDML7oEkvlFl0Ayv+gSKJlfknqTzC91Kuf+AXHwdkXP2FOhAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1505,92" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Buscar&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <uix:NCheckState DisplayName="Check App State 'ERROR': Verificar si existe algún error NIT digitado no se encuenta (screenshot no coincide con selector) " sap:VirtualizedContainerService.HintSize="1505,414" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="39af79bb-c7bb-4b71-961c-124db3a4c273" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_15">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[BusquedaNegativa]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_16">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[BusquedaNegativa]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://muisca.dian.gov.co/WebGestionmasiva/DefSelPublicacionesExterna.faces;jsessionid=0BE2B04BB6AFA2B69E76A08F3B216E64" DesignTimeRectangle="781, 393, 76, 15" DesignTimeScaleFactor="1" FriendlyName="'ERROR'" FullSelectorArgument="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;&lt;webctrl tableCol='2' tag='STRONG' innertext='Error en Dígito de Verificación' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divMensaje' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='' check:innerText='ERROR' /&gt;" Guid="177a3a64-cb1a-4d4c-b757-cd01793a4c36" ImageBase64="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" InformativeScreenshot="17ca7b2602e97c1d6c2f13ec0430dda9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="781, 393, 47, 14" CvTextArgument="ERROR" CvType="Text" DesignTimeRectangle="781, 393, 47, 15" ElementType="Text" FriendlyName="'ERROR'" FullSelectorArgument="&lt;webctrl parentid='divMensaje' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divMensaje' tag='TABLE' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname='ERROR' check:innerText='ERROR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAATCAYAAAA9DTUcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATjSURBVFhH3VZbT1RXFB4ExAvegvUS72g0MZqoiTFaH8Raa4y++NTX/oKGyyAqSEVs7S32GrDFGVsbo0nbpEGuLTPjUOggOGhLYVpAW1tJxRoGoUX78nV9a+9zmII+l7CTnXP25Vtrfet2jqfv4QN4PB5MhjE5ybwxezYK5FmcnKzP12bOROm0aTgm76emT9fnKykpOCLPk2lpuj4q8/VZs1CUlDQh8C6ZHJnZMj9YtAhvz5uHDxcv1ncCc2WfQkqmTlVQxcqVKLQYCsq37/833iVT6KnAfRuucWMgiEB6Ot4tCuMfuzV29PuMx2qercSA3Rs7HjUW49KGDYgcOIA358xRg6Ixe+iMoTZcy8xUg7/YvBntLQ/twdgRQ5vgSfBEaqrK0mIhmWMOmaEogsKeIb2wbh2+3LJFLxJQkhfEY975rV49wjAXeHLRq9Z3IiqYhqwq/MnlQABtCXhj9ADulixHy8GDgs9zcTTKpJEPw9wSQymL+n9oNWTunxf9YvhHywVfcRMj3Oyq0JQkltMlUyBk+rkYakedCMqTvY9XrMDljRs1/DTem91ghPxapeenJVoUVhswsWB0rj5fY5wy0IBIIt7XqXdGgvlCOAuVFnNPMJTtGHW1rN01lPpv2Mj0+0S/nNOpDVll6FZ4DK2UbfEumdPpnxgjhm+gRtbMUYb6802b1LP0SlGOJXOnGsenTMHF9etV+NehOHfFeylo3l9nnCJkWhLx57v0zkggF8HnynFLjelFVPAsdDqG2dC8v8JEzOJvXnMiI/rFaMp6Gt6tmZNpftxT2PhBA0iu1Bu0ZGrx6owZqN6xA4clzXpUcBda5E5oT7UhEw8iIinx6dq1akCrconjVm4yGl+oNako9XFFzg6r/jSNdmhPuU2/LsQE3xYZ5EIjSKPZ7RrP2uj9UqlYB/+fBqBk/upA65o1qNy2DVXbt6v36REK8pU2m5oZN0zeMw06XgyIyU8acfSVZuLssmXofSlsmsTw96i13uY0+AvoU/tv447ojz6tAfRcRvTQITdanC6ZE6k+Q0bC+50opNL3FixQT3Ayrc4Uhg2Z7osoX7oUzU3Ga8TUS7jpoSPiFDV0sAmNxPtNrZBwR0YG/KtXo2xJCX5X6M/omD9fo850Nfhc3NWzbvwo+LqgSkO/X/RnFFmiwOOmEpGzBO8k4F0y7CROrrMBMH95gST4rh3DaQBSnFSc76YYC9ur3sl3uqJ0MxIk3m2/guOaxXoloQGwK1KH4h0dMZ/qr3XIyD3acDwnYM7FZT3ZbFyjeJdMUdKoEVW6Nh8jKncIuQ1AFDFaFJLnKBfht71pcm80wqwHgz9nZMvo9ydrMylO9traMDjqY92ae524bvU7ZNhceId660PWg6KjUu6wXnjmkmF6aFE+cXQiQpA0gEdc9lzSEPMLza+z42XEQ2h85jM84Ptgs0uGHs2xrZmp9ZN0KQffYprc6IiHEZZ0PLdqlUbfIfOHRIZGv79woXTZUzZNgb+lOZn0TKgZLsiaCijom127tCAZehpD5uxMX23dqu2WX/LA7t14a+5cTYeJgE9IsyRlyJZ7Rjzz7b59eFnWVEDv8jKFURHBms87d+oPIfN2IuATGkCK5ig3WQsUxhQic54xxPyas4vRY7wT3rtX/7GImQh4l8xkGJOIDPAvZNBCn5Uz+6kAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                  <If Condition="[BusquedaNegativa = True]" sap:VirtualizedContainerService.HintSize="1505,766" sap2010:WorkflowViewState.IdRef="If_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -281,7 +312,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,70" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_11">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[Encontrado]</OutArgument>
                         </Assign.To>
@@ -291,25 +322,67 @@
                       </Assign>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="862,709" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence sap:VirtualizedContainerService.HintSize="1026,606" sap2010:WorkflowViewState.IdRef="Sequence_16">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:UiElementExists DisplayName="Element Exists 'FONT'" Exists="[BusquedaNegativa]" sap:VirtualizedContainerService.HintSize="800,116" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
-                          <ui:UiElementExists.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4664c9d6-a003-41d0-9bba-4ec07c8b507c" InformativeScreenshot="23c280999059090c3ded286036f0518b" Selector="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;&lt;webctrl tableCol='1' tag='STRONG' innertext='ERROR' /&gt;" WaitForReady="COMPLETE">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                            </ui:Target>
-                          </ui:UiElementExists.Target>
-                        </ui:UiElementExists>
-                        <If Condition="[BusquedaNegativa = True]" sap:VirtualizedContainerService.HintSize="800,431" sap2010:WorkflowViewState.IdRef="If_6">
+                        <uix:NCheckState DisplayName="Check App State 'ERROR': Verificar si existe algún error" sap:VirtualizedContainerService.HintSize="964,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="39af79bb-c7bb-4b71-961c-124db3a4c273" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[BusquedaNegativa]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[BusquedaNegativa]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="https://muisca.dian.gov.co/WebGestionmasiva/DefSelPublicacionesExterna.faces;jsessionid=0BE2B04BB6AFA2B69E76A08F3B216E64" DesignTimeRectangle="781, 393, 76, 15" DesignTimeScaleFactor="1" FriendlyName="'ERROR'" FullSelectorArgument="&lt;webctrl parentid='divMensaje' tableRow='1' tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divMensaje' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='' check:innerText='ERROR' /&gt;" Guid="177a3a64-cb1a-4d4c-b757-cd01793a4c36" ImageBase64="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" InformativeScreenshot="17ca7b2602e97c1d6c2f13ec0430dda9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="781, 393, 47, 14" CvTextArgument="ERROR" CvType="Text" DesignTimeRectangle="781, 393, 47, 15" ElementType="Text" FriendlyName="'ERROR'" FullSelectorArgument="&lt;webctrl parentid='divMensaje' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divMensaje' tag='TABLE' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname='ERROR' check:innerText='ERROR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAATCAYAAAA9DTUcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATjSURBVFhH3VZbT1RXFB4ExAvegvUS72g0MZqoiTFaH8Raa4y++NTX/oKGyyAqSEVs7S32GrDFGVsbo0nbpEGuLTPjUOggOGhLYVpAW1tJxRoGoUX78nV9a+9zmII+l7CTnXP25Vtrfet2jqfv4QN4PB5MhjE5ybwxezYK5FmcnKzP12bOROm0aTgm76emT9fnKykpOCLPk2lpuj4q8/VZs1CUlDQh8C6ZHJnZMj9YtAhvz5uHDxcv1ncCc2WfQkqmTlVQxcqVKLQYCsq37/833iVT6KnAfRuucWMgiEB6Ot4tCuMfuzV29PuMx2qercSA3Rs7HjUW49KGDYgcOIA358xRg6Ixe+iMoTZcy8xUg7/YvBntLQ/twdgRQ5vgSfBEaqrK0mIhmWMOmaEogsKeIb2wbh2+3LJFLxJQkhfEY975rV49wjAXeHLRq9Z3IiqYhqwq/MnlQABtCXhj9ADulixHy8GDgs9zcTTKpJEPw9wSQymL+n9oNWTunxf9YvhHywVfcRMj3Oyq0JQkltMlUyBk+rkYakedCMqTvY9XrMDljRs1/DTem91ghPxapeenJVoUVhswsWB0rj5fY5wy0IBIIt7XqXdGgvlCOAuVFnNPMJTtGHW1rN01lPpv2Mj0+0S/nNOpDVll6FZ4DK2UbfEumdPpnxgjhm+gRtbMUYb6802b1LP0SlGOJXOnGsenTMHF9etV+NehOHfFeylo3l9nnCJkWhLx57v0zkggF8HnynFLjelFVPAsdDqG2dC8v8JEzOJvXnMiI/rFaMp6Gt6tmZNpftxT2PhBA0iu1Bu0ZGrx6owZqN6xA4clzXpUcBda5E5oT7UhEw8iIinx6dq1akCrconjVm4yGl+oNako9XFFzg6r/jSNdmhPuU2/LsQE3xYZ5EIjSKPZ7RrP2uj9UqlYB/+fBqBk/upA65o1qNy2DVXbt6v36REK8pU2m5oZN0zeMw06XgyIyU8acfSVZuLssmXofSlsmsTw96i13uY0+AvoU/tv447ojz6tAfRcRvTQITdanC6ZE6k+Q0bC+50opNL3FixQT3Ayrc4Uhg2Z7osoX7oUzU3Ga8TUS7jpoSPiFDV0sAmNxPtNrZBwR0YG/KtXo2xJCX5X6M/omD9fo850Nfhc3NWzbvwo+LqgSkO/X/RnFFmiwOOmEpGzBO8k4F0y7CROrrMBMH95gST4rh3DaQBSnFSc76YYC9ur3sl3uqJ0MxIk3m2/guOaxXoloQGwK1KH4h0dMZ/qr3XIyD3acDwnYM7FZT3ZbFyjeJdMUdKoEVW6Nh8jKncIuQ1AFDFaFJLnKBfht71pcm80wqwHgz9nZMvo9ydrMylO9traMDjqY92ae524bvU7ZNhceId660PWg6KjUu6wXnjmkmF6aFE+cXQiQpA0gEdc9lzSEPMLza+z42XEQ2h85jM84Ptgs0uGHs2xrZmp9ZN0KQffYprc6IiHEZZ0PLdqlUbfIfOHRIZGv79woXTZUzZNgb+lOZn0TKgZLsiaCijom127tCAZehpD5uxMX23dqu2WX/LA7t14a+5cTYeJgE9IsyRlyJZ7Rjzz7b59eFnWVEDv8jKFURHBms87d+oPIfN2IuATGkCK5ig3WQsUxhQic54xxPyas4vRY7wT3rtX/7GImQh4l8xkGJOIDPAvZNBCn5Uz+6kAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NCheckState.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NCheckState>
+                        <If Condition="[BusquedaNegativa = True]" sap:VirtualizedContainerService.HintSize="964,403" sap2010:WorkflowViewState.IdRef="If_9">
                           <If.Then>
-                            <Assign sap:VirtualizedContainerService.HintSize="262,70" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[Encontrado]</OutArgument>
                               </Assign.To>
@@ -319,16 +392,16 @@
                             </Assign>
                           </If.Then>
                           <If.Else>
-                            <Sequence sap:VirtualizedContainerService.HintSize="493,263" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence sap:VirtualizedContainerService.HintSize="485,243" sap2010:WorkflowViewState.IdRef="Sequence_13">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,141" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                                 <ui:MultipleAssign.AssignOperations>
                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
                                       <ui:AssignOperation.To>
                                         <OutArgument x:TypeArguments="x:String">[Encontrado]</OutArgument>
                                       </ui:AssignOperation.To>
@@ -336,7 +409,7 @@
                                         <InArgument x:TypeArguments="x:String">Si</InArgument>
                                       </ui:AssignOperation.Value>
                                     </ui:AssignOperation>
-                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
                                       <ui:AssignOperation.To>
                                         <OutArgument x:TypeArguments="x:String">[NombreID_URL]</OutArgument>
                                       </ui:AssignOperation.To>
@@ -353,26 +426,24 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'AddressDisplay Control'" sap:VirtualizedContainerService.HintSize="1169,116" sap2010:WorkflowViewState.IdRef="GetValue_4">
-                    <ui:GetValue.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="536919d5-30d1-4651-9164-5ebc54d744f2" InformativeScreenshot="b6141e47ab1b3ed0607f167c30848968" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;&lt;ctrl role='pane' idx='*' /&gt;&lt;ctrl role='pane' idx='*' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" WaitForReady="COMPLETE">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                      </ui:Target>
-                    </ui:GetValue.Target>
-                    <ui:GetValue.Value>
-                      <OutArgument x:TypeArguments="x:String">[Url]</OutArgument>
-                    </ui:GetValue.Value>
-                  </ui:GetValue>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1036,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Frameworks/Guardar como - Internal.xaml">
+                  <uix:NGetUrl CurrentUrl="[Url]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="1505,87" sap2010:WorkflowViewState.IdRef="NGetUrl_2" Version="V3" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1505,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Encontrado : &quot; + Encontrado]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1505,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Frameworks/Guardar como - Internal.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" &amp; Busqueda + RFC_NIT &amp; ".pdf"]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">[BrowserID]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <If Condition="[BusquedaNegativa = True]" sap:VirtualizedContainerService.HintSize="1036,217" sap2010:WorkflowViewState.IdRef="If_8">
+                  <If Condition="[BusquedaNegativa = True]" sap:VirtualizedContainerService.HintSize="1505,242" sap2010:WorkflowViewState.IdRef="If_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -380,7 +451,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Else>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_17">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[NombreID_URL]</OutArgument>
                         </Assign.To>
@@ -392,21 +463,18 @@
                   </If>
                 </Sequence>
               </ActivityAction>
-            </ui:BrowserScope.Body>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:BrowserScope>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" IconBase64="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" InformativeScreenshot="a4c3ac8ff30c6c5aacaf61a2f18393e9.jpg" Selector="&lt;html app='msedge.exe' title='DIAN - MUISCA' /&gt;" Title="DIAN - MUISCA" Url="https://muisca.dian.gov.co/WebGestionmasiva/DefSelPublicacionesExterna.faces;jsessionid=0BE2B04BB6AFA2B69E76A08F3B216E64" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1667,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
