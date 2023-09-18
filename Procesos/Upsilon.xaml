@@ -17,7 +17,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1998,8167</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1998,8104</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Upsilon_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -103,13 +103,9 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Upsilon" sap:VirtualizedContainerService.HintSize="2008,8102" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Upsilon" sap:VirtualizedContainerService.HintSize="2008,8039" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="ui:Image" Name="Screenshot" />
       <Variable x:TypeArguments="x:Boolean" Name="sobrescribir" />
       <Variable x:TypeArguments="x:String" Name="nombre" />
@@ -122,20 +118,25 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1946,7991" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1946,7928" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:String" Name="FilePath" />
+        <Variable x:TypeArguments="x:Double" Name="TypingLag">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Double" />
+          </Variable.Default>
+        </Variable>
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1908,7758" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence sap:VirtualizedContainerService.HintSize="1908,7700" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1846,94" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;rol: &quot; + rol + &quot; país: &quot; + Pais]" />
-          <Assign sap:VirtualizedContainerService.HintSize="1846,83" sap2010:WorkflowViewState.IdRef="Assign_17">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1846,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;rol: &quot; + rol + &quot; país: &quot; + Pais]" />
+          <Assign sap:VirtualizedContainerService.HintSize="1846,82" sap2010:WorkflowViewState.IdRef="Assign_17">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -143,7 +144,7 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <If Condition="[Pais = &quot;Colombia&quot; or Pais = &quot;México&quot;]" sap:VirtualizedContainerService.HintSize="1846,7390" sap2010:WorkflowViewState.IdRef="If_11">
+          <If Condition="[Pais = &quot;Colombia&quot; or Pais = &quot;México&quot;]" sap:VirtualizedContainerService.HintSize="1846,7335" sap2010:WorkflowViewState.IdRef="If_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,13 +152,9 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="1810,7198" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <Sequence sap:VirtualizedContainerService.HintSize="1810,7146" sap2010:WorkflowViewState.IdRef="Sequence_19">
                 <Sequence.Variables>
-                  <Variable x:TypeArguments="x:String" Name="DefaultPDFPath">
-                    <Variable.Default>
-                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;C:\Users\&quot; &amp; System.Environment.UserName &amp; &quot;\OneDrive - EY\Test Forensics\6.- Temp\PDF Descargado.pdf&quot;" />
-                    </Variable.Default>
-                  </Variable>
+                  <Variable x:TypeArguments="x:String" Default="[&quot;C:\Users\&quot; &amp; System.Environment.UserName &amp; &quot;\OneDrive - EY\Test Forensics\6.- Temp\PDF Descargado.pdf&quot;]" Name="DefaultPDFPath" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -165,7 +162,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="1748,83" sap2010:WorkflowViewState.IdRef="Assign_14">
+                <Assign sap:VirtualizedContainerService.HintSize="1748,82" sap2010:WorkflowViewState.IdRef="Assign_14">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[RutaPDF]</OutArgument>
                   </Assign.To>
@@ -173,29 +170,29 @@
                     <InArgument x:TypeArguments="x:String">[ruta + NombreID_URL + "\" &amp; "PDF Descargado.pdf"]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1748,81" sap2010:WorkflowViewState.IdRef="CreateDirectory_10" Path="[ruta + NombreID_URL]" />
-                <If Condition="[System.IO.File.Exists(DefaultPDFPath)]" sap:VirtualizedContainerService.HintSize="1748,1982" sap2010:WorkflowViewState.IdRef="If_20">
+                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1748,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_10" Path="[ruta + NombreID_URL]" />
+                <If Condition="[System.IO.File.Exists(DefaultPDFPath)]" sap:VirtualizedContainerService.HintSize="1748,1966" sap2010:WorkflowViewState.IdRef="If_20">
                   <If.Then>
-                    <Sequence DisplayName="Copy Existing PDF" sap:VirtualizedContainerService.HintSize="450,535" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <Sequence DisplayName="Copy Existing PDF" sap:VirtualizedContainerService.HintSize="450,528" sap2010:WorkflowViewState.IdRef="Sequence_20">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Trace" Message="[&quot;Existe pdf&quot;]" />
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Trace" Message="[RutaPDF]" />
-                      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[RutaPDF]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="388,156" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[DefaultPDFPath]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Trace" Message="[&quot;Existe pdf&quot;]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Trace" Message="[RutaPDF]" />
+                      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[RutaPDF]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[DefaultPDFPath]" />
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="Download PDF from webopage" sap:VirtualizedContainerService.HintSize="642,1820" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <Sequence DisplayName="Download PDF from webopage" sap:VirtualizedContainerService.HintSize="642,1806" sap2010:WorkflowViewState.IdRef="Sequence_21">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="580,94" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Upsilon&quot;]">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="580,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Upsilon&quot;]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -203,13 +200,13 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:LogMessage>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Lista consolidada de personas, grupos y entidades sujetos a sanciones financieras " sap:VirtualizedContainerService.HintSize="580,1575" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Lista consolidada de personas, grupos y entidades sujetos a sanciones financieras " sap:VirtualizedContainerService.HintSize="580,1563" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1357" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1346" sap2010:WorkflowViewState.IdRef="Sequence_25">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="si:FileInfo" Name="DowloadedPDF" />
                               </Sequence.Variables>
@@ -218,32 +215,32 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Mostrar todo (9)'" sap:VirtualizedContainerService.HintSize="484,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V3">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Mostrar todo (9)'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V3">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions?locale=es" CvElementArea="722, 828, 187, 46" CvTextArea="769, 842, 124, 18" CvTextArgument="Mostrar todo (9)" CvType="Button" DesignTimeRectangle="723, 829, 185, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Mostrar todo (9)'" FullSelectorArgument="&lt;webctrl aaname='       Mostrar todo (9)      ' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='       Mostrar todo (9)      ' tag='BUTTON' type='' class='d-flex justify-content-center mr-3 distributions-show-more-button  ecl-button ecl-button--primary' check:innerText='Mostrar todo (9)' /&gt;" Guid="bd6ed33d-34ef-4bb9-9a3f-1c9b7b218028" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL0AAAAwCAYAAABE+Xs2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAXISURBVHhe7ZrBaiNHEIb3VfwEYV/BZ59yW18TyG0h+KirD4ZddHFyCCgQWLS+eEFgnENAOBBjWB8MIUQIjHUwLFrQQVggZISg0jPT1V1d3T3SyDOLs10//GDPjKp7qr7qaY/8AkSixCTQi5KTgf7FNz+IxV+1UQK9OBmjBHpxMkYJ9OJkjBLoxckYJdCLkzFKoBcnY5RAL07GKIFenIxRAr04GaMEenEyRgn04mSMEujFyRgl0IuTMerLQb/Xhm9bv8I++vVh+DqxuCGjmoX+1Ql0rscwnulBuFZLmI6G0Dl6egN0RjpmrjF0nPOn0KdzmA3hwDlfk98MYdpU7HWudexLGOhUDXqh81WN+ad1WVOT3jg/PL0+tceeaFRD0B9C668JLFY6eKYM8E9jGNwWHs/1ca3FpyG8fR2KtZld6FmxMiD08VxNgKmL1FhDlbn2sWuG3gPYxndFmwKv4QvY9kbVD/2rHpx/XuqohabDC9jf49e2YP/dHYydxniAq9+O2XWbmUNPV4iDa9ZhAv0a1wk9ruhz6L8pjtl6INB21ad1w5rWtdqj6oV+T03eWVKLCe/g+R8voJ+t9P/aLc1Om63CKjk376uDb6CfzYt4BACTPHUuF4OjrGFi18Do0pzzmkopi2GOz9Q946PcjM0e75lITPt0msNghPEtOOvGNtdgQ6BCjcGehINeDHp/zmubwsS2K7bJJb3fUOPW3MyoGqE/hu69Doaa38Ghs8L34MrUaKkSVsDtF84v7jrbRA51YTDJ9jHZNxCWgIciBfGAR+lr1kJPlX8mPq4Blm/JcvmP+jLog+PnInGC41hZqGNbEtZkzGYOBNxS6INz8+97G6Nqg/67Px90JCuejJ1f7mChz+Va3cNPWVMcBRI/rdbdNJH4c14wTJxKeocVwEJBmoxAUBTcAmoACBUosCpR6JwVkcwpCgKFkcIRcmhFJJ+3dSDNpmPaOdp7Cc3bNn7gnksWqRDgoTGD8WvdZtUO/R9wQ/fmWgaayRIWc3efX0glq51dE15FBh/oGOV2kovFUD9jgrPCm2TncFgAeHPyQtmCFAoWoAx6CiO3AUcL4TDQbvDUqzK2GS+DK5YDDlsMvngO0Zi7WHxfFHob/xlCbydHNTprqXMn3j7fCgsaSsISrn7m48TtgGpWUtxLF+PEoOcJNdchgLEiUaAqQV9S9LqhN/egbeKWQc9zg/P15xKGGh2Ln9nNwXQ0JvPyP/8MoVdbl3f37tZFafH37/m50NYnFxaJb3uUFreXsEvir7O7OttkFSoSGYOeF8SN5Y7DY5tiVIDeHCcQeWN+kZU+Bq0F0oWew1cGdeHypiAO3MOzhz57BWmLqbWaQDd/934MnVu2vXmcwHk7exK0bcFRM/4H8HpzaJyY+hgHIQSfha2s4IFiM5hC4xWfDQBOV72nQE9XSXIfFjjSsDwnoXkr4T3bfJIxzLjxOfr3qhyYL14Xbr4NcrCBUTVCn9mHe/H5HzjIAW7BbvsCumcfofv+FHb1sf2zsbvKP6pEbPEllZdck1ibSB9CAhsXKRKFwBUpBhkvl/p8DPp4PCUcdyvotXQMCyoXAbcsB0qm0UkTcZWu4jg3JweRMVme7Jh0vtsbVTP0mY/h7fWDC7LaW3fbbfu+Xnnn+1Po3rLiT+62/lbWgz4ATQxCDkeoiD6ofiGcOCXQh671ClwFemUvHp7jDRGYC4ew6ff0hRn4oXkFG2Z7oxqAvvDLo4/2CxnUqniLs3jUv6NWcxicncDLQBzx/93YKNW3KLholD5JKhjVGPSFiy3N+c0EpvyV5WP2vzj30P+AWx3xV2u9YleDF5ulnq1NZlTD0IvFmTXAVbYpeltU1yqfGSXQi5MxSqAXJ2OUQC9OxiiBXpyMUQK9OBmjBHpxMkYJ9OJkjBLoxckYJdCLkzFKoBcnY5RAL07GKIFenIxRAr04GaMEenEyRhnoRaJUJNCLEhPAf/j1Kkxkyw0AAAAAAElFTkSuQmCC" InformativeScreenshot="5eb187083647db757339a2ce69ade484.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lista consolidada de personas, grupos y entidades sujetos a sanciones financieras de la UE - Data Europa EU' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PDF'" sap:VirtualizedContainerService.HintSize="484,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V3">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PDF'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V3">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions?locale=es" CvElementArea="1673, 866, 18, 16" CvType="ArrowButton" DesignTimeRectangle="1672, 865, 20, 20" DesignTimeScaleFactor="1" FriendlyName="'keyboard_arrow_down'" FullSelectorArgument="&lt;webctrl aaname='keyboard_arrow_down' idx='15' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='keyboard_arrow_down' type='' tag='I' class='material-icons small-icon float-right align-bottom' check:innerText='keyboard_arrow_down' /&gt;" Guid="77d8e11c-b03a-4227-affb-3fa6d1be1c27" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVEhL7c3RCYAgEMZxh3OCZmoBwQkCn3MKn3pthqIlrq6uQsruCnwJfxCJ0fdXkFkJsEqA9YOAMxaUXh7T01UsGA+Bzlc91In/dqpqJzpeDW2zxfVdZBlfv1l42lBupFNK528i53jd0VUCH0BRRD6OZAF0ROTjSB5AFJGOo3eBD/IH6J1NCbBKgAEwAzkHxDbAYfyeAAAAAElFTkSuQmCC" InformativeScreenshot="e397b399c152c3ff08fd4ce34c606ee0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lista consolidada de personas, grupos y entidades sujetos a sanciones financieras de la UE - Data Europa EU' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target CvTextArea="1245, 871, 25, 12" CvTextArgument="PDF" CvType="Text" DesignTimeRectangle="1245, 871, 24, 14" ElementType="Text" FriendlyName="'PDF'" FullSelectorArgument="&lt;webctrl aaname='PDF' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='PDF' tag='SPAN' type='' class='' check:innerText='PDF' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAASCAYAAABIB77kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAClSURBVEhL7ZJBDkAwEEVtegj3dAGXcQEHsHAGidhZW4jY2Xwmik5NlKiuTPI2/T99bYlyFSMkv9A7TFgVA87ToL2ZE22tl9kcHUE4oEv0WlJion6dyblK0fVUODZchfwQJtfCBXMDKd8ONRXpqb93DN4LVYaRKvoV3gmdT0pIQj7b7Qn3T9OXqFj+5Q0txNz3N3TltuADoT1880fCEPxC7wQWxpgB1fNpSg4BtdkAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[DowloadedPDF]" sap:VirtualizedContainerService.HintSize="484,529" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                              <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[DowloadedPDF]" sap:VirtualizedContainerService.HintSize="484,524" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
                                 <ui:GetLastDownloadedFile.Body>
                                   <ActivityAction>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,269" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'downloadURL'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V3">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'downloadURL'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="13018295-046e-4ae6-a04f-fa3b5c008920" Version="V3">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions?locale=es" CvTextArea="1587, 938, 83, 13" CvTextArgument="downloadURL" CvType="Text" DesignTimeRectangle="1580, 938, 96, 15" DesignTimeScaleFactor="1" FriendlyName="'downloadURL'" FullSelectorArgument="&lt;webctrl aaname='downloadURL' tag='SMALL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='downloadURL' tag='SMALL' type='' class='px-2' check:innerText='downloadURL' /&gt;" Guid="31e52518-18a3-49b2-a255-f1562ef86471" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAATCAYAAABmxagtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVFhH7ZYxdsIwDIa5CHfKKXIOFsZsHICBkZk9GwuHyHscgrK4tiTbkuykGCh13/Pwv9aRLEv65JDV7etumupRA1KZGpDK1IBUpheAXM2+35rueM3Y3qtx2JrVcMnantfFbNZbsznb/6eT6dY7s5+Uj3iO/quMIAbteTXXBqQQCG++03TcWSgHM9K6AXla7wGin38WCCRoD3TqD2YjgGBi+hrDBLEEdcJu7WLgcxszxIgN0ntwKsmvP5mJngffTAzQ+RBtdNY/BqJuBBWH65yNCoGi/JW2yfc7uSY/bGRsCqyp2aJIiO3347nCxgDJ5sjGeaivAvm7V1aSNIOwZGNNBz+b7DjQmjVQFwKFZmxJwQIQVwaW8GMNLgASbliQ3Pc5IJnC3eHQ9MQmb4z3c03O/fU+PwORcUH8bGhgbFTHgPB4uBdj4cTnpz8HJPoo4KTPAUmmiDVnyebWrmk2yXAznP9wsj5xz2NAMgUzINom1snQ8AbPABF7cj74jA9Ikl+hin9DwmE0jZhMBgAHRMA6+yEQinO/JWxidSFzQGSTZE7g52NSfjGmah7EiQ2GvQKYqncR2vxglaoAiBMmha8E+5ViD4/TwW06cSouAFAArR4G4m3+LAY1QKDno35NCTt+JfI8EQqTaOwMEF8bwUxigPjbY1mFQJp+Ww1IZWpAKlMDUpkakKp0N9/n9PsbLTKCkQAAAABJRU5ErkJggg==" InformativeScreenshot="07f8970fd165faac969e840e2af4c7c6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lista consolidada de personas, grupos y entidades sujetos a sanciones financieras de la UE - Data Europa EU' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                         </uix:NClick.Target>
@@ -252,8 +249,8 @@
                                   </ActivityAction>
                                 </ui:GetLastDownloadedFile.Body>
                               </ui:GetLastDownloadedFile>
-                              <ui:CopyFile ContinueOnError="{x:Null}" Destination="[RutaPDF]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="CopyFile_4" Overwrite="True" Path="[DowloadedPDF.DirectoryName + &quot;\&quot; + DowloadedPDF.Name]" />
-                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="484,81" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[DowloadedPDF.DirectoryName + &quot;\&quot; + DowloadedPDF.Name]" />
+                              <ui:CopyFile ContinueOnError="{x:Null}" Destination="[RutaPDF]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="484,153" sap2010:WorkflowViewState.IdRef="CopyFile_4" Overwrite="True" Path="[DowloadedPDF.DirectoryName + &quot;\&quot; + DowloadedPDF.Name]" />
+                              <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="484,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[DowloadedPDF.DirectoryName + &quot;\&quot; + DowloadedPDF.Name]" />
                             </Sequence>
                           </ActivityAction>
                         </uix:NApplicationCard.Body>
@@ -264,28 +261,28 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <Sequence sap:VirtualizedContainerService.HintSize="1748,4821" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence sap:VirtualizedContainerService.HintSize="1748,4787" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1686,94" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Start pdf&quot;]" />
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1686,94" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[RutaPDF]" />
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: PDF-XChange Editor" sap:VirtualizedContainerService.HintSize="1686,4442" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V2">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1686,92" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Start pdf&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1686,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[RutaPDF]" />
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: PDF-XChange Editor" sap:VirtualizedContainerService.HintSize="1686,4412" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1652,4149" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1652,4122" sap2010:WorkflowViewState.IdRef="Sequence_31">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="1590,83" sap2010:WorkflowViewState.IdRef="Assign_20">
+                          <Assign sap:VirtualizedContainerService.HintSize="1590,82" sap2010:WorkflowViewState.IdRef="Assign_20">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[RutaPDF]</OutArgument>
                             </Assign.To>
@@ -293,27 +290,27 @@
                               <InArgument x:TypeArguments="x:String">[ruta + NombreID_URL + "\" &amp; "PDF Descargado.pdf"]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1590,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]o[u(ctrl)][u(hk)]" Version="V3" />
-                          <uix:NCheckState DisplayName="Check App State 'Open Files'" sap:VirtualizedContainerService.HintSize="1590,751" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1590,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]o[u(ctrl)][u(hk)]" Version="V3" />
+                          <uix:NCheckState DisplayName="Check App State 'Open Files'" sap:VirtualizedContainerService.HintSize="1590,746" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,532" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,529" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Text="[RutaPDF]" Version="V3">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="[TypingLag]" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,217" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Text="[RutaPDF]" Version="V3">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable DesignTimeRectangle="201, 650, 754, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="5d55db30-2b92-41d4-8e4d-1f6a5a77e8c0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvYAAAATCAYAAAD790k4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB8SURBVHhe7dYxEQAwCACxysK/MaqDvwzxkDczCwAA3Cb2AAAQIPYAABAg9gAAECD2AAAQIPYAABAg9gAAECD2AAAQIPYAABAg9gAAECD2AAAQIPYAABAg9gAAECD2AAAQIPYAABAg9gAAECD2AAAQIPYAABAg9gAAcN7sBwZn+nNfPk0SAAAAAElFTkSuQmCC" InformativeScreenshot="dc3e90290b00ffbea609c69c99fed893.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='pdfxedit.exe' cls='#32770' title='Open Files' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                           <uix:Target DesignTimeRectangle="138, 649, 54, 15" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAATCAYAAADBGB7WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEFSURBVFhH7VOBDcQgCPyxnMZZ3IVN3MRJeLHSoqHafr/Jv5XmErVwcIIvYww+AVPoaJhCR4MQ6tBjaQEsGgsY4geWfXj9X6iE9kRMoT+PA0LleeWTxprNoyviCNkftkeRnkP+7+Rb8a6McRu3dwYtbJkkh1oDEQdAyz4RzTdKCfaFynVEJC8KkJwsIilrXMjKG40LzbexchccOzWQT1uoCFLPxbq4yWxrV7RYZZ9FLKbk6HEcqmHBRaFadyR6RXK8RQhKjlMcbVx4o7QWI6Wi5hR7OV6pYC1Hb09rpYavji79q0fn1OhSF3Nc8Og/6SjttRraQsfGrUJbpvnfidnR0fAQoQbfy3Vpi0ep9AUAAAAASUVORK5CYII=" SearchSteps="Selector" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
                                 </uix:NTypeInto>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable DesignTimeRectangle="987, 674, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="a87e4445-f04d-4415-856d-24ef2568f95b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE4SURBVGhD7ZXhDYMgEIW7E3+chWVYhVUYxQ3cgPJQFEFNm+qJzXvJl7QINPnuvL66rvNEDgoXZhY+DAO5kE3hzDU5FK6UIieCULggCIULglC4IAiFC4JQuCBIe8KNi7+d0lu9ve+BIG0Jj7J7b3Va0972/yMdaUj4KNeZYl3bUALnTb72UJB2hO+KRSFS15uwI3w22Dtm1f3xjpR013TGLqPqrjcGaUt4b72unuWdD3khaV8UXBQjjaMwnkax0xln5vWlGLIgz+zwecYrD3+xGKvunhIll2fqO6RA2hH+0QwvZWVndgtG4ftUrzvk5DO3+F4VY2s+U/gxUfqSdcePspzL/hrz5+VY4Uj5lftknQHSjPBPQuHiUDj5AoTCBUEoXBCEwgVBDoUz52dXOLmOSjiRgcJF6fwbrTUX9x3FxXMAAAAASUVORK5CYII=" InformativeScreenshot="fe691fb9448331d68a2acd7f4d0c01b2.png" ScopeSelectorArgument="&lt;wnd app='pdfxedit.exe' cls='#32770' title='Open Files' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                   </uix:NClick.Target>
@@ -340,17 +337,17 @@
                               </uix:TargetAnchorable>
                             </uix:NCheckState.Target>
                           </uix:NCheckState>
-                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1590,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)d(shift)]f[u(shift)u(ctrl)][u(hk)]" Version="V3" />
-                          <uix:NCheckState DisplayName="Check search dialog opens up" sap:VirtualizedContainerService.HintSize="1590,781" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1590,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)d(shift)]f[u(shift)u(ctrl)][u(hk)]" Version="V3" />
+                          <uix:NCheckState DisplayName="Check search dialog opens up" sap:VirtualizedContainerService.HintSize="1590,775" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,562" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,558" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[Busqueda]" Version="V3" />
-                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="[TypingLag]" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,224" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[Busqueda]" Version="V3" />
+                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
                               </Sequence>
                             </uix:NCheckState.IfExists>
                             <uix:NCheckState.IfNotExists>
@@ -367,15 +364,15 @@
                               <uix:TargetAnchorable CvTextArea="2283, 203, 172, 15" CvTextArgument="WHAT would you like to search?" CvType="Text" DesignTimeRectangle="2285, 202, 279, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'WHAT would'" FullSelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.what@' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.what@' role='text' check:text='WHAT would you like to search?' /&gt;" Guid="c071d70b-6b2f-476b-a330-fb4d3116c56e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARsAAAAVCAYAAAB2UErlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQDSURBVHhe7Zm/btswEMb9XHogvkwXAV1a9AG6NZ00BGgnD1mLopO3pGO2dipQMDz+vTuSMm3AMmx8P4AASVF3J/ruk5jsLAAAbADEBgCwCRAbAMAmQGwAAJsAsQEAbEIWm8XsrFniwLNYs5vsfIhDYjF25xc1rnna82Q73Bfw413dptrghejFT6xduxTM52G2U/Z/jVi25NjvkHLDuBG4dcqXTRaSiE96KQCHeYrjXpI05snOZKyZBtdvwrEk3zqmE/ZzmGvt7SmsxLjMeZ5eTtu9iMClKGLjRWG26SclYTGzm8sCdLBzFozx4kgCVYSKc62CWPN7jZjG93Oca+3tKYzF2M4dcGuwv9lwMUl9Sob0Cav7rSTR88ymErNAP9nksU6tI1vpYvwCS0ex7j1i3LAX75+cwNYx0XOoYyZ9CabnOSsGTi823Xf2m8+tjxlxbWpH94oTnrVa0/EnjsR5cYjbmImtbdmNz+e+Ysr+q83h+wxuGvEH4lLgLgniD7y4hPG/vzhmqWQWLRWHgxI0JwoTnkxMNjEX4f5cf3L3pkSUxzldEMmets3Hul9skG3xDAnx/DTkBXNODBwdj+5rsVN2aH8qo9oXjXtxMtRzBk71F3yVNSH+9j0uZ1KOkG8unCJ/wK0jxCYnGku49jFIJV9GzuvPX1/IIpF7dhws0bzg0dvPj5lo+YKRb3UpAtw2H7N+ldC9mGg++XL9dM/ZMXD4fN2fdKF6n0rkxb4SytdqnIxoe9ifF4g033oGR8N3QK3TY5aH4PaRYkNJ4YpocaKQf2OaM7P6KtFJkuDz1GfJmRtPup4dIomKW5NFxt0bY/S3NJL4cmJDSxvCe3YMnE5svu8K3+2DKLqGzxrlazXOGv9icL799Z4/Mc9eAgO+A2pdNQb3hBQbnzAkCDoBRkWCzdNbSRQxEeyXBF9PLl/ULoFTYdPYGP4JH2LL9qrkZ9f8Gzj54n6ljVBknZjIfvWftXNj4Oh46j4Jg37uMm7B7RDhnnacbYqodvzx39jbaz0DEfahjrcVIxsPxAhuByU2IcG0SFCijx1/yrwsjoK3X6qvYyciErgxJvxc+mpS13xxx2tOpIov5Zeta/+BuFDvheOsGDg8nl4/vghEcSefZLsuSR8rv7YWZ4LHywu96S/GRGMhwq3flebK/SEkvU6NvU+Izb1QiQ1Yhwq4UdcAgCNAbE6B3rTV0RAAMALEZoh0XOgcPQAAR4HYAAA2YROx+f/vr/3z+5t9/fnevv54h4aGdq/N1TjVOtW85uJiQ05ff32yT48f7dcvn+3DwwMaGtqdNqpxqnWqeS04FxcbUjlyvt/v7fPzs315eUFDQ7vTRjVOtf70+MHV/veoAoS1b9JGFnMSP94LAAAAAElFTkSuQmCC" InformativeScreenshot="2b3f483ea27798950afd569ac614ca0d.png" ScopeSelectorArgument="&lt;wnd app='pdfxedit.exe' cls='PXE:{C*AD*E*B1E*D8AF3B9D}' title='PDF Descargado - PDF-XChange Editor' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                             </uix:NCheckState.Target>
                           </uix:NCheckState>
-                          <uix:NCheckState DisplayName="Check App State 'idle'" sap:VirtualizedContainerService.HintSize="1590,831" sap2010:WorkflowViewState.IdRef="NCheckState_3" Mode="WaitDisappear" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Timeout="10" Version="V3">
+                          <uix:NCheckState DisplayName="Check App State 'idle'" sap:VirtualizedContainerService.HintSize="1590,827" sap2010:WorkflowViewState.IdRef="NCheckState_3" Mode="WaitDisappear" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Timeout="10" Version="V3">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="1086,612" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                              <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="1086,610" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NCheckState DisplayName="Check App State '0 documents, 0 entries'" sap:VirtualizedContainerService.HintSize="1024,497" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
+                                <uix:NCheckState DisplayName="Check App State '0 documents, 0 entries'" sap:VirtualizedContainerService.HintSize="1024,495" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="f1ac7174-6993-4f32-ac36-dff7a85d67ec" Version="V3">
                                   <uix:NCheckState.IfExists>
                                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="485,247" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -449,6 +446,12 @@
                                   <uix:NCheckState.Target>
                                     <uix:TargetAnchorable CvTextArea="2349, 385, 111, 13" CvTextArgument="documents, 0 entries" CvType="Text" DesignTimeRectangle="2341, 384, 221, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'0 documents, 0 entries'" FullSelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.foundVal@' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.foundVal@' role='text' check:text='0 documents, 0 entries' /&gt;" Guid="654d7213-7889-4089-86a4-be19d1b43971" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAAAVCAYAAACwsIl1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJvSURBVHhe7ZjNceMwDIXZRLYYdZIGWMOWoUO2Dh8845mtYW++enLcMjyMQJASQJMSJdmRHL9vhkn4B4IgnsnYHA4Hh4KC8j3leDy68/nsrteri5jwGwCwERAhABsDEQKwMRAhABujRXiyzhjjS9NeQuMYJ2dN46qG/jRmx+oOXFrXvGq8fzBChCQo2/2Mf9cc9jOLcI3vS2JVwzPHEyxlECF9sltOK+LSNhWf8C8qwkWxqgEifEV6Ed4kUpJoPf5JFJ9hrU4a0UdFT7+4tkn70qST9fD3abBJc8jPaEP5q9ZObqk2fTpSexzbFe9Mzr88S2K1zCceay3tmeaHuXHprP36fYB9MFOEnCixmQUhRSMO3SdI7OPEUPY9SVKpOtszTdvNpionbW/D1wtPwq5PJXZ0amJOVkgZ6mO10qcwdlhL9hfsz9gH2AfzREjCiqLwiETwoovJxJxsEGWmj8klXSHJxurqRgjFLzzDfrChYlCgOlZrfRqrl+zP2AfYB/P+J6QD3q0I19pn+HafeMbVxmqTPTNV+wC7YBChOtT08CPUPhwsH7RMIHHoyl7pOcrt/RxKbmWvkIAeWee1b+1PzZF9A1lRSWbEap1PU2PHb7zJfYBdMIiQ8CLgp03xE1SMGf9iRiYPwUlzY1/YM9YmSVZKQCKpq7XJFi0wPodu6n6s9CMKjNrUzS+oidVanybGZu3n9gF2jRYhUPTPaQAeCERYhG4d3CTg8UCEAGwMRAjAxkCEAGzMTkT4z9m33679DNW7Umn774czv959af78D40dpXbJmrng5XkiES4Vaq3tj/AljBxfapesmQuAc18BQV7CDoWzFAAAAABJRU5ErkJggg==" InformativeScreenshot="532d8cb58bca7f8ded71e9b51f3b8019.png" ScopeSelectorArgument="&lt;wnd app='pdfxedit.exe' cls='PXE:{C*AD*E*B1E*D8AF3B9D}' title='PDF Descargado - PDF-XChange Editor' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                                   </uix:NCheckState.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                 </uix:NCheckState>
                               </Sequence>
                             </uix:NCheckState.IfExists>
@@ -463,10 +466,10 @@
                               </Sequence>
                             </uix:NCheckState.IfNotExists>
                             <uix:NCheckState.Target>
-                              <uix:TargetAnchorable CvTextArea="2339, 399, 22, 12" CvTextArgument="idle" CvType="Text" DesignTimeRectangle="2341, 398, 221, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'idle'" FullSelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.stateVal@' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.stateVal@' role='text' check:text='idle' /&gt;" Guid="dbba5b8a-81a1-4b78-8321-64ee22d1ad56" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAAAVCAYAAACwsIl1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVHhe7drBCYMwFIDhzJWBMk828SBkAifw6k3nkNfEKkYxoK36Lv8Hrxja60+i1giKgjPiwrwAHkKERUGccfETeBYRAsqIEFBGhICyNcLOizVWfDevN9L90fJdfg3gXyd3QiIEnkKEgLIswl1c0/HUiIljvS9HmP3O8EgfuKwQYbpeX1R33sbAjiLcBRlcDHZZADjjOMK0u1kva06F8Da74Dz8xQS45IYIOYIC/7jhOJruGacFgB+UH8zE+7vliHn+wQzHUeCqLEIAGogQUEaEgDIiBJQRIaDMVFUlDMO8N3VdS9u2Mo7jN8JhGIRhmPem73tpmmYKUUTkAxRZze64juybAAAAAElFTkSuQmCC" InformativeScreenshot="a871fcf14ee5248bdd052a68c4370b7b.png" ScopeSelectorArgument="&lt;wnd app='pdfxedit.exe' cls='PXE:{C*AD*E*B1E*D8AF3B9D}' title='PDF Descargado - PDF-XChange Editor' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable CvTextArea="1699, 399, 22, 12" CvTextArgument="idle" CvType="Text" DesignTimeRectangle="1699, 399, 22, 12" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'idle'" FullSelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.stateVal@' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.stateVal@' role='text' check:text='idle' /&gt;" Guid="8b61bec1-cff6-4212-b35f-ecfbec66b424" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAAAVCAYAAACwsIl1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVHhe7drBCYMwFIDhzJWBMk828SBkAifw6k3nkNfEKkYxoK36Lv8Hrxja60+i1giKgjPiwrwAHkKERUGccfETeBYRAsqIEFBGhICyNcLOizVWfDevN9L90fJdfg3gXyd3QiIEnkKEgLIswl1c0/HUiIljvS9HmP3O8EgfuKwQYbpeX1R33sbAjiLcBRlcDHZZADjjOMK0u1kva06F8Da74Dz8xQS45IYIOYIC/7jhOJruGacFgB+UH8zE+7vliHn+wQzHUeCqLEIAGogQUEaEgDIiBJQRIaDMVFUlDMO8N3VdS9u2Mo7jN8JhGIRhmPem73tpmmYKUUTkAxRZze64juybAAAAAElFTkSuQmCC" InformativeScreenshot="122b9a22ea54f1c27bc38fdec8453b36.png" ScopeSelectorArgument="&lt;wnd app='pdfxedit.exe' cls='PXE:{C*AD*E*B1E*D8AF3B9D}' title='PDF Descargado - PDF-XChange Editor' /&gt;" SearchSteps="CV" Version="V2" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                    <uix:Target CvTextArea="2308, 399, 30, 12" CvTextArgument="State:" CvType="Text" DesignTimeRectangle="2282, 398, 56, 17" ElementType="Text" FriendlyName="'State'" FullSelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.state@' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.state@' role='text' check:text='State:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAVCAYAAAAaX42MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEQSURBVFhH7ZS7EcQgDESvYOqgDjpw4IjcBTAuwSQ04dnjb/PxjZM7PBw7owChQA8teuHPNIB71wDuXe2ABQMhxAeD8Olvqw2w4qBnSH3m9iDACAVXNvtBd+tKtQE206UcZb+9AtuGCWjSsctFmzM3f8HyXL3OuSbkvXsqD9twaSlw6hoMPTuYq8md7/K67KxB7WM+C9jLT8ZBV4CT5XYBnEzXx/GKidoDaylOT3bNQcJyM474BHxv0zdaWnorh2a9td1/Lq0ZLWmhLoDtOd8JWs+xtGuwZr+4pGzu+OeEMrA44bxOK7e1yT/yD/9YA7h3DeDeVQDv+451XTHPM6Zp6i4KYAO7LAu2bYOUsrOQeANKP8z5/TUN8AAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArea="1700, 385, 121, 14" CvTextArgument="0 documents, 0 entries" CvType="Text" DesignTimeRectangle="1701, 384, 221, 17" ElementType="Text" FriendlyName="'0 documents, 0 entries'" FullSelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.foundVal@' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='A20@' /&gt;&lt;ctrl automationid='lb.foundVal@' role='text' check:text='0 documents, 0 entries' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAAAVCAYAAACwsIl1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJCSURBVHhe7ZhRkoMgDIY5lwfiPN6kD53xIH31LB3WEJCEgqJuV7v9vxm2RSCEkL+wmtvt5lBQUP6m3O9393g83PP5dBETPgEAJwERAnAyECEAJwMRAnAyWoSDdcYYX7p+DA+XGJw1nWvq+t/YHKtfYOxd963x/scIEZKg7PQ3fm/Z7E8W4RHf98SqhU+OJ9hLEiH9sltOK2Lsu4Zf+C8V4a5YtQARfiOzCF8SKUu0GX8litewXieNaKOih4+u7/K2POlkPXwfkk0aQ35GG8pfNXd2SvX51ZGex75T8c6U/CuzJ1b7fOK+1tKaaXwYG6cu2m9fB7gGG0XIiRIfsyCkaMSm+wSJbZwYyr4nSypVZ3um66fRVOWknW34euVKOLWpxI5OrYwpCqlAe6wO+hT6prlke8X+hnWAa7BNhCSsKAqPSAQvuphMzGCDKAttTCnpKkm2VFcnQih+4g32gw0VgwrNsTrq01K9Zn/DOsA12PY/IW3wZUV41D7Dp/vKNa41VqesmWlaB7gESYRqU/PNj9DztLG80TKBxKYre7XrKD+fx1ByK3uVBPTIOs/9an9tjGxLFEUl2RCrYz6t9V0+8VbXAS5BEiHhRcBXm+ovqOiz/GJGJg/BSfNiX9gz1mZJVktAIquruckWTbA8hk7qua/0IwqMnqmTX9ASq6M+rfQt2i+tA1waLUKgmK/TALwRiLAKnTo4ScD7gQgBOBmIEICTgQgBOJkkQv+mTb6Jk8i3cvkbOwDAERpPQogQgPfg3A96S416qEeVfwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
                               </uix:TargetAnchorable>
@@ -478,7 +481,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NCheckState>
-                          <Sequence DisplayName="Screenshot" sap:VirtualizedContainerService.HintSize="1590,498" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <Sequence DisplayName="Screenshot" sap:VirtualizedContainerService.HintSize="1590,495" sap2010:WorkflowViewState.IdRef="Sequence_14">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -494,10 +497,10 @@
                                 </ui:Target>
                               </ui:TakeScreenshot.Target>
                             </ui:TakeScreenshot>
-                            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="388,81" sap2010:WorkflowViewState.IdRef="CreateDirectory_5" Path="[ruta + NombreID_URL]" />
-                            <ui:SaveImage DisplayName="Save Image" FileName="[ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - Screenshot - &quot; &amp; Busqueda &amp; &quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="388,135" sap2010:WorkflowViewState.IdRef="SaveImage_3" Image="[Screenshot]" />
+                            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="388,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_5" Path="[ruta + NombreID_URL]" />
+                            <ui:SaveImage DisplayName="Save Image" FileName="[ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - Screenshot - &quot; &amp; Busqueda &amp; &quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="SaveImage_3" Image="[Screenshot]" />
                           </Sequence>
-                          <If Condition="[Not BusquedaNegativa]" sap:VirtualizedContainerService.HintSize="1590,275" sap2010:WorkflowViewState.IdRef="If_17">
+                          <If Condition="[Not BusquedaNegativa]" sap:VirtualizedContainerService.HintSize="1590,271" sap2010:WorkflowViewState.IdRef="If_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -505,7 +508,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_12">
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[NombreID_URL]</OutArgument>
                                 </Assign.To>
@@ -515,7 +518,7 @@
                               </Assign>
                             </If.Then>
                           </If>
-                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1590,135" sap2010:WorkflowViewState.IdRef="KillProcess_9" ProcessName="PDFXEdit">
+                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1590,133" sap2010:WorkflowViewState.IdRef="KillProcess_9" ProcessName="PDFXEdit">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -536,7 +539,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1912,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1912,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -547,13 +550,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="496,879" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,877" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[exception]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[exception]" />
               <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Error de búsqueda&quot;,&quot;No&quot;,&quot;&quot;,&quot;\\5.- Exception_Screenshots&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Frameworks\TakeScreenshot.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
