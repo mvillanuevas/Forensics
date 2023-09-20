@@ -16,7 +16,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2106,14571</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2106,14331</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Kappa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -100,11 +100,16 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="2116,14506" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="2116,14266" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
+      <Variable x:TypeArguments="x:Int32" Name="contador">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:Boolean" Name="existeArticulo" />
       <Variable x:TypeArguments="x:Int32" Name="botonVisible" />
       <Variable x:TypeArguments="ui:Window" Name="nuevaVentana" />
@@ -124,12 +129,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="2054,14395" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="2054,14155" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="existeBusqueda" />
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="2016,14167" sap2010:WorkflowViewState.IdRef="Sequence_39">
+        <Sequence sap:VirtualizedContainerService.HintSize="2016,13927" sap2010:WorkflowViewState.IdRef="Sequence_39">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="ButtonBuscar" />
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
@@ -242,7 +247,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </uix:NApplicationCard>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Browser Edge: Sign in to your account" sap:VirtualizedContainerService.HintSize="1954,489" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="549f92d2-d14d-4845-b525-907cbb87951f" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Browser Edge: Sign in to your account" sap:VirtualizedContainerService.HintSize="1954,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="549f92d2-d14d-4845-b525-907cbb87951f" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -273,18 +278,18 @@
             </uix:NApplicationCard.TargetApp>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </uix:NApplicationCard>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Factiva" sap:VirtualizedContainerService.HintSize="1954,11318" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[BrowserID]" ScopeGuid="549f92d2-d14d-4845-b525-907cbb87951f" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Factiva" sap:VirtualizedContainerService.HintSize="1954,11515" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[BrowserID]" ScopeGuid="549f92d2-d14d-4845-b525-907cbb87951f" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence sap:VirtualizedContainerService.HintSize="1920,11101" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                <Sequence sap:VirtualizedContainerService.HintSize="1920,11298" sap2010:WorkflowViewState.IdRef="Sequence_75">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -298,13 +303,13 @@
                       <InArgument x:TypeArguments="s:String[]" xml:space="preserve">[{"AND soborn* OR gob* OR secretaria OR escandalo OR organismo OR delegacion OR fraud* OR investiga* OR  litigio OR criminal OR arrest* OR presunt* OR culpa* OR  ilegal OR indiciad* OR terror* OR contraband* OR corrup* OR testif* OR incrimina* OR mafia OR acusa* OR lavado de dinero OR defraud* OR controver* OR estaf* OR evasion OR neglig* OR robo OR viola* OR pago OR soborn* OR bancarrota OR descalific* OR  malversa* OR sancion* OR pena* OR manipul* OR prohib*","AND brib* OR govern* OR minist* OR secretar* OR scandal* OR agency OR department OR fraud* OR investigat* OR litigat* OR lawsuit* OR crim* OR arrest* OR alleg* OR guilt* OR illegal* OR indict* OR terror* OR smuggl* OR corrupt* OR testif* OR racketeering OR incriminat* OR mob OR mafia OR convict* OR accus* OR moneylaunder* OR defraud* OR controvers* OR scam* OR evasion* OR neglig* OR steal* OR stole OR breach OR punish* OR violat* OR payment* OR barred bribe* OR bankrupt* OR disqualif* OR embezzle* OR sanction* OR penalty OR manipula* OR prohibit* OR malpractice OR suspen*"}]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1858,10864" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[BusquedaString]">
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1858,11061" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[BusquedaString]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:String">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:String" Name="bString" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1822,10738" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1822,10935" sap2010:WorkflowViewState.IdRef="Sequence_79">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:Boolean" Name="Resultado" />
                           </Sequence.Variables>
@@ -315,13 +320,13 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1760,52" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                             <ui:CommentOut.Body>
-                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1200,164.8" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_112">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[existeBusqueda]" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="If_38">
+                                <If Condition="[existeBusqueda]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_38">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -329,7 +334,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="644,5408" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="644,5404" sap2010:WorkflowViewState.IdRef="Sequence_80">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:Boolean" Name="existeBoton" />
                                         <Variable x:TypeArguments="x:Int32" Name="salir" />
@@ -900,7 +905,7 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="450,320" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="450,316" sap2010:WorkflowViewState.IdRef="Sequence_91">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -953,7 +958,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <Sequence DisplayName="Factiva window sequence" sap:VirtualizedContainerService.HintSize="1760,10531" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                          <Sequence DisplayName="Factiva window sequence" sap:VirtualizedContainerService.HintSize="1760,10728" sap2010:WorkflowViewState.IdRef="Sequence_74">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -968,7 +973,18 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:LogMessage>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Update Your Profile'" sap:VirtualizedContainerService.HintSize="1698,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="549f92d2-d14d-4845-b525-907cbb87951f" Version="V3">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'A new'" sap:VirtualizedContainerService.HintSize="1698,157" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="549f92d2-d14d-4845-b525-907cbb87951f" Timeout="15" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://snapshot.factiva.com/Pages/Index" CvElementArea="1296, 289, 24, 23" CvType="CloseButton" DesignTimeRectangle="1302, 295, 14, 14" DesignTimeScaleFactor="1" FriendlyName="'A ftCloseAnchor'" FullSelectorArgument="&lt;webctrl id='ftCloseAnchor' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ftCloseAnchor' tag='A' type='' class='ftCloseAnchor' aaname='' /&gt;" Guid="71311b4e-9a64-40f5-8e35-b96f8990b670" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADeSURBVDhPrZNNDoIwEIW9/w3cmojBBAK4oOIGPJHI/2rk1U6DoVYa+5IGmHn9OsykO/Ik/6BH3dCluNMwTiryXfCkoqK6aVVkAcquFe0PEYVpQf0wquhayMEDL/awNKjtejpGuTScYmGEIYYcPPBiD+ujR0iwEc+l0ZaDVs02nYr1q9oVCOr6gcLk3Ydg3sgQW/+MIAiTYZiEzO+2iW4GnbObOwjl84iDOJdLVuXya16ajQ0MwRPfLFsO0qAtp5qqZWmQ0xVRQzBeEVzaJC+tk2HBk4qSnqZL+688gYhec2fAqVnwexQAAAAASUVORK5CYII=" InformativeScreenshot="1b597d796673834725b3a526f425778d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Factiva' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArea="678, 340, 563, 31" CvTextArgument="A new Factiva experience is now available" CvType="Text" DesignTimeRectangle="649, 338, 624, 32" ElementType="Text" FriendlyName="'A new'" FullSelectorArgument="&lt;webctrl id='ftHeaderTitle' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ftHeaderTitle' tag='DIV' type='' class='ftHeaderTitle' aaname='A new Factiva experience is now available' check:innerText='A new Factiva experience is now available' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAnQAAAAkCAYAAAAAeKcRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABXDSURBVHhe7Z3X82xVlcet+Qd8mQerfPLJmvLBUsua0tIaZ0odp3RmDGVARxlMAxhAokIRFLwICMhIRoIShIELkuQqWbiSJUgaRBHJSJaowPF+zu3Vd/X37r3PPt3n13TL+lSt+v26zz5p7bXWXjuc069qgiAIgiAIgqUmErogCIIgCIIlJxK6IAiCIAiCJScSuiAIgiAIgiUnErogCIIgCIIlJxK6IAiCIAiCJScSuiAIgiAIgiVnoRO6l156qdn/uJ80f/fm/5iQo07/+ahE0Jc9jjxpI312yZs+sVVz2+/vGR1hMXjxxZeai66+sTnytJ+NvtnAw48/2bzvS7uNr3/zbx/cPPPc86Otwd8K3pYX0UYXGXSFzkx/6DIIuij53ErH3RN+evH42Mhl198y2lLPEMdYZBY6obvvj48279lil4kKQD66w3eax//09KhU0IdlT+hI5C697ubm37fao722VEMUCd0rg0jopicSumAaIqFbbBY6obvgyuubV7/j4xMVgLz2vZs2V950+6hU0IdlT+hqGqJI6F4ZREI3PZHQBdMQCd1is7AJ3XPP/7nZap8jJpTvZddDTmheePHFUemglldCQhcEQRDMl0joXn4WNqH73T0PNG/7zHZjxf/Pngc3n/j6PuPPTMUyJRv0Y9lHNSKhC4IgWDwioXv5WdiEjgcfTOlMuzL96r9DTrvgl6PS/VDDo5JZm/XLG25tPv+t7zeve//n2+9JKA895afNU888O9ozDcc76KSzm3/+wk7jY/I/37HN8+TTzzSf2eWAcTn+5zvPHx97ovm3L+8+LpNKvHAUHMbKUJ79uhgqoTN9fWGdvt6yydbjY/79uz7Zrm+jrrr0dtf9DzV7Hnly8/ZNtx/v/w8f2qLZbLcDm4uv+XXzlxdeGJXcuM5SQj2mylpg0VHfUqeAKX2m9q2sPojDsdasvbbZ5Bv7ttds5bCdj++4T3P6hZe3ZaYF3Z147iVtvdqyA/SMvtCbwv19Ze/Dx9eB8NkHVB4yOvDEMyfKbLf/0ePr1GSZYKe2Tf1+bIe92wdSsIEcKX/iL5/5PrevD7jU4b0PPdIcfuqasY7fvfkurd6hxpa551t+d3ez7f5HjY9h98BxcnWU0oXVOftyDL7nelafv7ZY1/4avK/wP/Z47a13FHXZJ77UoveX6hhhgyet+UVrz1aHCHr80DarmiNWr5nq/EPqFrDxcy+7ZuI6rY65fo1DzOzs9P0fjc+PLrEzj8ZXfFAbf+p1z3X+aGVyNphimvjZFZMM9NUV5yz2/tPnvj6xrIlYvMshxzd33vvgqOQkJZ/LxV1l2nOnkjF0RBttgz/YJn7W5xgpVsLn5sFCJnSa9JhB3nTHXc0bPrLl+PtpewBqeIedcm6z80HHjT+rfHCbbzcPPPLYaO8N4NAkHr5BV2EbgYqyBg2Ubed+uC/PNbfcMeG4yHlXXDfaup7f3/dg847Ndhhvx0H8OXIMkdDhRCV9mfzrlrs1t99172ivDZCo4YQWuHOCDTz06OPtPlpnKelK6IBOgN9H9QoaqLWOuCZvnznx198HzvXOzXZMHhNBbz8864KJhBfQtR/VJlj+/PJfjbY2zdU3/2aiYeYcPvBpQ4udlq7jm4f/OOl/+O9XC8slkC/tdVjzyBN/Gu2xAR9w8Xtvrwj3ROcOumyZhm2fY1dPNBoqH952VetLiuqCBL1U59yPNsDAdzRSpWtA8Cfdf9r4UoPenyZ02BL+68+VEuyNeNWHoXQLJMMlG0X+8dPbNmuvv3VCR/i9bfc2ZWh8RfAHDw/m8YCeba9tj6aNn4+u8xfs1bajMx0MANWvX56EDoiBPg6khO2UU7uaJaGb9dyajJHQ5myUGEky33WMVJK+Uj43DxYyodOeiCUr2vNIJUM1qOFp8pQSXp+iFYgxdBknQhmMxNCEzRIRQ40OMR0YXQEpxxAJXer6crLjgcc2z//5L6M91zsMI09dDZyJjSANldDpk9Pb7PeDiesDLYPN2SgBgXGvo08Zb+sSenR90KQsJ+gPPapNnnHRFRO6/cBXv9Xc//CjbWPAiIXfn7IebQhqZN8fnjaxlhU960hhTlINdZdtbbnq0PE+JVvmmrg2v29OUh021UVNjKAR8pBw733MqcmyKWH01NfntPGlBr0/n9BRh/iMP0dJsCvsq5YhdAvcc41+ENVRV4cY3WuM0gTlhtvvbF7/wc3H23MjZsos8ZNz2Db0lkqmtYx/gLCPjzMipbMBsyR0s567j94Q7v3Cq24Y7b0ePYYmdCvpc/Ng4RI6nArnMsWpQeLYXrGpRKuLVHKAoTGaQRDGCFcd9X8T22kYfdDSBpKs/axLrmqdj+H0K379/xM9Rx/0tGfnkwr+8tm2mfhXtaiOUlMGObxD1og6Jffge4kkH5ffeFt7z+iORNM7BHpG34Y6tdc7wjSET2i6ApJviIxSYKGhp8dq2wjqOkKjT1efefGVoy0br+3ELkjCqBPqjpEzv6/qrwRJIwms7Usv8+ifnNcmMByf83jd6wgb6DEQRqkYEfXfMUKAvj2pgMs5qF/zi+PPuWiifrVTpQklSds9Dz7cXv8TTz3d1pdt568mlRpwKUMDZQm1p9S46GgkemM7dsp9oFc/QqzJVEoXjAZwXI6BH5Bc+u3c67PPb6jrS669qbXf1P7YCnblrxG7wr5glvhSQ8mPNFFhZMqSaHREfW6x6pB2hIh7oMPgddfFELpl5Nv7Anay26EnNA8+sn5EHFs74PgzJurY+4vGWX0VFvvaNhONFd5W0Rd662LW+Imv+VkqrtNDPbFkxbZru+Hf64rOeI8n/sA2dEPnxrYjmvCUfK4Ud4c4dyqh2/6AY8bTyfzls9+uflFK6Fba5+bBwiV0OjqC8Xulac9Kt9eghodx+akp0HVsmjRhCOxn21M9SB/QKWvGo8btj81fPts2E+88mhCyHsSPkpTwDlkjmpBw7ejvnEuvbgP6sWeeP9qyHsqyj+2vQdBPN6f0DhwTZznu7AtbR/eJR6khMkqBBXQE2NedJnw23W/g2NQRo2Mf2W6vjXqAem5tKErovaU6K1qGAKWgMx94VP7lizu3jbKix6ZhoZH1cD0EYn88m4rSuk/5ppbRutGA+18775fVX65x4Rp9h8cnSgb17EdadQ2q6oJGVBtsLeOnwDi+X6eV2p8y3MN/7/q9NjHCrrAvmCW+1KDX7v2I49j3CL6udjgLs+oWtGNPfWsHhWumA+LL+QTIH8MnZLrkx8TrWBNCvb4cXNMs8ZOOjZ+lUh/ThE9HDTk+8Y9lAH6021D/851ZyPkcdMXdWc+t2zfd9YA2cffwme+tDP7hRzH1GN5nVtrn5sHCJXR+KhHRHogGSpRaO91oqOHRaOtaJ3UsNV7fg9NtBsf0yam/F2883jDordn3b/zYVyaSVzNwAo/vQavhl/AOWSPqlDks0fnRWRdOBGKvG3rY9LRtW5+RRUMDvW+IjK7AogHbT6lqQk1DUdOY0ZiQSFHHpR52CerR9kNSweLpZ59rF1JbmdSUMZAomx15IRhpEmqobjkP51O0nI2eaGcrVTeAjVgZbbA04JJ05cg1LtrhydkwwdnKaOCv0YXama9rGllGb21bbYNvzBpfutD783Wl2xCSYspgk7UdlByz6laTqZx+QP3Z14NeB7YHv/nDfc1bP/W19juSIxbvWxnTsR63j+5T1MRPw7eR2K2fwfAd5pJeFOqUKUQ/QoWYToycz4HWWW3bUXtujQ3oKoWW88fRbT7GrrTPzYOFSui096FB1tApsT4jVKCGp9OpUEroNKmsFd/46gigGYZ3SM7h1wHtftiJbXLhjVIbxC68Q9ZIzikJQDy5970TzmifyvJTG1683lTvfRs54Fgc047hGyKjJrD4dSb+Gn1SpcHSQwJ31bptnJ+n8VLJE+Iboi583ddKbgSQ60stvE6NZBg1ugXVr12DdjRqRH28FIyVXOOijW2t+I6R6kKn/ED14Ota9+8To4aIL12U6hr76Fr7R4LHVH7qiesuZtWtJsulUXCN474TqdtMfz5hIkYxU2CfLfn0HfJcO1Vimvhp6CyWdTrRge/I+I6qwtQ0Dw0wPVt6AED9L+dzoHWWazumPbfGhlSHF/jel/Odwtwx5uFz82ChEjp19FpJTamUqDE8dXZvvLqtVvx5MCA/tUfgwND9cTE+H1xwVnoIvndactoUJYeshbVc9tNbJoxKMXV0ynmXNZ/c6bvJc9Q6fAm1kVTSUXMeXQtn67R8hyLXUDCKypNzVg4hMLHvqeetnejR+4aoC183tVI6Ph2f17z70xPlmYLKjTjW6BZUv3YNGkhrxQdmDbgn/+zS0ZaNydmy3ket+AZkGjvzdVGryxRDxJcuuq6P49AQ5hINE7annrguMatudVvpvlWXnJfzG75jR7LHUgQSJPuO/31HxTrQfjSn77KfaeOngf/6JTskdyR5upQkNXPDNKc+dc3/DC6wzlYTee8TkPM56KqXWc+tsaE2ofP2lTuG2kmt9PG5ebBQCZ13rr6iawVK1ASEUiDQIf9a0fP4ZI3j8yi0TVnZmg4/jcV3vG/Jjz6o0XdRcsgaSCgJYHYMespcp639Ub35EUTVe6lnnYPr5brtGDWNQap+NXmjDD1m0zWSsil9CvVz3/zfdqrVkqRZ7tE3ErXCuTinwlObusgYSa1XMlS3NiKs6D3aSCujFL5BqZVSQpcL2pCzZe8zfcT70jR25utC9+/Tkx8qvpSouT9gTRLrvUg2/FICL6WR7BSz6lZHoko+pvHIj9CBT9ZILs7+xVUTxyZG6/notGHz9tlGyGqYJX56fPLGdeMnPn5YkudhEMHP+FCf3Iu3GfU/TQpzPgdaZ94ehzi3bmfJRApN6GyNL+Tiyzx8bh4sTEKnTtNXGL7VRZY5SoZn8Nk7lhqvX1Ct22rRqSFeumr/W5DS6+B/6+FMc96SQ9bgpyQRdSpd4+UDsa6hywWrElwv123HqGkMck7np+45pu/15nTjgyZrHG+98+7RlvXoGovcuVMwGmX7IaVkpgSjJX6UQSW1mBhUt7mG0q8xQixZ0e9zSUKJXMBNkbNlnZLrUwfGNHbmbb3PtGCKIeJLiZr7U2ydFzFA1zuV1joqs+pWG9+SfjTG6jIP/vfJGS8nxq/53+ITyZr3J0bQ7Potmapllvjpoa3zT7PyMl0eILLPqSRTOzqpDptf34roveV8DrTOvN8NcW6NDT5R86iOfWJYii8r7XPzYGESOh0u7grCugatTy+xZHgGn/neymgF6zq+1BMxXZR6Bd4hc2ur+iSxRskha/D7IxqQGOWyYIdoQNJ7wcGUX93227YxZI0Ooz6+brhef/yaxiBnS7oWxUtqKlttIpXQ8cBBHzv26BNqqadca9BroEHTF3DypKoeW3XLMfQBCvbRJwctsGoj03cqCoZI6HQ5Q98lGTCNnXlb1zU56DI1osCovE054TvEBBgivpSoub8S2L0lPn33n1W3oHZCvNRp35StpkbdcyPj3nf9bIqX1EhYCW+zSN/46cnNaOXaQnzJl9OkCv/94h4HTZQZKqEb4txa57QRvDLHo8exmS6jFF9W2ufmwUIkdBqAkVRD78EY/IgKkuqVpCgZnqGNtxovDZUfOmcNFQZgx2E7b9LnJ3Jo8Ng3tc5EexMmvleRm8rK9VBKlByyBk3I+Omrux94uO2984oLTRwYsWHkxtBgru/6YbvXK+ITG92f3vVjTz7V6p2/UFO/kLIhEwK4oo00wjvfqGvqlidL/bUhBJ3apEangVmfxK+Y2GgawYpEDB2zmBq7sATAIMD5kSGmNqgXgppPFu17j+oW4bN/TyB15afe2O5tCB/w+/MbzDYlzf68Z5BGED1yXNXNEAkdaAcRm7KpLbMzXjvD6xPwNX2XmupimqSDxtpfg3+nH8L/+noZa0SGii85SvfHObAtOlR0Bg4++ZyJeuJ/GmTbF+mK154hdKudMRrirvfQ5V7Xk4uv7G/oCJMJdkxcqGXW+OnRdcAmOgpp+OllhHjA06WcG33qO9wQXcNa8rlS3B3i3BobEEZLf3vP/a3vUudqlxr7S/FlpX1uHixEQqfOqYaSQ4N2bW+pZHgGn0sJHWCQvnErCeVSjVPKKfVcOhqJaM+jlpJD1kDQqb1nRM+B4/X5pQj/MlDAqXzC4sWmfWrq19BAg5TsSF+c2yXaEHVBDz0VpFPCdfC0mEFwoVPjy9gvOaB3/R1XfTEm9UR9+TJdoi/kJen00+pdor83O1RChy76/EoDgZzpckN1MU3S0fcatD6GiC85cvdHXep7BrtEddfFELqFvvqhfAptyBF8y+tT2wOTVMevxKzx05PqYCK59eTcp06Vd4km6iWf0zrzcXeIc/vYQP3oA18q6Fk7rV3xZSV9bh4sREKnvfrUdFeK1Lo7P7KVo2R4hjpwyrEIflx7lwGQ6ed++y0VKLSHlXLcvmtyjJJD1kAjRZKQS2roYbLY1U/HaNDjGDwZ1/UEHckcv9XoSSUmJjaMX1O/BgmInyZESiO9lN963yMnynuh7n68LmG1z9Mk3oxi+QYvJamnC3WqVRtaXZCN+IRMG1qeSMvVNd+hp5ReOY9fl5QTEj/9PdehEjqgrmp+MxOd6FpO1cW0SQf6QU85fzFJXQP1Mmt8yVG6v9prRvB3HhTqw1C65X75jVZ94lyF7YyG5uA43K/fRx+eAB1dm2YN8BDx06PThCk/8DBqjL1YeS/Y2TFnnN98dvcN8VBHIEs+1xV3Zz23jw10uol/Od/I+URXfFlJn5sHL3tCp9NMCAqtRZ2sJhnsMjzgc1dCZzCas99xp0+8jwyD+M+v7dkcsXrNRoFIUSPzQ/2GTs2mytTQ1QjWwDD5RVff2Pa4LCnj3ukZ0ohqop2rE95hRSB9+6bbj8viKExDMPLEsVJwLJImW+yMzhnB5DsCQE39enyHgoSoay0m5199/tr2nJwbYRieHxlnm07PTLMWjukD9OnfUcVf7iv1/i+dauU+Ui8Q1h4o/1svNtXQWl1zf9wn18A0x6XX3dxuy0HDxblIln0Qp66xB5LW1P5DJnTAOegUcM63bLL1uDz/c200linbTOlCUTvj/5SvU/eMvLJwvc81GLPGlxRd98c1MzLO1D7n8TZjPorflPwqx5C6Ba6B6Xtva9gp8akURzzYmekWsQd9PDo1mypTw1DxE3R0sab9o16xRdMVf+m82UyIX1Oo609LPqd1loq7s5zbxwazB/Zjf/MrjkcnLvd+xNr4shI+Nw8W5qGIIAheXmoa2iAIgmAxiYQuCIKWSOiCIAiWl0jogiBoiYQuCIJgeYmELgiClkjogiAIlpdI6IIgaImELgiCYHmJhC4IgpZI6IIgCJaXSOiCIAiCIAiWnEjogiAIgiAIlpxI6IIgCIIgCJaapvkro9UxD9CIpaMAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Update Your Profile'" sap:VirtualizedContainerService.HintSize="1698,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="549f92d2-d14d-4845-b525-907cbb87951f" Timeout="3" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://snapshot.factiva.com/Pages/Index" DesignTimeRectangle="1173, 440, 25, 25" DesignTimeScaleFactor="1" FriendlyName="'DIV jobRoleCloseAnchor'" FullSelectorArgument="&lt;webctrl id='jobRoleCloseAnchor' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='jobRoleCloseAnchor' tag='DIV' type='' class='' aaname='' /&gt;" Guid="2e7be5a7-6567-4956-8618-dd8bdbefff31" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATYSURBVEhLzVbrL55nHN5/0g+o81naqEbEKUQ/8EFEUh/6BbFpqw6vKkoPC2nGamHb67SmSrXRqZVhimVDETV1Pmwifa06p1IRp7j2XL/seb3eA82yLfslV+7nPv2u+/6d7uejq1nZ+K/x/yXNvf0piopL0NTSgonJSfz+5g1WVlbwx+IiZn79De2dP6K0ogK38vLN7jfGsaT3qh5ganoGlO3tbUxPT2NwcBB9fX0YGBjA+Pg43r17J/O6+Xk8qnsihzSnS4VF0us3b+Gnri7s7e1hUbnR/fv3kZycjNDQUJw+fRpubm7w8vJCQEAAYmNjUVxcjImJCSHnIUu+1prVS5glzbl1G+N/KWhtbUVkZCTs7e1hY2MDZ2dnIXR3d5fWxcUFtra2sLa2RlBQELRarRx0Vbl9+Tf3THQTJqSZObkYGRsTwsrKSrkVCT08PODp6XkkHB0d5SDp6el4//69EH9ZWnpIP3GINCP7OpqVm1FqampEEZWoCnkjtsZEhuO0AK1BYsbA5NQ0sm/ctEz6lXKqzc1NCRIfHx+4urrqb3jhwgUkJSWJqUlAf7Jln+Oc5zquV01fXl4upq6ufSQXMiGlWV8oZBsbGxIYNKmqhH6rUFKCMjw8LMFDQrbsUzjPdeohHRwcEBYWhrm5Obx+rZM40ZOmZ2aBYI4tK7nX0dEhfqQCbiZ4am9vb7S1tYklqqqqJHDYss9xzquuUA978uRJlJSUyG21yq1NSGna/f19FBQUwMrKSr+ZoCnpJ5pyaWkJMzMzcjO27HOc81xnuI++jo+Px9raGlrbnh+Qaq5lgviuqUlMm5iYKIsNN6ugr+7cuYPl5WU92Oe4ufU8SEhICKamppRKNnVAmpZxDcTPXd1YWFjA+fPnxR/mlDCwzp49K5WIB2TLPsctrT916hRevnyJhbdvD0hTr2aAeNHbi3mljEVFRenD3xj0c3R0tJTC9fV1adk39L8h6GP6tr+/X9ygJ03WpINo7+yUCYa+uZtyM4OlSymNNCv9yZZ9jqtRawiSnjlzBkNDQ9Dp5g9Ik1LTQDx8/Bg7OzvQaDQSdcYK6J+8vDyJ1u7ubsTExEjLPsc5b7yHFouIiJC0+UUh1pNKkhlIWVmZCamTk5OYfXZ2Voo/i8GJEyekZZ/jnOc6w31MK1YmXubbhgbLpKOjowgMDNT7lcHg6+uLnp4ema+rq9NXKrbsUzjPdWpQ0bT8rq+vx+7uLgqLvrBMSsnJyRFSKmaQnDt3TlKjsLAQwcHB+hRhyz7HOc91alDZ2dlJfDBHh5SqlZV742hSpk54eLgoYMLzxDQVi4ZxpLLPcc5znbqeAcTbb21tyV+FSmiRlMIc9Pf3F6XmItMS1IPW1taKnh+etx8q9keSUkZGRiQPaWqmkSVyjjN6uYbx0NjYKPuHXr0yITyWlMJczM/Pl3JGpTQj/aWCfxOEn58fUlJSMKb8ALCG9yoFgS+XMeEHkarC6lNdXS1BlpCQgLi4OEFGRgZKlceCVYeyurqKJ0+fyiNijpD4YFJDYURSOcFni/Jap8P3La0ouFskhP8oqbasHA3PnqGpuVlIHtQ8xGef35VHmg8HX6xjSfm6Ex8qH1+8hMTLSbh0JRmXU1JxJU0jtZuPxr9GmqCQfqKQXvzbpNn4Ey0ZaCBwP7jJAAAAAElFTkSuQmCC" InformativeScreenshot="e72e38951214e6c9b779d6b099e77795.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Factiva' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
