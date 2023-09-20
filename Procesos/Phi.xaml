@@ -17,7 +17,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1984,6227</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1984,6200</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Phi_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="72">
@@ -110,18 +110,13 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Phi" sap:VirtualizedContainerService.HintSize="1994,6162" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Phi" sap:VirtualizedContainerService.HintSize="1994,6135" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Image" Name="Screenshot" />
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="s:String[]" Name="ArchivosExcel" />
       <Variable x:TypeArguments="s:String[]" Name="listPhi" />
@@ -135,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1932,6051" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1932,6024" sap2010:WorkflowViewState.IdRef="TryCatch_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -143,7 +138,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1894,5823" sap2010:WorkflowViewState.IdRef="Sequence_66">
+        <Sequence sap:VirtualizedContainerService.HintSize="1894,5796" sap2010:WorkflowViewState.IdRef="Sequence_66">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -158,7 +153,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign sap:VirtualizedContainerService.HintSize="1832,81" sap2010:WorkflowViewState.IdRef="Assign_34">
+          <Assign sap:VirtualizedContainerService.HintSize="1832,82" sap2010:WorkflowViewState.IdRef="Assign_34">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -166,7 +161,7 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <If Condition="[System.IO.File.Exists(rutaDescargas +&quot;\0.- Phi.xlsx&quot;)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1832,5499" sap2010:WorkflowViewState.IdRef="If_31">
+          <If Condition="[System.IO.File.Exists(rutaDescargas +&quot;\0.- Phi.xlsx&quot;)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1832,5471" sap2010:WorkflowViewState.IdRef="If_31">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -174,13 +169,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="1796,5311" sap2010:WorkflowViewState.IdRef="Sequence_81">
+              <Sequence sap:VirtualizedContainerService.HintSize="1796,5282" sap2010:WorkflowViewState.IdRef="Sequence_81">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[Not System.IO.Directory.Exists(rutaExcel)]" sap:VirtualizedContainerService.HintSize="1734,268" sap2010:WorkflowViewState.IdRef="If_32">
+                <If Condition="[Not System.IO.Directory.Exists(rutaExcel)]" sap:VirtualizedContainerService.HintSize="1734,269" sap2010:WorkflowViewState.IdRef="If_32">
                   <If.Then>
                     <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_6" Path="[rutaExcel]" />
                   </If.Then>
@@ -221,14 +216,14 @@
                     </Catch>
                   </TryCatch.Catches>
                 </TryCatch>
-                <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="1734,25" sap2010:WorkflowViewState.IdRef="Delay_23" />
-                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: 0.- Phi.xlsx - Excel - Acceder a Archivo Phi xlsx" sap:VirtualizedContainerService.HintSize="1734,4406" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="41e36a91-f281-46ae-9617-174c183bb107" Version="V2" WindowResize="Maximize">
+                <Delay DisplayName="Retraso" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1734,25" sap2010:WorkflowViewState.IdRef="Delay_23" />
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: 0.- Phi.xlsx - Excel - Acceder a Archivo Phi xlsx" sap:VirtualizedContainerService.HintSize="1734,4376" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="41e36a91-f281-46ae-9617-174c183bb107" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1700,4076" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1700,4086" sap2010:WorkflowViewState.IdRef="Sequence_111">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="systemLanguage" />
                         </Sequence.Variables>
@@ -243,7 +238,7 @@
                           <uix:NClick.Target>
                             <uix:TargetAnchorable CvElementArea="1650, 130, 13, 12" CvType="ArrowButton" DesignTimeRectangle="1649, 129, 14, 13" DesignTimeScaleFactor="1" ElementType="ArrowButton" FriendlyName="'excel.exe 0.-'" Guid="afebb828-e61b-44f9-821c-aed462c855ca" InformativeScreenshot="bcb8867bb39a072e36a3a510514aa6fb.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='0.- Phi.xlsx - Excel' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target DesignTimeRectangle="1617, 75, 47, 73" FriendlyName="'Find &amp; Select'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIAnchor' name='Find &amp;amp; Select' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUIAnchor' name='Find &amp;amp; Select' role='Menu Item' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAABNCAYAAAALiVybAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANDSURBVGhD7ZfLihQxFED9LJmtjgjS2gtt6aWzEfEHFAZdiDKIaxm1v0DEhYi7Hh8b5ydE/ITRXW/inILbXONNulJVXaRDFofK4+YmJ5169IU/v89cKZQp8+vnj52lyuRKlcmV0WQ+ffzgHj86dPP5zO3tXVxDnXb6rXEpbF3m6+cTd3Bwx02n191i8cYtl0u3Wq3WUKedfuKIt/K0Yasyr45fuumNSbNYLRCikTqPZ5yVbxNbk2FB+/uX3Onpd3PhIYhnXBehrchwVNjhVBGBcYxPPXJbkeHstz1aIRhPHit/iMFleCpxM1sLTIU8KU+5wWV4zPb9VQTykM+ax2JwGd4b/uO3K+QhnzWPxeAyvAithXWFfNY8FlUmRlEyRd0zRT3NinrPQDFfAFDUtxk8e/qkjK9mzvlkcq0RYofbHjniiM/m/4yIyI3LUeHsczOzWP+xTb2ROO8nLvVoaQaV8UX8Ph6zvDd4EQrUabfGpDKYTExkLAaRyUEEesvkIgK9ZHISgc4yuYlAJ5kcRSBZJlcRSJa5PbuZpQgky+RMlcmVKpMrVSZXWstcvXL5H148P3Lfvpw0Za7WmBixceSWeQ4fPjBjLJJkuiw6RCgfbfPZrXWdctt5d0bGb7foLaPbKS9eHzdX4LhIHDG6nauVDzhaEisxXAeV0bx/93bdrmXu37vblOmnLuNZCKKUYzKyGfRxlXuG9k33T5KMNblu92Okjpi/q1Y+6rTrNgSQZ5NkA0NkJWPFAW3yi8cYRUbKsrP6KEksUNdxOhZ0rMVoMnpRcoNb+RCROJBfRMbHfqHWMrtAlcmVKpMrVSZXojL63QC6z4IY690xFkEZFqUXx1W/mS36yAyxEUGZ0HdSjGxlgAmsz24mpQ+0sF5QKAaoS5//+eLPJ/1yKvy6JioDMrEeTJssmvtKFkCctIdi+LayNkiP9REB+R9kicBGGdC7IWWNfPxRZkGhGPoo+/n1WKsP9BqsfmglA+wKO0oy/9gIsqBQTB+ZNgRlOBp6F9hZhCgzMf3SJ+gFhWKQlDwa4mO73oagDDAxk4D+H8Gk0g7WPROKkThBBOj341KJyuwaVSZXqkyuVJlc+U+mBAqSOXN/AfscKTl3/+Z1AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -254,7 +249,7 @@
                           <uix:NClick.Target>
                             <uix:TargetAnchorable CvTextArea="1655, 157, 33, 12" CvTextArgument="Find..." CvType="Text" DesignTimeRectangle="1619, 150, 184, 28" DesignTimeScaleFactor="1" FriendlyName="'Find...'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Find...' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Find...' role='Menu Item' automationid='' check:fulltext='Find...' /&gt;" Guid="86f1efda-6681-4233-8d83-362155fae8d6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALwAAAAgCAYAAACo7RKTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIwSURBVHhe7ZjfSgJBFMZ7l+wdorvSxZvShzDvAsNeYOk6KiUoxG4juooK9AHEvIoIfBlvTn5jG+M6K+rO9sfzffBjd2fmzNWP4exsDPo9IUQLRniG0ZAp4T/e3whZWxAKT9SAUHiiBoTCEzUgFJ6oAclM+OenR6nVjiSf35WdnW3zxDfGXesJyRokE+Evzs+kVNqXRuNShsOhjEYj82w2G2Yc8646QrIE8S48TnBIPRi8GtHjYBzzPOnJT4N4Fx5tC052l+wROOnr9ZqznpCsQLwLj149amOSwHyhsOesn6Ul1VxOtnKb3xTDF/nohFLMBXLacdXMA/utUkf+O4h34fGD6pI8Dta56mfxLSiF1wryayd8EOSd9bNQeOIHxLvwi/bwJ/VjZ/0sSYLa41/vYWW67YnWmvZn0hYVw5DCKwXxLvwitzTl8sEStzSQebqHr7ajcVv48ZrD1qSmDfErcmvVT2repBsG4zkKrxHEu/AP93emrYH0OMmj9gbP1e7hbbGTxuNrrG+c7kEoXWcd0QTiVfhIdgiNExxXj7iNwQ8qena0Mcvfv1N44gfEm/C27K751UkpvHlPammS9ojvR9YBxIvw2ckOkuSbJ2js2/T00c+s/dOatEd8P7IOIKmFz1Z2QvyBpBIe/XjWstu3MzautYTMA0kt/M31lXOOkL8Gkkp4Qv4TCIUnakAoPFEDQuGJGhAKT9SAUHiiBoTCEzUgU8IzzLqHwjOqMuj35BOY6Cd4mhZoVgAAAABJRU5ErkJggg==" InformativeScreenshot="5f5e611487c7482bd0282b55b810b4aa.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='0.- Phi.xlsx - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target CvTextArea="1654, 185, 52, 15" CvTextArgument="Replace..." CvType="Text" DesignTimeRectangle="1619, 178, 184, 28" FriendlyName="'Replace...'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Replace...' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Home' /&gt;&lt;uia cls='NetUIChunk' name='Editing' /&gt;&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnMenuItem' name='Replace...' role='Menu Item' automationid='' check:fulltext='Replace...' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALwAAAAgCAYAAACo7RKTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKaSURBVHhe7Zg9b9NAGMf7SVgaxNqZD9AVz/0CjGyOYGeBgQGWykMZGOiEBAMSyAoSVehAQ6kElQAlvA2AYEBIrEf+57P92L4D4rPVpPf/Safc+y2/e/Kc1/bHewocHU5YWE5tAXCdwrMEUUBFeEJOOxSeBAWFJ0FB4UlQUHgSFL0If3fzvqkRslxQeBIUvQn/fvRZPbs2Uc9vvlQ/P/4yI4ScLL0JD9nfPpjp39HlsRkh5GTpTXiJX4qTquFgoM4O1osyTM1QK7BfpJKpaZKg8Bb+3usf6sKdY9PK6F54IWgaz6WP571tofAh4yU8ZD93Y6KuPPpgejIgOHJ4gLTm8aWnut6OuqC+wlL4kPESHpG9Ljt4eHGkJccvypcX38xIGywRPkrUzDTVNFFRkfLkkd+sScuxqNygsl8ai3Qplv8bU5VE5ViRRlnPI6uCl/Bnrh+od99/m1ZfQFCXlM3LkIlt1uQXQ0uaz6utKZD9mezlJclxnUdWhU6FR8RHmtMtQjItroiqlWgrL0RTakTyLEo3pS3XO87JcZ5HVgUv4espDWTfuHXYkB6XAnPPbx/p8cWoCjpLojKqusRsCJ9F7IbwlfWY8z/C284jq4KX8PLRmkd6m/Rbu2/U1SefdH3xFKgur2yj7ko9RH9FVLFevgf0nHzfv6U0/0p1XHWyDHgJDyA2ojfSG1lkJEe7PU1pEOWrotZz/GzNMJ7PM/3lt3u5n3iYRrEa5hFeg3nlvvZHa/W8puSyTpYBb+Hr2CK8n/BtoGjETqfC22QH+Ae4ffBV1xdNaYpIailuKDyx06nwrq80kHxz55UueLj2D4UndjoVnpBlh8KToKDwJCgoPAkKCk+CgsKToKDwJCgoPAkKCk+CYn+8p/4As+0cla1e8c4AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -263,7 +258,7 @@
                         </uix:NClick>
                         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1638,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                           <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1007,163" sap2010:WorkflowViewState.IdRef="Sequence_123">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -310,7 +305,7 @@
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable DesignTimeRectangle="102, 72, 402, 16" DesignTimeScaleFactor="1" FriendlyName="'EDTBX'" FullSelectorArgument="&lt;wnd cls='EDTBX' /&gt;" FuzzySelectorArgument="&lt;wnd cls='EDTBX' /&gt;" Guid="e53463d6-d2aa-4a8f-9e89-63fcfe15c959" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZYAAAAUCAYAAACu9xvxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVHhe7dWxCYNQGEZR9x/oiZ0JKCkygziBqYzlHxLIBO8rz4E7wx3Wx7MkSertdl9/Def5LkmSejqOV7U2VhvHGgoAOl3XVfM817ZtxgJAv/9Y9n03FgD6GQsAUcYCQJSxABBlLABEGQsAUcYCQJSxABBlLABEGQsAUcYCQJSxABBlLABEGQsAUcYCQJSxABD1Hcs0TbUsS30A1XsgVMkcU8oAAAAASUVORK5CYII=" InformativeScreenshot="4af38206b9344c3c26cedb2b6bba2bee.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='bosa_sdm_XL9' omit:title='Find and Replace' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target DesignTimeRectangle="26, 73, 61, 14" ElementType="Text" FriendlyName="'Find what'" FullSelectorArgument="&lt;uia name='Find what:' role='text' /&gt;" FuzzySelectorArgument="&lt;uia name='Find what:' role='text' automationid='' check:fulltext='Find what:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEEAAAASCAYAAAAE7bMcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARFSURBVFhH7ZbtT1NXHID3L+wv2Od93qdlyZIty3CGiSHDzAiZbCIIDtABAtYJjFcBh4uiTqB0cfKiVI0YtC3jpSIoWBAHgSr0hVcF+nIplLa3fXbFgkUDdrplceFJTnJ77u+e3znPved3+g6bsClBYlOCxKYEiU0JEhtKEN1T9P3Rxuic6O/ZGNE9zYM2HVMLXn/Pq/AxP2PgfucgVre/6z9gVYLPO8GNnwvJTEkhRWpF5zWYJoZp+b2OgSfBLMqLfUrFkS3JqMeDXdESo50KMqOK6bf7u9bFh8uhRyW/ht4W3EsJllUJHlcfBZ9HkHHqIjfVGjoHTDhcSywIC3h8Ik77PE63E5vFgt3hxOt79pxPdDNvt2CxzDJuvPGShKf3nU5/vM/tH0+69roQFuafSYgsoMtsk8awsODyC/c4l38/bcv5RCdjg0rSPoujYciGxyuNZRFYCX8T1kgoDo3lvG4WcXmBXoTHWspi8rk1ZeSyLINMWRbxO8KJjD+CetghRfiY6GtCFhPCtvBw4mWJRH+cgCpAwvxYLxcqC9AalxDGmymNy0VtWMRpUlOoUNGjOktySBTJyYnsCttK8pnbCKKHuR4lSbGRhH25lV1SvqaOdkqTwnn/3ff4cE8OTX3t/LrnMFcfzPnn+/qskVC05SuSiyq5UFNL8z09k+aVz3sERexOIvafY3D0AfKMg2SUtzBt1VN9aD9ZtXeYEWz0N+ay/dN93AzcDoIJ+eljVGgeMqEtYd/eg5RcN2K4XspP9c3oWk8T8cFOqrV69C2n2BGWR7cgMNjZzbBpEuHJsD+fmuGRa2SEfE/jIzuLi6NcPy5Ha3JIr+LNCJDQS+4nXxCVdJSi4mLqmnUYDc8lnE9I4oTyTxyilfaz+WTnKRkyaMgJzaLT6pFGWKcmiDa0NeWcVFyhoUBGXkU5hfn11OWXUNfVz8DtlZqw9nnbkPTV5B0mNTWRnSFbSVjO93drTnBsuB2eT2o9Ca1kh6aimVxajp8duUz6S5P0YmytorDsBzJyrtDb3Urlj3Ek5Ci4MzTOyGphDMjXq6MkJ4tjv12k6eYljiXuJe0lCR4WrALuf7smbCzhCoZpM5WySFLOXKVP10N9WTRbPvpu7XaQEMe0lBz4mm/KWpmbfEhVaijbDlUzYlkMOB0C8vV0kJmayS9KDd23GsmO3s5eScKwsYOC8DjOSVvnifU+52Jk/2xNEN0GGo9XSQVsZY9JZ/hsH7W51fRbHqOtUtB0xyRVYweDaiUNl7uxuEVmH7VxPOVb9sTEUHahhoosuRT/whHmm6G9Uk5jpxHXkpW7l6qQK+9icbl4rG+j5uQ1zIsB+eYE7jWUcSB2N/FpaZSUnqVeyjcjnUIdiqNEHzlBy4Duhfm+PqsSNqKrq4s0aTKBLT09nbGxMX/E201QEsxmMyqVak3TaDTY7a/8h/NWEJSE/zubEoC/ADdKEhJ7JgODAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -322,9 +317,9 @@
                             <uix:TargetAnchorable CvElementArea="227, 168, 91, 25" CvTextArea="256, 175, 35, 12" CvTextArgument="Fjnd All" CvType="Button" DesignTimeRectangle="227, 168, 91, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Fjnd All'" Guid="abf33c64-4909-442a-be0d-2656fd20b2b5" InformativeScreenshot="bf3ad2c13e450b3a15417f1778273412.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='bosa_sdm_XL9' title='Find and Replace' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NCheckState DisplayName="Check App State 'Microsoft Excel' - Verificar si existe mensaje de &quot;Búsqueda Negativa&quot;" sap:VirtualizedContainerService.HintSize="1638,412" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="41e36a91-f281-46ae-9617-174c183bb107" Version="V3">
+                        <uix:NCheckState DisplayName="Check App State 'Microsoft Excel' - Verificar si existe mensaje de &quot;Búsqueda Negativa&quot;" sap:VirtualizedContainerService.HintSize="1638,414" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="41e36a91-f281-46ae-9617-174c183bb107" Version="V3">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,195" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_114">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -341,7 +336,7 @@
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_115">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -377,7 +372,7 @@
                           <uix:NTakeScreenshot.Target>
                             <uix:TargetAnchorable DesignTimeRectangle="0, 0, 470, 122" DesignTimeScaleFactor="1" FriendlyName="'Microsoft Excel'" Guid="62935aae-ffb2-4571-ab7a-349712bc622d" InformativeScreenshot="f262b79738d988d92ddcceafd060d90b.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='#32770' title='Microsoft Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target DesignTimeRectangle="205, 85, 60, 24" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='2' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='OK' check:text='unchecked' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAcCAYAAADRJblSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKBSURBVFhH7ZhLTxNRFIA10YU/wJ1x70ITEqNL3bvQGMUGjbxGQDAoRAgiQSRFrQqlqCAaBHkUKMRHE4MUoRBeYoEi0vTdmYnGhQ/oP/hsIUYKVQwQx7Sz+BZz7pkzc77MPZPcLcFgkHhGFRAtGE9ECDAMfuZYkxjzFJg/8nV+YbWAlA6ZrUVOdlW42H0jNtlW7GR/jY8v338jYGe5i4EZkVmPFHNMuST2VrrXFjDplJBlOebwiTIJelWAKkAVoAr45wIk/D4bpspSzmk0aDRnyS+rZ9ghhtYCTFm7qK1oZNwdyvU66Guu5oruKW/D11HrrQ/FBIguG626TITzZbR099Bj7sRQlE7a5XuMzHkYflHFheNXsUx/oPfRLdKFUpqHbHhCLxyt3npRTIDd2k5hViqNlhkC0lIsMNFFVkoBj/vGGAwLOJrPY8Nt0jO0tA3b8a2osRkoI0DyYG3XkaXRYo34pMcxJF/krtHCm2c6Tu5J4NCRPFosNgLL799EFBMw1BESkFjOgGt5fAx9ch7VHRb6n98h6cBhTiSepryuhznvsrxNRKEt4Geqv4GcUxpqX9kRw1tA9OMYNJKdUUxD3yhDizOgEKOpnrwzGrQNVlz+lXU2jmIzQPZN06YVSM4s4WGTCVNjHYVpAvk13Uy63b+G4KyXCXMduUk56Np7sTsD0eutE+UEhHG/ozX0G8wWBAQhl5sPXjIjhp/j5/24mSd6IzZPKM/vZMSk59L1aiw2z+o6G0BZAf8BqgBVgCrg7wSMzkl4AnLM4fBKawvYXuxcPDbaVxV7hPvaUfKHM8Frrz9x8L4/5kntlPk2v9RzhID5heDiQjzws+cIAfFHkB9OWyq/lcrYtAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -389,7 +384,7 @@
                             </uix:TargetAnchorable>
                           </uix:NTakeScreenshot.Target>
                         </uix:NTakeScreenshot>
-                        <If Condition="[BusquedaNegativa]" DisplayName="If: Condicional: Si existe Búsqueda" sap:VirtualizedContainerService.HintSize="1638,869" sap2010:WorkflowViewState.IdRef="If_35">
+                        <If Condition="[BusquedaNegativa]" DisplayName="If: Condicional: Si existe Búsqueda" sap:VirtualizedContainerService.HintSize="1638,871" sap2010:WorkflowViewState.IdRef="If_35">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -397,7 +392,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence sap:VirtualizedContainerService.HintSize="496,392" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,394" sap2010:WorkflowViewState.IdRef="Sequence_116">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -424,7 +419,7 @@
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence sap:VirtualizedContainerService.HintSize="1097,709" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                            <Sequence sap:VirtualizedContainerService.HintSize="1097,711" sap2010:WorkflowViewState.IdRef="Sequence_119">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -488,7 +483,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <Sequence DisplayName="Screenshot" sap:VirtualizedContainerService.HintSize="1638,553" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                        <Sequence DisplayName="Screenshot" sap:VirtualizedContainerService.HintSize="1638,557" sap2010:WorkflowViewState.IdRef="Sequence_120">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -530,6 +525,12 @@
                   <uix:NApplicationCard.TargetApp>
                     <uix:TargetApp Area="1912, -8, 1936, 1056" Arguments="[rutaExcel + &quot;0.- Phi.xlsx&quot;]" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQdSURBVFhH7dhLTFRXHMdxMLWRODN35sIw4EIeLmyqUWEERECeUgSKgBhta7tpqbysCsqz5SnPjQsFDbHWYknVmKDR+GxtGklXXViWbZOWRcVVbeLC5a//c+5rZrgzXOlxFqQn+SYMBP6fnHvuWRCxUlYktSrMWV6RSVO1N5Muf4rl5J3tW16Pe2+o85dcUWaDrWY63GI0+w2FEHpJZoOtZjbYajTbphBCL6fZYKuZDbYazZYVQuj1PzBYNHuFABO//Bghu6iU9HUtkqYEA+PHqmbiR6sQP1qJuJG9SsMV8LCG3uXFDpYrnSqD+1Qp3AOsPYjpZ5Ugpu8dRFOekQoFOkVQYUAOU3GE8sctAetXYNG9xdRuyD27IR3PgrMjF87P83m+u/mqcaD5rqmwwTI/XAzH+cD6GKyYw+SeIri6iyAdy4LUugvOrjxBQD9YqMfJYCUqTNk1X5iruxCuLwrgaMqE1JINZ6cgoGd4MeyjawMY+3Ga+gZ5k40KToV13juH0R+m0Hl3QsUpMCeLQI6GDEjNIoGB54zKn2yCtmb//EXfsQ+v9KrfBTrujBNMxRHE2cXKg71eMDDYOfv2yQOVAlRcOsEf5/zzZ/zz7B9PVJiGy4NEIKkzVzzQ/5ypZ412LHm0Gv+8fKGDGmfG+Nds5YzX6jAGYTCJ3lypfRfsdemCgQEw3xeAnTNtadiJn64rML5rBozXliMeyGFBr41CzC38zmFszT9fQMJAuf44dRzBHK3UyWzYDwsGmsOMt5OhtMV2cX1/mR9MYrDWbI5znMiCXLMNsTWpiHs/HXGHMpSjsMwUoA4zdk27NkYeXdJh2iOe/vkuwbRdM2COlp08uWarWKAZjP0w5+wnHMTW8Hdfof3WGfUTUHr+iAFTcfbmTNiPZ0LeJxjIYRrO59qYe/obx8z/vYD1vaV8x9jXbM399auxa82EI5j92A6eeGAAjL0A7beN3aq/NqSfs7qrg+p3gaH7F/Rd47ijGbB/li4eyD8EXBvscQ4/vMjzP2dZHDZ07wLaZk77wWxHqKY0yNVbBAN977MO4z7Trg2zc2bAKA5TcLbG7eKBwe4zx0kDFnjOAneNwWwNVL0XrioC7hcJDHKf6TCTc7YI1uDF2vpUrK1LgVy2STCwLWcm8JwFe5w6TMd5adcYjDqcAtvBzYgu3UxArw78L3GgheV0pCUgdImQMpPhKtgId8VWeA5sR9wHYQTKhW8hZEVU8duIKafzty8VnvfSTAe+ajTbGtC9dxuCVqlWnUJvrxeeg4QTsHssmm0NyIYuGe2ah507QTgWzbYGNPvlcESzVwZQMvvlcESzLQGj6F57ZPYHXmc083ua7VAIoddqKplKp3aEKTZrA/UmteRi/+FfQ7mpeGrda47NiKWiIiIiIv8FG3Tl5OYvmvIAAAAASUVORK5CYII=" InformativeScreenshot="467634635f3b598d7e49e68973a6acf2.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='0.- Phi.xlsx - Excel' /&gt;" Title="0.- Phi.xlsx - Excel" />
                   </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </uix:NApplicationCard>
               </Sequence>
             </If.Then>
