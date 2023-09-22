@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1868,1726</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1272,2954</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Omicron_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -101,10 +101,14 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Omicron" sap:VirtualizedContainerService.HintSize="731,1661" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Omicron" sap:VirtualizedContainerService.HintSize="1282,2889" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
-      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
+      <Variable x:TypeArguments="x:Int32" Name="contador">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="Url" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -112,7 +116,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="669,1550" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2778" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -120,7 +124,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="631,1322" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap:VirtualizedContainerService.HintSize="1182,2550" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
           </Sequence.Variables>
@@ -130,7 +134,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="569,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Omicron&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1120,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Omicron&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -138,7 +142,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign sap:VirtualizedContainerService.HintSize="569,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+          <Assign sap:VirtualizedContainerService.HintSize="1120,82" sap2010:WorkflowViewState.IdRef="Assign_4">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -146,19 +150,19 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Template Consulta del Registro de Servidores Pblicos Sancionados @ SFP" sap:VirtualizedContainerService.HintSize="569,997" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Template Consulta del Registro de Servidores Pblicos Sancionados @ SFP" sap:VirtualizedContainerService.HintSize="1120,2225" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,780" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1086,2008" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sanciones Administrativ…'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sanciones Administrativ…'" sap:VirtualizedContainerService.HintSize="1024,194" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://compras.funcionpublica.gob.mx/ConsultaPublicaDGRSP/" DesignTimeRectangle="61, 354, 445, 12" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Sanciones Administrativ…'" FullSelectorArgument="&lt;webctrl aaname='Reportes Nombre Accesos' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Reportes Nombre Accesos' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='link_consulta' aaname='Sanciones Administrativas de Inhabilitación impuestas a un servidor público - Por Nombre -' check:innerText='Sanciones Administrativas de Inhabilitación impuestas a un servidor público - Por Nombre -' /&gt;" Guid="7fbfce02-60d0-446d-9b4a-60ef06d0d60c" ImageBase64="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" InformativeScreenshot="86ee78fc3550f86bf960878d8b8047fc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Template Consulta del Registro de Servidores Pblicos Sancionados @ SFP' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -189,12 +193,12 @@
                     </uix:NClick.VerifyOptions>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type search criteria" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Text="[Busqueda]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type search criteria" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1024,217" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Text="[Busqueda]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://compras.funcionpublica.gob.mx/ConsultaPublicaDGRSP/faces/home.xhtml;jsessionid=0fad00d23e4720f67fe81cf2e4b5" CvElementArea="994, 381, 153, 19" CvType="InputBox" DesignTimeRectangle="996, 382, 149, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT consultaForm:j_id…'" FullSelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="36e1b9cb-8bc2-44dc-8a1b-3dac1c452a68" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAUCAYAAACecp+8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVGhD7dqhCsJQHIVxk8Xkqxh8F5uPYvaxLBaTyWKyiOLGnGPOMSaDuSDjlHNv+w784MK/fvFOWsYij8hY9A2RTRdLIJjZat2X9RcZY6E232z710hku1sC2GRk+3sK2GRkh0cG2GRkx/QJ2GRkp+wF2GRk57wAbDKyS1ECNhnZtXwDNhlZUn0Am4wsr2vAJiOrmgawycgYCzEiY9E3Gln3NaM7AKH8NkTGWKwRGYu8tv0CY4Ry3sxS5r0AAAAASUVORK5CYII=" InformativeScreenshot="7616b5f7342ee5b2f1782cca0e64640c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta del Registro de Servidores Publicos Sancionados @ SFP' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -206,17 +210,17 @@
                     </uix:NTypeInto.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generar Consulta'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generar Consulta'" sap:VirtualizedContainerService.HintSize="1024,194" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Version="V3">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://compras.funcionpublica.gob.mx/ConsultaPublicaDGRSP/faces/home.xhtml;jsessionid=0fad00d23e4720f67fe81cf2e4b5" CvElementArea="994, 406, 104, 19" CvTextArea="1002, 409, 89, 11" CvTextArgument="Generar Consulta" CvType="Button" DesignTimeRectangle="996, 407, 101, 16" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Generar Consulta'" FullSelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Generar Consulta' check:text='Generar Consulta' /&gt;" Guid="4979d0d2-ad15-4771-ba89-028f9a8b7c19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAAUCAYAAACOPhMlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANLSURBVGhD7Vg9SFtRFHbq4tSlu3unDu3u3r3dCt27O9lFKBUK0oI4KVQHW6QEigWhbSA02kgkoiQxGqMxMZqamB8FXxy+nvv33n33vZuphSe8Ax/kfuc73znnHVwc6Xa7iBFtxEe6A3CPdP/12xgRwujzF+FHmvidixER3Hv0OPxIr1KZGBGB9Ugvv/+KERFYj/Ts28/hqF3DF4M2PobpooBCG/q0162DcN0/xylquMVugX7zGa7xI1Q3HNYjPU2s2XF8RaveYnvX49b6RPVrfl0UEJh1D9sD4OrPnl/3X1BDVfXmc1xhLVQ3HNYjjX/+akEeW7TkccXgcxfoDy4wK9+rPZpJRr+Z59xskwp7fRxLHr2qW89zKhRfocsPSM9SnBO93ZD9dF/VS4HNYXLjuTxWCeKtew6wlRMa66xsT0l5+irXqW8iapme8Uwj8jyG7CHmCcJ6pCdLXyw4QoUab2bDcgIzZzRB90i+PT3n0UOC8dkm/ZI+ZfqSThMzXL+DTQeolCWv98oeIeH2tfj6wDTSK5ATSHRJoGbl/YSPbVam753tcL23p7+Pn9d2dP3C9xDvIKxHejj/yYJDlMl0IyPfmXNqrULwKx351KLXyGG6QcM755g2fDhvRucQD0v8C2LF1z+HDTqiCK3e9Q1qyyWTVzDzxkwhs4qZvN5enefDa9n8gTp9l+Aegg/CeqSxuUULskiT+X7R5A+wDwfp9CKWL2mcetbIL2KqToVOA1OGnvOXBwH9WJFdu4Nl31v1NupdXz9CZ0k36HMxX3MXm6fHKw+eZ8E1LO/5ePtodfoulj2UtwnrkR68n7cjz5o4SKXCuckTtkAHSzxXQolepbzkb04x6fLSw+eXQeqGqk8yklc+UqfqzX6urwGfN4PmT++lNqXbJU0r+tlmZXq2i6vnGt1T/Bae5o5yF7dO8fp8QViPNPpubjiSdWqph4Nk0ssvtCRN0amuc26iyhavY4JrCihqNTynolUQPrv0Z4BLLHC9qpHRqiNJH6O4a/qGgPt4oeYRWOc+Iox5QmfVZgid30GxRb/5Dlqd+l4uL0Pbw5vJD+uRRt58iBERxEe6A4iPdAcQeiT2r3GWiBEdBI4UI7qIjxR5dPEX7FwuNDIcPB8AAAAASUVORK5CYII=" InformativeScreenshot="c8434c8875925c5785ae795f4e6d53dd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta del Registro de Servidores Publicos Sancionados @ SFP' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable BrowserURL="https://compras.funcionpublica.gob.mx/ConsultaPublicaDGRSP/faces/home.xhtml;jsessionid=0fad00d23e4720f67fe81cf2e4b5" CvElementArea="994, 406, 104, 19" CvTextArea="1002, 409, 89, 11" CvTextArgument="Generar Consulta" CvType="Button" DesignTimeRectangle="1000, 365, 101, 16" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Generar Consulta'" FullSelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Generar Consulta' check:text='Generar Consulta' /&gt;" Guid="4979d0d2-ad15-4771-ba89-028f9a8b7c19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAAUCAYAAACOPhMlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANLSURBVGhD7Vg9SFtRFHbq4tSlu3unDu3u3r3dCt27O9lFKBUK0oI4KVQHW6QEigWhbSA02kgkoiQxGqMxMZqamB8FXxy+nvv33n33vZuphSe8Ax/kfuc73znnHVwc6Xa7iBFtxEe6A3CPdP/12xgRwujzF+FHmvidixER3Hv0OPxIr1KZGBGB9Ugvv/+KERFYj/Ts28/hqF3DF4M2PobpooBCG/q0162DcN0/xylquMVugX7zGa7xI1Q3HNYjPU2s2XF8RaveYnvX49b6RPVrfl0UEJh1D9sD4OrPnl/3X1BDVfXmc1xhLVQ3HNYjjX/+akEeW7TkccXgcxfoDy4wK9+rPZpJRr+Z59xskwp7fRxLHr2qW89zKhRfocsPSM9SnBO93ZD9dF/VS4HNYXLjuTxWCeKtew6wlRMa66xsT0l5+irXqW8iapme8Uwj8jyG7CHmCcJ6pCdLXyw4QoUab2bDcgIzZzRB90i+PT3n0UOC8dkm/ZI+ZfqSThMzXL+DTQeolCWv98oeIeH2tfj6wDTSK5ATSHRJoGbl/YSPbVam753tcL23p7+Pn9d2dP3C9xDvIKxHejj/yYJDlMl0IyPfmXNqrULwKx351KLXyGG6QcM755g2fDhvRucQD0v8C2LF1z+HDTqiCK3e9Q1qyyWTVzDzxkwhs4qZvN5enefDa9n8gTp9l+Aegg/CeqSxuUULskiT+X7R5A+wDwfp9CKWL2mcetbIL2KqToVOA1OGnvOXBwH9WJFdu4Nl31v1NupdXz9CZ0k36HMxX3MXm6fHKw+eZ8E1LO/5ePtodfoulj2UtwnrkR68n7cjz5o4SKXCuckTtkAHSzxXQolepbzkb04x6fLSw+eXQeqGqk8yklc+UqfqzX6urwGfN4PmT++lNqXbJU0r+tlmZXq2i6vnGt1T/Bae5o5yF7dO8fp8QViPNPpubjiSdWqph4Nk0ssvtCRN0amuc26iyhavY4JrCihqNTynolUQPrv0Z4BLLHC9qpHRqiNJH6O4a/qGgPt4oeYRWOc+Iox5QmfVZgid30GxRb/5Dlqd+l4uL0Pbw5vJD+uRRt58iBERxEe6A4iPdAcQeiT2r3GWiBEdBI4UI7qIjxR5dPEX7FwuNDIcPB8AAAAASUVORK5CYII=" InformativeScreenshot="1fa274776a9bd3aa2e0cc790cea268f9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta del Registro de Servidores Publicos Sancionados @ SFP' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CvTextArea="1002, 409, 89, 11" CvTextArgument="Generar Consulta" CvType="Text" DesignTimeRectangle="992, 403, 322, 25" FriendlyName="'Generar Consulta'" FullSelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tag='TABLE' /&gt;&lt;webctrl type='' class='rich-table-subfootercell  ' tag='TD' aaname='' check:text='Generar Consulta' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUYAAAAdCAYAAADW6cVwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQLSURBVHhe7Zw/aBRBFMZT2aSysbe3stDe3l47wd4+VWwEURCCQkiVgEmhIhIQhYB6EEz0woULCZfzTLzkcudp9C73JwHvUjxn3szszs7uXrbIwoV8H/xyO2/ee/Mmx36kyggJZTIZ+QFBEHSuZbxwRD4AAABQsDG2221eyE8AADjPwBgBAMABxggAAA4wRgAAcDjRGC/efwSGiNHbd0LfEQDgdElkjGNf82BIuHD1Wug7AgCcLomM8d5iFgwJMEYA0ieRMd798BkMCTBGANInkTHeev9pMNUjbuKp36TnUXnDwGaT7GmPGlvReafOT6rSMW1simee4Yg+RuYNBsYIQPokMsab8wvx7B6K8mNa2/BjC10R6laDecNAaNZvtNYnOvzzLZiXClWqmLN5jkNaiMwbDIwRgPRJZIw3Xr2NoUCrwlh2y048/5e6/b80qdfvOnwGq7tf4NjkvijsdGlXx6lT8ep5z8jEy8Jt+yJfbnFMne1Jn2f3NWcZ5Bxu7Ea+QO8Eam337NNqXuXEzirvqUN+foXzzO9E1cp8GZc5ap814B5qnjAwRgDSJ5ExXp97E8MOlcXLvpKL2lNM/BJvfXtHr/18jlOH5mU8ty+edJ9t4V69fZrg/HVa6RGVt3XcPiu3Q/PeuTF9A8gc3Su0p5hviwQzK5+n+sTNKvM7v9Y5379n8Jxg3Lqj1y/6HmodBsYIQPokMsYr0y9j+EHb4kX+ktXr7G/xuhup+OuWXlrq1PP0uC4Mo/ebHjt9OO6q9YOulNi16HXg/Dx9EcapZNV7fcO52yU3bnD3nZkiZlUz+Wf7dX4frpXzh+rsu4TvoeJhYIwApE8iY7w8NRtDjpbEC/296Ma36Dv1aGlpll4cCAuo5Zz9WXpQE4W9Oj1w8jl+sBXKv1yUDtuiF4G1Odup9/oGiZxlqS4sSvZ17xLX04+bHrwvxTly3+/j38eqs+8Scw/T2wXGCED6JDLGS0+n4ynIF7tHi4vRsfE9aRotmuO9EpXEqlTQ8X8/adyL6x6Bflla/Ceq97I6bvroPFPvnuf1dQj0llj9xXquKbabJStXnRc3q8yXd/HyOcfuqZ5VT/eO+i5enYnb84WBMQKQPomMcfTJ1GAyNfGa2+qJXv7+TEOHhVqVZY6NVaTZ1GiMczapaNXwnlFjU/XZEH/u0QHNcL6p0WrUKCMMqLjh9o2A+/gy8yiWuY+SM0/krNYMkfP3qNgQz3wHq878vry4lnUPf6YgMEYA0ieRMY48fAaGBBgjAOkDYzxjwBgBSB8Y4xkDxghA+pxojPLfXMmXEQwP7ncEADhdTjRGAAA4b8AYAQDAAcYIAAAOMEYAAHDwjFE+AAAAULAx8k8IgiDIE4wRgiAoIKL/nt4Fm1M5zJYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="931, 298, 71, 11" CvTextArgument="Criterios" CvType="Text" DesignTimeRectangle="619, 294, 699, 21" ElementType="Text" FriendlyName="'Criterios'" FullSelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='rich-table-headercell  ' aaname='Criterios' check:innerText='Criterios' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAr8AAAAZCAYAAAA4w0Y0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANSSURBVHhe7dq7TxRRFMdxKysrKysrKyorKysrKzsbKzsrKyv/BQxGEgxGIjEYjUYSIgjZ+ESikXWzsMvKhiDs8gqP5RFYaBiK49w7M+vOzFlNtDGX70k+CZxz75mpyC8TTghFURRFURRFHZOy4XdwugwAAAA4aXR01AZfUzb83nv9Xm5nCwAAAIBz1PB760seAAAAcI4afm+OfQMAAACco4bfGx+/AgAAAM5Rw+/1d58BAAAA56jh91rmEwAAAOAcNfxeHf4AAI77ISXP/u0L60hKZe3cb5R35MC/ubKszIZXZcXbkb5U/1+F772/qswAAH+iht8rg28BwGGzUjQB0tuW3rDXu3nkN46k+D159u+82Y/vBwD8H9Twe3kgAwDuWjTfa4+kMKXMEnrCUHxgvxIn7kxt2y+/S4tNvcadqA4k0zQzMvVw5NfB5kxsZtn382desCe+f0YK5l3qy029yLIs2RtBqbuj+1GpewDAXWr4vfRyGACc1V2z/zcgI8osKTgrslhV5oUtf4s+GzEB19uS7kTf7ov6re5XTdd/w1o53rfKMmHD75Lej3aHO1rttn37sycThcQZAHCYGn4vPh8EAGd1bQThd0iZJQVnPclPKvPJTRteFyrp2dCeubYpXbH+tOTNukTtb0w3nfFVgoCq7W3s2FuM91Pv8vtzUaWeDQCOU8PvhacDAOCueftZVnJ5ZZbQuR6EX/VsviZmU3U+PXtlwu9hTTpj/ZLkDrV+gn0/fW9jx95CvJ96lxbnQvb9wqqvl9QzAOAiNfye7+sHAIcVJRuG0I6w17EWhNxsLn62Vd/KBYGzMpeeDezG90di++aCEJ7abfv63sa771b1fvTMVjtiz6xKxf+tvlaMnwEAh6nht633BQA4riDjJiw2ypPxbPpc+2oQVrVZW3bDht/52fQsuGdqT/pjs/hz66uFplloNvgsq+1t3N+tKLOKzNubQam7ff0mmEd1uCHtyhkAcJUafs/1PAMAAACco4bfsw+eAAAAAM5Rw++Z+48BAAAA56jh93TnIwAAAMA5avg9dfchAAAA4Bw1/J680w0AAAA4JxV+TQMAAABwVVSNL79jtR0AgIPMH32tDwDHBeEXAI4Rwi+A4+5X+BX5CdlLaeK/40ykAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
@@ -233,14 +237,15 @@
                     </uix:NClick.VerifyOptions>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <uix:NCheckState DisplayName="Check No Results" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1024,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Busqueda: &quot; + Busqueda]" />
+                  <uix:NCheckState DisplayName="Check App State 'No se'" sap:VirtualizedContainerService.HintSize="1024,462" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="No results" sap:VirtualizedContainerService.HintSize="485,247" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="485,243" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -271,7 +276,7 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Results" sap:VirtualizedContainerService.HintSize="485,247" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="485,245" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -302,40 +307,33 @@
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FuzzySelectorArgument="&lt;html app='msedge.exe' title='Consulta del Registro de Servidores Publicos Sancionados @ SFP' /&gt;&#xA;&lt;webctrl aaname='No se encontraron coincidencias.' parentid='principalContent' tag='SPAN' /&gt;" Guid="7cbd1cd8-ae3e-4875-ac4c-7a03062f985e" SearchSteps="FuzzySelector" />
+                      <uix:TargetAnchorable BrowserURL="https://compras.funcionpublica.gob.mx/ConsultaPublicaDGRSP/faces/sancion/Criterios.xhtml" CvTextArea="467, 252, 225, 13" CvTextArgument="No se encontraron coincidencias." CvType="Text" DesignTimeRectangle="468, 251, 224, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'No se'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='required' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='required' type='' tag='SPAN' aaname='*No se encontraron coincidencias*' check:innerText='No se encontraron coincidencias.' /&gt;" Guid="ea1a4d74-1e3f-4d42-b1b2-d397a68543ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOQAAAAUCAYAAACdxZGUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPzSURBVHhe7VXLcRsxDM0pTaUPN+IiXIFrcAPqQWfVkNHI9sEHN7AhlwQJPADkOlKUnQRvBoflB58HPO63JRAI7AYhyEBgRwhBBgI7QggyENgRQpCBwI7ABHlcLj++Lz+TXU51acXr8v6Y1x+W97e6FNiEz8PDcj681q9/HTQ/T8tHXbkWH8/WPDKcntb9u3H89rKcc42PL8tnXbo1TEFKUkOQv4MsxrsOy/+IewvyDnAEmez5WNdtQdLrVWwmVvLRDV896W/2ynq5JrBX7J35xKaRYIoZ+ddmm/cnMaTvcu6T/UEudGfNG2pJxrlpf4lnyqdyQzmQcQ4S2r0DPzfhFWpWf6YRJ6w+kd8VfdB/SM5VimMIcpO/IScwq/xvqP6Qeq5lffO5R/iCbMVoQUrxdPOC2ecn/jgRAnqAszUicFCb9XhKMLCPg9eMhn4SYyzIbpeTblixPiSKm5yDF59x5vUIhdvg1Nx6OuPEE6Sy7X2gGkoOHle997a/AZdkrQYnBvEKgrT96fy9fQuGIPvLUwKDIBvR7GUR5zVKYl4iNS67S8SaAq+x+ktE+eEgULxOcvFHdfZ8KF7xiecz4M40BvrMIB9OXSuA64TWVCYkWtMcdN/q3rBHRs10fr2/gZP2fas+9BrW85SPITDZNz2X6M/lRHFEPmuOIEiEyLd99/q2wBYkI+98OIqk9KBlGGRwNDLJ2LnWOG0yRgHF1+aTRndWoiakevszH2KfffcaYGABbVhW603EJrt+nOFT98y6x7lt4gR9XNuHBF6D5jNB1EzxDasCnHFixuCY8EDW/I/m3oEjyAQKnobjzF8JaHzBRJAVZuItjmHsr0BAH9y8RtMdb19CNokw8yH22XfnCfhdAS+w+raGyOH6TwpyCyfo4+o+3FCQNcatBYn+tP8C8kuG+xy+IBOkI/gD8ebRSzAgV4DOr4Kzm+3CfBAYpmLpjWvEiHxo4DlxdAc4cGNYzdX8aj8QJ8FqMq113zrn2fBJ9PvNp8htAydY39V9gBpor/GHOdM34xcw5UTFgDuiJqjX5AgA9VkYCpIHsYYEzU6E+7DP2/56PIneSGFE6hfEIo3Fa40BIyK/HCNzavBLfpSNBeneY/lMhw/h1NzuzzjB+m7QB1mDP0f0iNj+erw5J04M2hc1OXOYbJavn89UkAmtEVIg5Mza09DJ9de9QPqTSWogGcaQDwYhA5un4sEAinw3xeA5OoJMEHnk4a5xKZ7VtBUoSnh158NnYFRzxnAf6rtBH9waVkszd5BcZaA/vreNE5zVwWxxPvIa7bdejOfe6i0TZCAQ+NsIQQYCO0IIMhDYEUKQgcCOEIIMBHaDZfkFQ1O4atifmKkAAAAASUVORK5CYII=" InformativeScreenshot="5e84e83f5ebdd3d3ca16a48f75cb8324.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta del Registro de Servidores Publicos Sancionados*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="848, 218, 240, 21" CvTextArgument="3) Resultado de la busqueda.O" CvType="Text" DesignTimeRectangle="849, 219, 237, 20" FriendlyName="'3) Resultado'" FullSelectorArgument="&lt;webctrl aaname='Reporte Servidores Publicos SancionadosSanciones Administrativas*' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Reporte Servidores Publicos SancionadosSanciones Administrativas*' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='tit_predef' aaname='*Resultado de la busqueda*' check:innerText='3) Resultado de la busqueda.' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
                     </uix:NCheckState.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckState>
-                  <uix:NGetText DisplayName="Save URL" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" TextString="[Url]" Version="V3">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1024,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Encontrado: &quot; + Encontrado]" />
+                  <uix:NGetText DisplayName="Save URL" sap:VirtualizedContainerService.HintSize="1024,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f3eab119-4ed7-499b-aed4-f578ac2b3c4b" TextString="[Url]" Version="V3">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="241, 46, 1192, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'https://compras.funcion…'" FullSelectorArgument="&lt;ctrl name='Consulta del Registro de Servidores Publicos Sancionados @ SFP -*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Consulta del Registro de Servidores Publicos Sancionados @ SFP -*' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="cf5e0f11-9653-4bca-9963-89150f5f9bc7" ImageBase64="" InformativeScreenshot="d48014c5df61ee933d475575bc54605e.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Consulta del Registro de Servidores Publicos Sancionados @ SFP a*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                     </uix:NGetText.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetText>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Save result as..." sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Save result as..." sap:VirtualizedContainerService.HintSize="1024,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Frameworks\Guardar como - Internal.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="Url">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">
-                        <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="BrowserID" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; ".pdf"]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">[BrowserID]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -344,7 +342,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <If Condition="[Not BusquedaNegativa]" DisplayName="Save value variables if not busquedNegativa" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If Condition="[Not BusquedaNegativa]" DisplayName="Save value variables if not busquedNegativa" sap:VirtualizedContainerService.HintSize="1024,52" sap2010:WorkflowViewState.IdRef="If_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -381,7 +379,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="635,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1186,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
