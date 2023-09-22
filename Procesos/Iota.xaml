@@ -16,7 +16,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2106,13022</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2106,14528</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Kappa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -103,13 +103,9 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="2116,12957" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Iota" sap:VirtualizedContainerService.HintSize="2116,14463" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:Boolean" Name="existeArticulo" />
       <Variable x:TypeArguments="x:Int32" Name="botonVisible" />
       <Variable x:TypeArguments="ui:Window" Name="nuevaVentana" />
@@ -129,12 +125,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="2054,12846" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="2054,14352" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="existeBusqueda" />
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="2016,12618" sap2010:WorkflowViewState.IdRef="Sequence_39">
+        <Sequence sap:VirtualizedContainerService.HintSize="2016,14124" sap2010:WorkflowViewState.IdRef="Sequence_39">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="ButtonBuscar" />
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
@@ -168,7 +164,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Factiva (website access) | Data Explorer" sap:VirtualizedContainerService.HintSize="1954,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="94967343-d554-4b5a-a8dd-06ffc0879ffe" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Factiva (website access) | Data Explorer" sap:VirtualizedContainerService.HintSize="1954,1558" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="94967343-d554-4b5a-a8dd-06ffc0879ffe" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -242,7 +238,7 @@
             </uix:NApplicationCard.TargetApp>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -984,11 +980,11 @@
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="1698,157" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="549f92d2-d14d-4845-b525-907cbb87951f" Timeout="3" Version="V3">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="1698,157" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="549f92d2-d14d-4845-b525-907cbb87951f" Timeout="3" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://global.factiva.com/factivalogin/login.asp?productname=global&amp;resume=http%3A%2F%2Fglobal.factiva.com%2Fen%2Fsess%2Flogin.asp%3Faccountid%3D9ERN000800%26productname%3Dglobal%26referedsite%3D" CvElementArea="925, 559, 104, 45" CvTextArea="966, 574, 24, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="927, 560, 101, 42" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl id='okBtn' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='okBtn' tag='INPUT' type='submit' class='btn btn-primary' aaname='OK' check:text='OK' /&gt;" Guid="e10404a8-f786-44dd-a2c0-bb1791e31c87" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAAuCAYAAAAr3zfuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK+SURBVHhe7ZxPi9NQEMAt3rx581t48eAnKBQq/Qh62fsectiDsIIgVDwqqAQWakuVsphFtipSWAvuiku2IJiDmFQP2y5dafBgU9M/YyZ5+dfGc97gDPygeW9eD/NjkimlvVAsFoFDruj3+1Cr1aBUKgH6WZO0XC4ZCcBotVppSbihn/6EDe0TXH/6Dq49fsvkANYeHaALy7JiSaGgq4/ewOV7u3DxzgsobD9ncgBrjw7QBTqJJC0WC7i1e8RyJAJdoJNI0nw+hyv3tcxkJj/QSUoSd5F8oJNI0mw2y0xi8oclEYAlEYAlEYAlEYAlEYAlEYAlEYAlEYAlEYCuJOUBFG5up9laydnMWt+J8ze918l8SaEpySu+Yjj+d2DJMLrpwqtnYv04PIuCdDCCZYBzM8qVGXqSth6COhBFzorBZyjcDnLTkmgKQuhJ+jgSVXah8zqxfvJLrDvQeRl0UyyJriCEmKQ6qMOgzoa+vq+Yf4LNs6/+dSSpmxA0+LJ2TnaISdKhM8FKT6Gzn7G/fwo2bq9ISscIVCIDQwgxST0hybulvcrY3/vxT0m21QP1XFwM9PVJUGKISfIKLx5JRtcbwcWA4OMNFNHENwqeOaEk+1tP5JnRbc84fBKflRxyklIDQkN83kG64UDhCTgJcuPBIT6vWOK59dsCRanH7ysx9CR5RLetrEhMblmSkt1kGwfpbpQUkpIQxXJFqeMIOygklLm6HnfjyhgvKWQl/U+wJAKwJAKwJAKwJAKwJAKwJAKwJAKwJAKwJAKwJAKwJAKkJF2628pMYvIDnUSS8OeYlfr7zEQmP9BJJMk0TTj6PuRukgh0sffhOJbUbDbBdV047A/hxrMDlpUjWHt0gC7a7XYgCf+/plwug6ZpMB6PYTqdguM4MJlMmBzA2tu27QuqVCqBpEaj4b9g5KRarcJfM3rGZotkidIAAAAASUVORK5CYII=" InformativeScreenshot="0cf4c9773d292884079448ccd181fec3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Factiva*' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CvTextArea="830, 294, 275, 22" CvTextArgument="Scheduled Maintenance" CvType="Text" DesignTimeRectangle="715, 288, 507, 36" ElementType="Text" FriendlyName="'Scheduled Maintenance'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Scheduled Maintenance' check:innerText='Scheduled Maintenance' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
