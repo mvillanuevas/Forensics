@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1868,2597</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,1285</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Tau_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -98,13 +98,9 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Tau" sap:VirtualizedContainerService.HintSize="1282,2532" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Tau" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:String" Name="Url" />
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
     </Sequence.Variables>
@@ -113,15 +109,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2421" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1182,2193" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -157,7 +153,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://internationaltradeadministration.github.io/csl-search/" DesignTimeRectangle="646, 737, 940, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT name'" FullSelectorArgument="&lt;webctrl src='https://internationaltradeadministration.github.io/csl-search/' tag='IFRAME' /&gt;&lt;webctrl id='name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://internationaltradeadministration.github.io/csl-search/' tag='IFRAME' /&gt;&lt;webctrl id='name' tag='INPUT' type='text' class='explorer__form__input' aaname='Name' /&gt;" Guid="936ffdbd-85fb-4c15-9857-21b41104155d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA7AAAAAiCAYAAABm+zUXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJwSURBVHhe7dtNqhpBAIXR7NZ9vPWJK3AiqKgDf1FaUStced0oRJJA1BScA99Eq51fuvxR4InD4VB6vV75+vr6/gQAAOBzDFgAAACqYMACAABQhYcBu9/vy3A4LIPBoPT7fUmSJEmS3l42abZpNuq9bsDmixwajUZlOp2W2WxW5vN5WSwWkiRJkiS9vGzQbNHJZHLbptmo9yO2G7BZtzmQh5bLZdlsNmW73XbtdjtJkiRJkv5599tzvV7fNmnGbDZqtmqrG7BZtjmQw1m4TdOU4/FYTqeTJEmSJEkvLxs0WzSbNNs0GzVbtdUN2NwzzsrNwTx4Pp/L5XK5db1eJUmSJEl6We3+zBbNJs02zUbNVm09DNhcG87azQP5AQAAAHinbNFs0mzTbNSnAzb3jfPKNqsXAAAAPiGbNNs0G/XpgM2fZ/Oq1oAFAADgU/IWNts0G/W3A9b1YQAAAD7FgAUAAKAKBiwAAABVMGABAACoggELAABAFQxYAAAAqmDAAgAAUAUDFgAAgCoYsAAAAFTBgAUAAKAKBiwAAABVMGABAACoggELAABAFQxYAAAAqmDAAgAAUAUDFgAAgCr81YC9XC7fnwIAAMB7/dGA3W635Xg8GrAAAAB8TDZptmk26i8H7GAwKKvVqjRNU87ns2vEAAAAvF22aDZptmk2arZqqxuww+GwjMfjst/vb69q80BWb8oPSJIkSZL0qtr9mS2aTZptmo2ardrqBmy+zLKdTCa3e8ZZu3llmwclSZIkSXp12aDZotmk2abZqNmqrW7ARr7Ius2h3DOWJEmSJOndZZNmm96P13gYsAAAAPB/KuUnrkYoIzLkyFAAAAAASUVORK5CYII=" InformativeScreenshot="e37914471e18b1e7d798302e820a77c1.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='CSL Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="646, 698, 53, 15" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="646, 696, 53, 19" ElementType="Text" FriendlyName="'Name'" FullSelectorArgument="&lt;webctrl src='https://internationaltradeadministration.github.io/csl-search/' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://internationaltradeadministration.github.io/csl-search/' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='' aaname='Name' check:innerText='Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAAXCAYAAACxvufDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFNSURBVFhH7ZPRDYMwEEPZiC1gFPZgAKZgCr4ZAnbgm99Uphi51yRQCaQqYOlUuOSMH6GZu4EeyFT0QKai+0G2beuyLNuq7/t15a26rpd+WZZumqa1+/+KQlZV5eZ5XlcThUShRyUH6QMKQbJvy34JuEYPa/AYx3H55X6+0GEYXJ7nW9/+bSD10vLtDUJ2XbeZ8OExSD1xrDG8gtpg9EEw9nSGzwMwwCm+BO2rh2aBgpAY4iDDhCB9opcGsSdJDz05PIPS4LiG1EP3ap8viYpC6iDWYpAayJYv4K+QPB3dGyqbLwoJ0RRVFMWXCX5xb+d8XmdAak/3xrQLCfEEWRrQFwS6CjK0N6ZDkPYT0YChmasgMYNZ6xHTIUhIT3MvoAZRrzMgIe3DD74U5m3vMKQGsW9QH8r1pmm2+7MhIfWyZfd+QKaqBzIVPZBpyLkXUYypRkcrqJ8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -236,18 +232,10 @@
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1024,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Path to file:&quot; + ruta + NombreID_URL + &quot;\&quot;  + contador.ToString() + &quot; - &quot;  + Busqueda +  &quot;.pdf&quot;]" />
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1024,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Frameworks/Guardar como - Internal.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="Url">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">
-                        <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="BrowserID" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; ".pdf"]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">[BrowserID]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <If Condition="[Not System.IO.File.Exists(ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;)]" DisplayName="Check for correct download" sap:VirtualizedContainerService.HintSize="1024,52" sap2010:WorkflowViewState.IdRef="If_8">
@@ -312,10 +300,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1186,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -340,7 +328,7 @@
                   <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[FilePath]</InOutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Tau    Error de descarga/Busqueda con: &quot; + Busqueda]" UseDefaultEncoding="False" />
+              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Tau    Error de descarga/Busqueda con: &quot; + Busqueda + &quot; Screenshot: &quot; + FilePath]" UseDefaultEncoding="False" />
               <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>

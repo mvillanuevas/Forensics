@@ -17,7 +17,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,3010</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>588,1285</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Omega_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -103,9 +103,10 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Omega" sap:VirtualizedContainerService.HintSize="708,2945" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Omega" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="nombre" />
       <Variable x:TypeArguments="x:Boolean" Name="sobrescribir" />
@@ -120,12 +121,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="646,2834" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="608,2606" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -175,7 +176,7 @@
                           <uix:NGetAttributeGeneric.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.dian.gov.co/Paginas/default.aspx" CvTextArea="415, 615, 134, 15" CvTextArgument="Proveedores ficticios" CvType="Text" DesignTimeRectangle="417, 613, 352, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Proveedores ficticios'" FullSelectorArgument="&lt;webctrl aaname='Proveedores ficticios' parentid='DeltaPlaceHolderMain' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Proveedores ficticios' parentid='DeltaPlaceHolderMain' tag='A' type='' class='' check:innerText='Proveedores ficticios' /&gt;" Guid="4e85424e-c082-47f9-9c8e-26b079e3e669" ImageBase64="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" InformativeScreenshot="eb1831e847d8c29c3fe0bf676fc39757.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Portal DIAN default' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target CvTextArea="405, 240, 346, 31" CvTextArgument="Servicios a la ciudadania" CvType="Text" DesignTimeRectangle="406, 238, 848, 53" ElementType="Text" FriendlyName="'Servicios a'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h2' idx='3' parentid='DeltaPlaceHolderMain' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='DeltaPlaceHolderMain' tag='H2' aaname='Servicios a la ciudadanía' check:innerText='Servicios a la ciudadanía' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -378,10 +379,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="612,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -389,7 +390,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="496,857" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,877" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="FilePath" />
               </Sequence.Variables>
@@ -407,7 +408,7 @@
                   <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[FilePath]</InOutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Omega    Error de descarga/Busqueda con: &quot; + Busqueda]" UseDefaultEncoding="False" />
+              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Omega    Error de descarga/Busqueda con: &quot; + Busqueda + &quot; Screenshot: &quot; + FilePath]" UseDefaultEncoding="False" />
               <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_9">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>

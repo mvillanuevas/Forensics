@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1794,3630</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,1285</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Xi_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -100,14 +100,10 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Un" sap:VirtualizedContainerService.HintSize="1304,3565" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Un" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="MensajeWebpage" />
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaAfirmativa" />
       <Variable x:TypeArguments="x:String" Name="Url" />
     </Sequence.Variables>
@@ -116,16 +112,16 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1242,3454" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1204,3226" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="ExistPage" />
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -145,13 +141,13 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Directorio de Proveedores y Contratistas Sancionados" sap:VirtualizedContainerService.HintSize="1142,2483" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="9d79c689-74e0-4e33-ad42-b205affd8a51" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Directorio de Proveedores y Contratistas Sancionados" sap:VirtualizedContainerService.HintSize="1142,2445" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="9d79c689-74e0-4e33-ad42-b205affd8a51" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1108,2226" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1108,2228" sap2010:WorkflowViewState.IdRef="Sequence_25">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -170,7 +166,7 @@
                     <uix:NSelectItem.Target>
                       <uix:TargetAnchorable BrowserURL="https://directoriosancionados.apps.funcionpublica.gob.mx/" DesignTimeRectangle="1261, 341, 188, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Seleccione una opción'" FullSelectorArgument="&lt;webctrl id='color' name='cfiltro' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='color' name='cfiltro' tag='SELECT' type='' class='ng-pristine ng-valid ng-touched' aaname='' /&gt;" Guid="bb57ab73-75a1-4793-9bc1-dab433a2b435" InformativeScreenshot="54e2cf3df80244f4c6f18e8f4414bed4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Directorio de Proveedores y Contratistas Sancionados' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target DesignTimeRectangle="948, 340, 283, 19" ElementType="Text" FriendlyName="'Tipo de Sanción'" FullSelectorArgument="&lt;webctrl idx='2' tag='H6' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H6' class='' aaname='Tipo de Sanción:' check:innerText='Tipo de Sanción:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAR8AAAAXCAYAAAAyc0uUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALuSURBVHhe7ZrLTQMxEIZpJQcO9IQ40EcOoZEoNJKIKpCghrRg1o/xjsczuw7ZxCH8lj4hdsfjB5kPG/Hg0NDQ0Do0yAcNDa1Lezgejw4AAK4N5AMA6ALkAwDoQpbPYfPkVo/TPO++3dfu1a1e3t0XS3ItwhwXGfvbbV/k+l7d9lOLvTQfbj2Mv97b71aPb+5QvQPgb2OcfFJxbj6Ud/1YRj6poOXa9m9BQroE+tBT9ABcmv8nnyAZ/SSx3MkKADDHyfIpfht/vrtnf13Z+69DfKI+PdD1gWi7RhRXwWHMrSKHIqbh6hTmf8I1psw/UIxPVyaxPmXfZJ5xjygHiw/7yuLFmulncAhrobhy7Tg1gVtnAfmID768vlAMyxULcVoAMiZKY3jGCqrK03J1YoU9GTcQ8hcFLK9sJJ2J9dNe8jxpDjFGyCf1939fs/rnvcjzUMYA4MZZRD5joUR40dYF7IkFJ/tliuIkRIGpMdZ4AiagjDHH6fzaOsTehbGmTmR8HGPfxVqjfIS8g7TmT34A3ArLXLvkBz4Ugi8OO8+kJHL/8jnvoxagx+hrkU8RCV2IURC1qDRBlWs255nhOTSZeZSccu8gH/DHuIp8tIKeko9VsHzsGDPkUGmXz0haM+sb5kg507jayWdWPsY6I7V8ynweyAfcHxeRTxTDKB8tTyhi5XngnJPPOfACFlcd4lfymZxnLR/r5EPPIR9wD1zubz6pb1mshFVkCbXw05wol1FsamFm7HUFuPRUAcZ5j/nn5TMvBZ7DmJ/YD8gH3AOLyKf40MsioBiWKwhp5tQiY8K4Pg8ruiqPKi1BmN/86YJy8bg4Hh+zQT70fSELLl+Ro5pf3R/yAffAIvJZ70hCHq0AYoHF9wOycAzGYo995v/PZ0Y8GTGfgDLvJILMsB9RghTbIp+InOcoFyVHlnpC5GqRjxoDwA1hyKeRlpMGAAAoQD4AgC5APgCALpwnHwAA+CWQDwCgC5APAKADR/cDPs/vaUKx9x4AAAAASUVORK5CYII=" SearchSteps="Selector, Image" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -181,7 +177,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://directoriosancionados.apps.funcionpublica.gob.mx/" CvTextArea="164, 386, 264, 19" CvTextArgument="Seleccione al proveedor y contratista" CvType="Text" DesignTimeRectangle="165, 387, 600, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT textoBusqueda'" FullSelectorArgument="&lt;webctrl id='textoBusqueda' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='textoBusqueda' tag='INPUT' type='text' class='mat-autocomplete-trigger mat-input-element mat-form-field-autofill-control ng-tns-c43-1 ng-pristine ng-valid cdk-text-field-autofill-monitored ng-touched' aaname='Seleccione al proveedor y contratista' /&gt;" Guid="c381ac2c-73e3-4ddb-aa05-51763f65c84a" ImageBase64="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" InformativeScreenshot="7cea503177c9ed6fbd29c78b027f35ee.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Directorio de Proveedores y Contratistas Sancionados' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="164, 386, 264, 19" CvTextArgument="Seleccione al proveedor y contratista" CvType="Text" DesignTimeRectangle="164, 387, 264, 18" ElementType="Text" FriendlyName="'Seleccione al'" FullSelectorArgument="&lt;webctrl id='mat-form-field-label-1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mat-form-field-label-1' tag='LABEL' type='' class='mat-form-field-label ng-tns-c43-1 ng-star-inserted mat-empty mat-form-field-empty' aaname='' check:innerText='Seleccione al proveedor y contratista' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -192,7 +188,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://directoriosancionados.apps.funcionpublica.gob.mx/" CvElementArea="769, 379, 66, 35" CvTextArea="778, 389, 48, 13" CvTextArgument="Buscar" CvType="Button" DesignTimeRectangle="771, 381, 63, 31" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Buscar'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='waves-light btn-primary btn' aaname='Buscar' check:innerText='Buscar' /&gt;" Guid="a8db32b8-6abc-4a2a-94b3-a2495757914e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAjCAYAAADPPrcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK8SURBVGhD7ZnbbtpAEIb3YdpHaSXyGq3Uvkheoml7m0TltlVeoEK5M1AhIpELLDAHgYzBHCyEJvxrr70247pR6cGHkf4Le2cd/59nlmhXHA4H2u/3Up7n0W63o+12S5vNJtR6vc61dC/wBo/wqnyDASSSEDB5tVrRcrkkx3GkFotFrqV8wBO8wWMSioSBCwy4rks/br9R/eI9fX55QZ9e1AopeINHeIVneFdAhALRvvnKTi6y4FkHInCBEvpSe8dOKLLgGd7BAC0j0Efz+bzQrZEmeIZ3MEB1CNu2aTqdssllELyDARZVATKj0YhNLIPgXVWHmM1mZFkWm1gGwTsYYO0QKJPBYMAmlkHwDgb4f0RMJhMyTZNNLIPgHQyeDeO+4RIbj3dsfh6kYGARlTD6/T6bmJSE4Rh0H7t/R3aOgcD7GWGk38+D/jAMv1Lsup6TuFc3UUtRJKpKPk8Lr3EVjSfnHiMcvzTII5MsNf8XPtCZYcCoS9alfv0TGPKF0/N9ENq4zE+bm8gPcp/Tsr8HIyUi8xkw5JeNG4p0RZaTqIQs6YB0cFwuozNXRo0eHo9vEBrMgBEYDiP2Fbm5nPy8KHQYaaB5nR1G3EQWDE16/0soGTBUGxwjvk7kCUZW+UooJj1ktAn79/W2+x9gxO8HbaDl+W0UwGDWDDketIt8lgSjxiNAJ2NhpfwrGFycAPKrQ4Vdj1fLyXMS85PjeqUosH7AuP9smfM3YRRRFQxNFQxNFQxNFQxNFQxNJzCqna4KhpSCIbf91IZwWQ+RYhvC2CYfDod08/otO6HIgmd4D48K1CFS4+MtO6HIgufYIRIWDvQMyuX7h2u6fvWm0C0Db/AIr/CsFk95vAgiKJPxeCx/Znq9HnW7Xep0OtRut6nValGz2STDMHIpvDs8wAs8wRs8wis8w7t/8LylJx1xeq64qB23AAAAAElFTkSuQmCC" InformativeScreenshot="f21da2e2aeb8f8e6c4ab4f9acc728f39.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Directorio de Proveedores y Contratistas Sancionados' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvElementArea="843, 380, 76, 36" CvTextArea="853, 388, 58, 17" CvTextArgument="Exportar" CvType="Button" DesignTimeRectangle="845, 381, 72, 31" ElementType="Button" FriendlyName="'Exportar'" FullSelectorArgument="&lt;webctrl aaname='Exportar' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Exportar' tag='BUTTON' type='button' class='export btn' check:innerText='Exportar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAjCAYAAAA+NeykAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMDSURBVGhD7ZrLbtpAFIa9at8jXVdV+wxV1fQ1qqp9gjwC20rdNWrZpum+XbDJLmsQSEYKGy5CQDH3O0in/udiz9gDxAhCU2akD4F9xp7z+YxJPDir1YqWyyUtFguaz+c0m81oOp3SZDIJGI/HJ4OaNzzAB7zADzw5eFFFodNwOKTBYED9fp/R6/VOBpkz8ocH+FDFOXjBhtFoROnfP+jVp3N6+u4ZPTk/O3ngAT7gBX7gyZGyvv+6MnaycOAHnhy8oARffnxrDLRw4AeeHMxVz/PsNNwC/MCT0+12qdVqGYMsOvDkdDodajQaxgCLDjw57Xab6vW6McCiA08OyqxWqxkDLDrwxIRVKhVjgEWnWq2S02w2Ewi7Jpc2tNEtXRj7PQQpSmdShu37A552EuZmTPuOSYpuRkTd3AMJK5fLxoA4VtgBhIlpq07Py1vq+ptYQux9n25yd4gSzf98qR7jjNIVsYs1dT+Or/b/Q3VfVtDkecU5tVa5XnOMO0qL824Cng5TYaogcfWDwQaJhIO8yPWVzyJeEc73S2mGCxKrMMM4M1wO32Y6xnZ2FrauqQOUElxWKcoVFMJ06UrCsgK1ilOF8DGEcqL71X4qqkTTMbZzuApjiEqJxhuFiCmIKmSVEJ8i7AKwKjWNYZ2wcAyyqcLul0fIgYXxWDQtkR2FBfvvJSw8d3Ar0PolySPkoML4TdtPnAlQBO1pSm4UZpKunfdfExaRxOTFvr3ChHa56UfHEFag/zl6kUQftKMIW9/8pIUQbRrKfkhIVpD2Z0WkGnx4hcoWTz6WLJOExo/FJYfN9f8LYBdi7bTezg7C9oBxyj0OrLCEWGEJOY6wR4wVlpAdHu+cNlZYQpgwPKLGo1dTgEWHPaKWiyB2IXcz8MMWQeQy24sPb4yBFg78sGU2uZD75ec3Y6CFAz9sIVf+VADl9vnqKz1//9pOTwE8wAe8wA88BT9GgT18C5RKJSoWi+S6LhUKBcrn85TL5QKy2ex/h5of8kXeyB8e4ANe4MfzPPoL/YIivHKT8R4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -237,7 +233,7 @@
                     <uix:NCheckState.Target>
                       <uix:TargetAnchorable BrowserURL="https://directoriosancionados.apps.funcionpublica.gob.mx/" CvTextArea="569, 515, 46, 13" CvTextArgument="- 0 of 0" CvType="Text" DesignTimeRectangle="558, 512, 57, 22" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'0 - 0 of 0'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LI' class='ng-star-inserted' aaname=' 0 - 0 of 0 ' check:innerText='0 - 0 of 0' /&gt;" Guid="cad671a8-8dd4-4f0a-9f02-21b508eca9f4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAaCAYAAAAEy1RnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVFhH7ZUxEoMgEEVzlRQW3sqx8CIWehJnuImOx3D0EDQbNQqKRHaRIjNL8Qoj/M8TjC8pJXAjSnMhSnMhSnPBkJ6gyVN4JxtVf7jnS+DMtlZZmZgsY9x9J+muOg76TrYH4wmdueTdzcf0aelBQJYU0Az65vpUcwHjfk3FK/PXThm/JzV05lxkn5Zej40RZAuhQM7cxExRde3YaWTfWfqyAz2UT6UpmYhFO6URfX8lPYrCOT68NOEorgtU71cKZXsd45X5VJp0vG2LsT45AtRMxKJvpZF9WnpmCQz5eVmgZT78I5vB9J2kVcl+bA9l/lAz78e7pDF9hjQPojQXojQXojQXojQPJHwAyNc+kao7TaUAAAAASUVORK5CYII=" InformativeScreenshot="f68debf00a18bae7694e1ea30dcef84d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Directorio de Proveedores y Contratistas Sancionados' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="508, 453, 78, 16" CvTextArgument="Expediente" CvType="Text" DesignTimeRectangle="509, 452, 77, 16" ElementType="Text" FriendlyName="'Expediente'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Expediente' tableRow='1' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Expediente' type='' tag='STRONG' class='' check:innerText='Expediente' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAUCAYAAAD1GtHpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG0SURBVFhH7ZZRbsMgDIZ3lT30oceq+tCT5KG9SaQcpVWPUak9BIOAsbEhhNTTtI1fstRgY+CzSfphut5Wh6igDlFBHaKCOkQFIcTHZA67vfks2HANcT+h62Xew2F6hYG7GeZ9XcwtjOjI5W3P+Ushfoe2F0ZCPE7mGYakYCGEejv7ZzggPA8TLQrfGOaZ7XwP4yDqt3NXdeJSTowfp1Mmhs21Bud70vjdyYwPP07VCNEqHGiOo7+DGyAKizFyw84Q0MuMR+lPYzjEWs6835mHlYeYAgSTnbryOqcTU1BpdaJPVDnEia4CaGENKAxZk3e7gFjLSSCVbpDIKXJYiXW8NkGksTyh31wKFipari7OAX+SV2w+PXAtpwRkVclJwQtjr5/26+wUu0XGQ4Wh4k7rIKZ+HYiwD2WI7MwbIMrkFFj7dWaKBYLD4DuyeOBaTgHIqgoxc50LWnmdcbFYdQcpzsGFIkRulQ8L+hEat/KBazlbIHpz46UOp03j1AZxCVrovHidW/7iLPptB0+1rnFaypmJz3QvhQbjHCSNByFEJeXeiX9dHaKCOkQFqUP8j+oQ35YxX/H2wiQJamykAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -289,18 +285,10 @@
                   <uix:NGetUrl CurrentUrl="[Url]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="1046,87" sap2010:WorkflowViewState.IdRef="NGetUrl_2" Version="V3" />
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1046,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Frameworks/Guardar como - Internal.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="Url">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">
-                        <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="BrowserID" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; ".pdf"]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">[BrowserID]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <If Condition="[BusquedaAfirmativa = False]" sap:VirtualizedContainerService.HintSize="1046,271" sap2010:WorkflowViewState.IdRef="If_18">
@@ -724,10 +712,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1208,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -753,7 +741,7 @@
                   <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[FilePath]</InOutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Un    Error de descarga/Busqueda con: &quot; + Busqueda]" UseDefaultEncoding="False" />
+              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Un    Error de descarga/Busqueda con: &quot; + Busqueda + &quot; Screenshot: &quot; + FilePath]" UseDefaultEncoding="False" />
               <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_14">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>

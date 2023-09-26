@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1272,2954</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,1285</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Omicron_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -101,14 +101,10 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Omicron" sap:VirtualizedContainerService.HintSize="1282,2889" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Omicron" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:String" Name="Url" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -116,7 +112,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2778" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -124,13 +120,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1182,2550" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -219,7 +215,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://compras.funcionpublica.gob.mx/ConsultaPublicaDGRSP/faces/home.xhtml;jsessionid=0fad00d23e4720f67fe81cf2e4b5" CvElementArea="994, 406, 104, 19" CvTextArea="1002, 409, 89, 11" CvTextArgument="Generar Consulta" CvType="Button" DesignTimeRectangle="1000, 365, 101, 16" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Generar Consulta'" FullSelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Generar Consulta' check:text='Generar Consulta' /&gt;" Guid="4979d0d2-ad15-4771-ba89-028f9a8b7c19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAAUCAYAAACOPhMlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANLSURBVGhD7Vg9SFtRFHbq4tSlu3unDu3u3r3dCt27O9lFKBUK0oI4KVQHW6QEigWhbSA02kgkoiQxGqMxMZqamB8FXxy+nvv33n33vZuphSe8Ax/kfuc73znnHVwc6Xa7iBFtxEe6A3CPdP/12xgRwujzF+FHmvidixER3Hv0OPxIr1KZGBGB9Ugvv/+KERFYj/Ts28/hqF3DF4M2PobpooBCG/q0162DcN0/xylquMVugX7zGa7xI1Q3HNYjPU2s2XF8RaveYnvX49b6RPVrfl0UEJh1D9sD4OrPnl/3X1BDVfXmc1xhLVQ3HNYjjX/+akEeW7TkccXgcxfoDy4wK9+rPZpJRr+Z59xskwp7fRxLHr2qW89zKhRfocsPSM9SnBO93ZD9dF/VS4HNYXLjuTxWCeKtew6wlRMa66xsT0l5+irXqW8iapme8Uwj8jyG7CHmCcJ6pCdLXyw4QoUab2bDcgIzZzRB90i+PT3n0UOC8dkm/ZI+ZfqSThMzXL+DTQeolCWv98oeIeH2tfj6wDTSK5ATSHRJoGbl/YSPbVam753tcL23p7+Pn9d2dP3C9xDvIKxHejj/yYJDlMl0IyPfmXNqrULwKx351KLXyGG6QcM755g2fDhvRucQD0v8C2LF1z+HDTqiCK3e9Q1qyyWTVzDzxkwhs4qZvN5enefDa9n8gTp9l+Aegg/CeqSxuUULskiT+X7R5A+wDwfp9CKWL2mcetbIL2KqToVOA1OGnvOXBwH9WJFdu4Nl31v1NupdXz9CZ0k36HMxX3MXm6fHKw+eZ8E1LO/5ePtodfoulj2UtwnrkR68n7cjz5o4SKXCuckTtkAHSzxXQolepbzkb04x6fLSw+eXQeqGqk8yklc+UqfqzX6urwGfN4PmT++lNqXbJU0r+tlmZXq2i6vnGt1T/Bae5o5yF7dO8fp8QViPNPpubjiSdWqph4Nk0ssvtCRN0amuc26iyhavY4JrCihqNTynolUQPrv0Z4BLLHC9qpHRqiNJH6O4a/qGgPt4oeYRWOc+Iox5QmfVZgid30GxRb/5Dlqd+l4uL0Pbw5vJD+uRRt58iBERxEe6A4iPdAcQeiT2r3GWiBEdBI4UI7qIjxR5dPEX7FwuNDIcPB8AAAAASUVORK5CYII=" InformativeScreenshot="1fa274776a9bd3aa2e0cc790cea268f9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta del Registro de Servidores Publicos Sancionados @ SFP' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="931, 298, 71, 11" CvTextArgument="Criterios" CvType="Text" DesignTimeRectangle="619, 294, 699, 21" ElementType="Text" FriendlyName="'Criterios'" FullSelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Criterios Campo Valor' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='rich-table-headercell  ' aaname='Criterios' check:innerText='Criterios' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAr8AAAAZCAYAAAA4w0Y0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANSSURBVHhe7dq7TxRRFMdxKysrKysrKyorKysrKzsbKzsrKyv/BQxGEgxGIjEYjUYSIgjZ+ESikXWzsMvKhiDs8gqP5RFYaBiK49w7M+vOzFlNtDGX70k+CZxz75mpyC8TTghFURRFURRFHZOy4XdwugwAAAA4aXR01AZfUzb83nv9Xm5nCwAAAIBz1PB760seAAAAcI4afm+OfQMAAACco4bfGx+/AgAAAM5Rw+/1d58BAAAA56jh91rmEwAAAOAcNfxeHf4AAI77ISXP/u0L60hKZe3cb5R35MC/ubKszIZXZcXbkb5U/1+F772/qswAAH+iht8rg28BwGGzUjQB0tuW3rDXu3nkN46k+D159u+82Y/vBwD8H9Twe3kgAwDuWjTfa4+kMKXMEnrCUHxgvxIn7kxt2y+/S4tNvcadqA4k0zQzMvVw5NfB5kxsZtn382desCe+f0YK5l3qy029yLIs2RtBqbuj+1GpewDAXWr4vfRyGACc1V2z/zcgI8osKTgrslhV5oUtf4s+GzEB19uS7kTf7ov6re5XTdd/w1o53rfKMmHD75Lej3aHO1rttn37sycThcQZAHCYGn4vPh8EAGd1bQThd0iZJQVnPclPKvPJTRteFyrp2dCeubYpXbH+tOTNukTtb0w3nfFVgoCq7W3s2FuM91Pv8vtzUaWeDQCOU8PvhacDAOCueftZVnJ5ZZbQuR6EX/VsviZmU3U+PXtlwu9hTTpj/ZLkDrV+gn0/fW9jx95CvJ96lxbnQvb9wqqvl9QzAOAiNfye7+sHAIcVJRuG0I6w17EWhNxsLn62Vd/KBYGzMpeeDezG90di++aCEJ7abfv63sa771b1fvTMVjtiz6xKxf+tvlaMnwEAh6nht633BQA4riDjJiw2ypPxbPpc+2oQVrVZW3bDht/52fQsuGdqT/pjs/hz66uFplloNvgsq+1t3N+tKLOKzNubQam7ff0mmEd1uCHtyhkAcJUafs/1PAMAAACco4bfsw+eAAAAAM5Rw++Z+48BAAAA56jh93TnIwAAAMA5avg9dfchAAAA4Bw1/J680w0AAAA4JxV+TQMAAABwVVSNL79jtR0AgIPMH32tDwDHBeEXAI4Rwi+A4+5X+BX5CdlLaeK/40ykAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -309,7 +305,7 @@
                     <uix:NCheckState.Target>
                       <uix:TargetAnchorable BrowserURL="https://compras.funcionpublica.gob.mx/ConsultaPublicaDGRSP/faces/sancion/Criterios.xhtml" CvTextArea="467, 252, 225, 13" CvTextArgument="No se encontraron coincidencias." CvType="Text" DesignTimeRectangle="468, 251, 224, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'No se'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='required' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='required' type='' tag='SPAN' aaname='*No se encontraron coincidencias*' check:innerText='No se encontraron coincidencias.' /&gt;" Guid="ea1a4d74-1e3f-4d42-b1b2-d397a68543ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOQAAAAUCAYAAACdxZGUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPzSURBVHhe7VXLcRsxDM0pTaUPN+IiXIFrcAPqQWfVkNHI9sEHN7AhlwQJPADkOlKUnQRvBoflB58HPO63JRAI7AYhyEBgRwhBBgI7QggyENgRQpCBwI7ABHlcLj++Lz+TXU51acXr8v6Y1x+W97e6FNiEz8PDcj681q9/HTQ/T8tHXbkWH8/WPDKcntb9u3H89rKcc42PL8tnXbo1TEFKUkOQv4MsxrsOy/+IewvyDnAEmez5WNdtQdLrVWwmVvLRDV896W/2ynq5JrBX7J35xKaRYIoZ+ddmm/cnMaTvcu6T/UEudGfNG2pJxrlpf4lnyqdyQzmQcQ4S2r0DPzfhFWpWf6YRJ6w+kd8VfdB/SM5VimMIcpO/IScwq/xvqP6Qeq5lffO5R/iCbMVoQUrxdPOC2ecn/jgRAnqAszUicFCb9XhKMLCPg9eMhn4SYyzIbpeTblixPiSKm5yDF59x5vUIhdvg1Nx6OuPEE6Sy7X2gGkoOHle997a/AZdkrQYnBvEKgrT96fy9fQuGIPvLUwKDIBvR7GUR5zVKYl4iNS67S8SaAq+x+ktE+eEgULxOcvFHdfZ8KF7xiecz4M40BvrMIB9OXSuA64TWVCYkWtMcdN/q3rBHRs10fr2/gZP2fas+9BrW85SPITDZNz2X6M/lRHFEPmuOIEiEyLd99/q2wBYkI+98OIqk9KBlGGRwNDLJ2LnWOG0yRgHF1+aTRndWoiakevszH2KfffcaYGABbVhW603EJrt+nOFT98y6x7lt4gR9XNuHBF6D5jNB1EzxDasCnHFixuCY8EDW/I/m3oEjyAQKnobjzF8JaHzBRJAVZuItjmHsr0BAH9y8RtMdb19CNokw8yH22XfnCfhdAS+w+raGyOH6TwpyCyfo4+o+3FCQNcatBYn+tP8C8kuG+xy+IBOkI/gD8ebRSzAgV4DOr4Kzm+3CfBAYpmLpjWvEiHxo4DlxdAc4cGNYzdX8aj8QJ8FqMq113zrn2fBJ9PvNp8htAydY39V9gBpor/GHOdM34xcw5UTFgDuiJqjX5AgA9VkYCpIHsYYEzU6E+7DP2/56PIneSGFE6hfEIo3Fa40BIyK/HCNzavBLfpSNBeneY/lMhw/h1NzuzzjB+m7QB1mDP0f0iNj+erw5J04M2hc1OXOYbJavn89UkAmtEVIg5Mza09DJ9de9QPqTSWogGcaQDwYhA5un4sEAinw3xeA5OoJMEHnk4a5xKZ7VtBUoSnh158NnYFRzxnAf6rtBH9waVkszd5BcZaA/vreNE5zVwWxxPvIa7bdejOfe6i0TZCAQ+NsIQQYCO0IIMhDYEUKQgcCOEIIMBHaDZfkFQ1O4atifmKkAAAAASUVORK5CYII=" InformativeScreenshot="5e84e83f5ebdd3d3ca16a48f75cb8324.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta del Registro de Servidores Publicos Sancionados*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="848, 218, 240, 21" CvTextArgument="3) Resultado de la busqueda.O" CvType="Text" DesignTimeRectangle="849, 219, 237, 20" FriendlyName="'3) Resultado'" FullSelectorArgument="&lt;webctrl aaname='Reporte Servidores Publicos SancionadosSanciones Administrativas*' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Reporte Servidores Publicos SancionadosSanciones Administrativas*' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='tit_predef' aaname='*Resultado de la busqueda*' check:innerText='3) Resultado de la busqueda.' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -379,10 +375,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1186,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -407,7 +403,7 @@
                   <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[FilePath]</InOutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Omicron    Error de descarga/Busqueda con: &quot; + Busqueda]" UseDefaultEncoding="False" />
+              <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[LogFile]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Omicron    Error de descarga/Busqueda con: &quot; + Busqueda + &quot; Screenshot: &quot; + FilePath]" UseDefaultEncoding="False" />
               <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
