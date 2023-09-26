@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,1060</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,1956</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Guardar_como_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -105,7 +105,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Guardar_como" sap:VirtualizedContainerService.HintSize="485,995" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Guardar_como" sap:VirtualizedContainerService.HintSize="1174,1891" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="nombre" />
       <Variable x:TypeArguments="x:Boolean" Name="sobrescribir" />
@@ -121,9 +121,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="423,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Guardar como ...&quot;]" />
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="423,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[Carpeta]" />
-    <ui:MultipleAssign DisplayName="Delete [*&lt;&gt;&quot;/] from Ruta" sap:VirtualizedContainerService.HintSize="423,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1112,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Guardar como ...&quot;]" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1112,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[Carpeta]" />
+    <ui:MultipleAssign DisplayName="Delete [*&lt;&gt;&quot;/] from Ruta" sap:VirtualizedContainerService.HintSize="1112,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -145,7 +145,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <If Condition="[String.IsNullOrEmpty(System.IO.Path.GetExtension(Ruta))]" DisplayName="Add PDF extension if not given on Ruta" sap:VirtualizedContainerService.HintSize="423,52" sap2010:WorkflowViewState.IdRef="If_17">
+    <If Condition="[String.IsNullOrEmpty(System.IO.Path.GetExtension(Ruta))]" DisplayName="Add PDF extension if not given on Ruta" sap:VirtualizedContainerService.HintSize="1112,52" sap2010:WorkflowViewState.IdRef="If_17">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -179,8 +179,8 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="423,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;0. Ruta: &quot; + Ruta]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="423,52" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1112,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;0. Ruta: &quot; + Ruta]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1112,52" sap2010:WorkflowViewState.IdRef="TryCatch_9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -206,27 +206,27 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use browser from arguments" sap:VirtualizedContainerService.HintSize="423,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[BrowserID]" ScopeGuid="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use browser from arguments" sap:VirtualizedContainerService.HintSize="1112,948" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[BrowserID]" ScopeGuid="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="512,374" sap2010:WorkflowViewState.IdRef="Sequence_51">
+          <Sequence sap:VirtualizedContainerService.HintSize="1078,811" sap2010:WorkflowViewState.IdRef="Sequence_51">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,259" sap2010:WorkflowViewState.IdRef="Sequence_46">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,696" sap2010:WorkflowViewState.IdRef="Sequence_46">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Close restore button" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Timeout="3" Version="V3">
+              <uix:NCheckState DisplayName="Close restore button" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Timeout="3" Version="V3">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_47">
                     <sap:WorkflowViewStateService.ViewState>
@@ -234,7 +234,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button Close'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'push button Close'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="321, 21, 24, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'push button Close'" FullSelectorArgument="&lt;ctrl name='Restore pages' role='alert' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Restore pages' role='alert' /&gt;&lt;ctrl name='Close' role='push button' automationid='' /&gt;" Guid="be11e693-38c9-48ef-bdf8-7ca7c1ad03a2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADMSURBVEhL7ZRLCoQwEETnfLmJP0JQ8KIuPIGIBPFzgBoqiyEwUePQ4yqLB6Gr4ZmYzksphSdJQnGSUJxLYd/3yPM8mPkURYGu64KZz6UwyzKM44iyLIM5YTYMg+sN5T5RR1pVFaZpgtb6K2ONWYyMRP9DSud5Rl3XnxrXrDHze8+4dWmMMVjXFW3bOpZlcbVQ7xG3hKRpGmzbhn3f3TrUc8ZPQu6S/F346JE+emmuxsJaKzcWMYNPKXtEBj/2aeMHiTxt0iShOEkojMIbhaKK9ekVRUYAAAAASUVORK5CYII=" InformativeScreenshot="92caf1ab69768a8c0c7b94adf8180843.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Restore pages' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -256,12 +256,12 @@
                 </uix:NCheckState.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <If Condition="[Not System.IO.File.Exists(Ruta)]" DisplayName="If file non-existent" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_7">
+              <If Condition="[Not System.IO.File.Exists(Ruta)]" DisplayName="If file non-existent" sap:VirtualizedContainerService.HintSize="954,52" sap2010:WorkflowViewState.IdRef="If_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -969,12 +969,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="423,52" sap2010:WorkflowViewState.IdRef="TryCatch_11">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1112,52" sap2010:WorkflowViewState.IdRef="TryCatch_11">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
