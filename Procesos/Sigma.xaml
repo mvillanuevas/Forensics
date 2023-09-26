@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1868,2855</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1272,2816</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sigma_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -100,7 +100,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sigma" sap:VirtualizedContainerService.HintSize="1282,2790" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sigma" sap:VirtualizedContainerService.HintSize="1282,2751" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
@@ -111,9 +111,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2679" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2640" sap2010:WorkflowViewState.IdRef="TryCatch_5">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1182,2451" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence sap:VirtualizedContainerService.HintSize="1182,2412" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
           </Sequence.Variables>
@@ -131,7 +131,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign sap:VirtualizedContainerService.HintSize="1120,81" sap2010:WorkflowViewState.IdRef="Assign_6">
+          <Assign sap:VirtualizedContainerService.HintSize="1120,82" sap2010:WorkflowViewState.IdRef="Assign_6">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -139,7 +139,7 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: The Denied Persons List" sap:VirtualizedContainerService.HintSize="1120,2087" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="929e1c56-b70e-4e1e-8d86-3b75bfdfff91" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: The Denied Persons List" sap:VirtualizedContainerService.HintSize="1120,2047" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="929e1c56-b70e-4e1e-8d86-3b75bfdfff91" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -151,7 +151,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1024,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(F3)][u(hk)]" Version="V3" />
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="15" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1024,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(F3)][u(hk)]" Version="V3" />
                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DisplayName="Type Into 'pane'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1024,217" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="929e1c56-b70e-4e1e-8d86-3b75bfdfff91" Text="[Busqueda]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="45, 25, 186, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='Find on page for     The Denied Persons List' role='dialog' /&gt;&lt;ctrl name='Find on page' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Find on page for     The Denied Persons List' role='dialog' /&gt;&lt;ctrl name='Find on page' role='editable text' automationid='' /&gt;" Guid="c18f6a9e-a98e-4da5-bf93-834693dee4f2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL4AAAAmCAYAAAB6QSGzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dKxDQAhEANBKrz+u+H1CaIGdixN5HTXzGyoET5JwidJ+CQJnyThkyR8koRPkvBJEj5JJ/x/9wEvEz5JwidJ+CQJnyThkyR8koRPkvBJEj5JwidJ+CQJnyThkyR8koRP0gkfSoRPkvBJEj5JwidJ+CQJnyThkyR8koRPkvBJEj5Bsz/IVQOvdwuX6AAAAABJRU5ErkJggg==" InformativeScreenshot="6391ab20e8588bf89df37c21fa19a38d.png" ScopeSelectorArgument="&lt;wnd aaname='Find on page for     The Denied Persons List' app='msedge.exe' cls='Chrome_WidgetWin_1' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
