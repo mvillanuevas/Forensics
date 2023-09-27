@@ -1,6 +1,5 @@
 {
   "name": "Forensics",
-  "projectId": "720534e4-d2f9-4096-8e72-b889d77ede98",
   "description": "Proceso Forensics",
   "main": "Main.xaml",
   "dependencies": {
@@ -16,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.4.0.0",
-  "projectVersion": "1.0.7-alpha.123",
+  "projectVersion": "1.0.7-alpha.127",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -46,8 +45,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true,
-    "saveToCloud": false
+    "modernBehavior": true
   },
   "arguments": {
     "input": [],
