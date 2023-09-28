@@ -1,5 +1,6 @@
 {
   "name": "Forensics",
+  "projectId": "3c4c425f-a9d1-44bc-aa5c-c1185d4aff0e",
   "description": "Proceso Forensics",
   "main": "Main.xaml",
   "dependencies": {
@@ -45,7 +46,8 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "arguments": {
     "input": [],
