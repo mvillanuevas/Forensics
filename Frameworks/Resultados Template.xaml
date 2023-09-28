@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,3836</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1182,3836</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Resultados_Template_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -165,7 +165,7 @@
                     <OutArgument x:TypeArguments="x:String">[NombreCompañia]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[NombreCompañia.Replace(" SA DE CV","").Replace(" S DE RL DE CV","").Replace(" SC","").Replace(" SAB DE CV","").Replace(" SA de CV","").Replace(" S de RL de CV","").Replace(" SC","").Replace(" SAB de CV","")]</InArgument>
+                    <InArgument x:TypeArguments="x:String">[NombreCompañia.Replace(" SA DE CV","").Replace(" S DE RL DE CV","").Replace(" SC","").Replace(" SAB DE CV","").Replace(" SA de CV","").Replace(" S de RL de CV","").Replace(" SC","").Replace(" SAB de CV","").Replace("SAPI de CV","").Replace("SAPI DE CV","").Replace("SAS","")]</InArgument>
                   </Assign.Value>
                 </Assign>
                 <ui:ExcelReadCell Cell="J11" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="532,60" sap2010:WorkflowViewState.IdRef="ExcelReadCell_3" SheetName="Datos">
