@@ -18,7 +18,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1182,5996</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1182,873</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Mu_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -98,15 +98,11 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Mu" sap:VirtualizedContainerService.HintSize="971,5931" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Mu" sap:VirtualizedContainerService.HintSize="596,808" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="Pagina" />
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaPositiva" />
-      <Variable x:TypeArguments="x:Int32" Name="contador">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:String" Name="Url" />
       <Variable x:TypeArguments="x:Boolean" Name="strError" />
     </Sequence.Variables>
@@ -115,9 +111,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="909,5820" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,697" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="871,5592" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence sap:VirtualizedContainerService.HintSize="496,469" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
           </Sequence.Variables>
@@ -127,7 +123,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="809,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Mu&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Mu&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -135,7 +131,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign sap:VirtualizedContainerService.HintSize="809,82" sap2010:WorkflowViewState.IdRef="Assign_18">
+          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_18">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -143,13 +139,13 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Consulta folio RUPC" sap:VirtualizedContainerService.HintSize="809,5175" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[BrowserID]" ScopeGuid="e2b52292-374a-4013-92b1-f87955c1b9cf" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: Consulta folio RUPC" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[BrowserID]" ScopeGuid="e2b52292-374a-4013-92b1-f87955c1b9cf" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="775,4958" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="775,4960" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -159,7 +155,7 @@
                     <uix:NSetText.Target>
                       <uix:TargetAnchorable BrowserURL="https://cnet.hacienda.gob.mx/servicios/consultaRUPC.jsf" CvElementArea="482, 336, 312, 25" CvType="InputBox" DesignTimeRectangle="484, 337, 310, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT consulta:razon'" FullSelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl id='consulta:razon' tableRow='4' tag='INPUT' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl id='consulta:razon' type='text' tag='INPUT' class='ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all' aaname='' /&gt;" Guid="5c85f826-2247-4298-9a60-6119a9b90503" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAToAAAAcCAYAAADxwHPDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVHhe7dk5csJAEEZh3z+GC5gIOAOhWYUgM4tAQmI/AkmbX4ETGJVD99QLvqhVCl9VT3/Y42EAEDNCByB6v6HbFZWtshwAoqCmvYROg1arZe12GwBcU8vUtLeh++x0rNvtWq/Xs36/DwCuqF1qmFoWDN1gMLBZkli6WNhiuQQAV9QuNUwtC4Yumc8tLwo7nk4A4JIappYFQ7d41rA6Hu16u9ntfgcAV9QuNUwtC4YuTVOrqspuCh0AOKSGqWWNoSvL0q7XKwC4pIY1hm7+3GsPh4NdLhcAcEkNU8uCoUuSxIqisNP5DAAuqWFqWTB0OstydQXgmRqmlgVDN53NbJ/n9dUCADxSw9SycOimU9vt91ZWFQC4pIapZcHQTSYTy7KsfswDAI/UMLUsGLrReGyb7bbecQHAIzVMLQuHbjSy9WZT77gA4JEappY1h269tv1zxwUAj9SwxtANNXx+pMc8APBIDatbFgrd13Bo36uVZbsdALikhqllhA5AtAgdgOgROgDR+3Potln29gcA8J+pXY2hy/KyHgBADNS0l9ABQKwIHYDIPewH7xNaBRr32nkAAAAASUVORK5CYII=" InformativeScreenshot="908368d778361181578e39bb84a2b036.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="384, 341, 79, 13" CvTextArgument="Razon Social:" CvType="Text" DesignTimeRectangle="22, 332, 452, 33" ElementType="Text" FriendlyName="'Razón Social'" FullSelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TD' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='celdas2' aaname='Razón Social:' check:innerText='Razón Social:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAcgAAAAlCAYAAADGDHkCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJeSURBVHhe7dhBbuIwFIDhuRPXKtykYsE5qHqPqoseouqm4gBsPAQ7xEle0qCZkSbiW3wLcLCd1a/Hr8PhkE6nU0rnMwA8tLqHAgkARRhIAKBjggSAou6hQAJAIZAAEBBIAAgIJAAEBBIAAgIJAAGBBICAQAJAQCABICCQAIQ+9pu02Tynj2DtEQgkwErlgI3t3+Ln7/Oe9pttev2M1pb7ftlWd/vz/dLb87J3XPrcDIEEWKlowvuvpr7PY9rdItUE93K3p2P6jp792wQS4HFFMcwTWzepTU1w/e+zW0xK2Ka+370cc+wa+/e8FimRmnxm6py5tUH4JifU3nNf6fXpsn5nnAUSYKV+nCCvkWnXJya4W4jq3zQR/Lqu94LbPlv2GMZ4pA3kzLnhOeWu7Vrvnerwzb2fQAI8rhyOoTYYnd6UNYhEu0ccqkYJTzMFtoFsJ8LBNBcZ3rE/+U2cc913IrzBmeH7LbjbTwQSYKWiyaoXwN53wRTVrldR7e15NQ5kG9PFEbqd0+09d844npX6zLn3W3q3GQIJsFLDyLTTWvjX5CiQ5fMgIksmyLsDWeT75L1/niAn9q3WZt9PIAEe1zCQt79Ay3e9CJVgDAPSBbO/R/iX652BrIPYfS73nTunjuVwrTpzyfvluwXT8wICCbBSo0Be5Gi0cSmhudqm3XVizM/n3w6UIHWhbXSBuzeQ9ZQ62qsxdc5orTqjd+b0+wkkAPwjAgkAAYEEgIBAAkBAIAEgIJAAEBBIAAgIJAAEBBIAAgIJAAGBBICAQAJAIAwkANAxQQJA0fXwnH4DH/UKsiCAEUwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -170,7 +166,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://cnet.hacienda.gob.mx/servicios/consultaRUPC.jsf" CvElementArea="393, 468, 70, 28" CvTextArea="408, 476, 42, 12" CvTextArgument="Buscar" CvType="Button" DesignTimeRectangle="396, 471, 65, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Buscar'" FullSelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='SPAN' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-button-text' aaname='Buscar' check:innerText='Buscar' /&gt;" Guid="317a1644-3146-4063-82e4-e304f805b09f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAcCAYAAAA3DHIWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJjSURBVFhH7ZbLUhpBFIZ5tmyQB4EXIE5lrVFc4qUqgqgvMIKWUmKqrIpLwmUi2WTBZeQOvgGbk9Nzuoceui3tXVLTi6/wnNPnp/srFiZgtQJLlEBKzx/Bn+4g9jAPoRTWWL6+xh7mwUrZwErRYKVoUKQslsvYo0pZLGKPImU+n8ceRcpsNjPmdt+BxCeVL9/15/91FCnT6dQYklKE23d6/wuKlPFkYszNHgm4kXre5QH2DuDkF9YPxeCX4zxoZmEtfmHRHLFLrHfGkydwwj6y98T7v+Ekg3WmCA77jOx8DEXKaDw25jqQUoDrsNeB4+BCvFcrBBd3ajRvcynHHtZeBVI4S112cMYfig8McviM9nhmpgJtnLHvpB2Rt3FO5LMcQxQpw9HImMpXdgmV7Ro/w6WIunWRwzoHRx7W/OFsnrroRHLpXAEqUi/KD9jmu+v8DhxxeS3tzvsoUl6GQ2NICl5e6jXP2YMc2Dp/hpd7kvL5Xp6hlLa8vybYCfvRXOKZHi4yI/l8lilDU9n7GIoU3/eNKe+yC55CWe43r2CLPbDkgV89pUtXadYokZTDpnSewc+J2Zvn5Gxpj/I9OExjRvoKGvKOAYqU/sAcl0txpV49eJAD2SrWDReS+Hey1MZZG/Ls0vjYfANn/EHBuc2syJ48e4Qs9hO7j1KeyOB12oU6v4spqpR+3xh3hy61SfKspTmTg+wO/QLyP2lWPyOBguydlH/3TZq9sZPOkbzg+1prKSLDEEVKD5txR5HS7fVij5WiwUrRYKVosFI0WCkaIlK6A/oXN+4wD6EUSxQrRWEFfwFZfs9yMPKpxwAAAABJRU5ErkJggg==" InformativeScreenshot="8ea0b998c29b47323bd893f58a5abcbd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvElementArea="393, 468, 70, 28" CvTextArea="408, 476, 42, 12" CvTextArgument="Buscar" CvType="Button" DesignTimeRectangle="395, 470, 67, 26" ElementType="Button" FriendlyName="'Buscar'" FullSelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl id='consulta:btnBuscar' tableRow='8' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl id='consulta:btnBuscar' type='submit' tag='BUTTON' class='ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' aaname='Buscar' check:innerText='Buscar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAeCAYAAAB+MQMgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJsSURBVGhD7ZbNUhpBEMd5Ni/Ig8ALELdy1ige8aMqgqgvgKCllGiVVfFIgN1ILjnwsfINvgGXTs/27DLL7qzOLamdw6+wu6f/zPyKgwlYrUATjpYTgSenZ4/gT3cQe5iHgBw2WL6/xx7mQcuRoOVEoOVEIJWzWC5jj1zOYhF7pHLm83nskcqZzWbK3B0YkNgK8vUp/Py/jlTOdDpVhuQU4e6D3v+CVM54MlHmdp9E3Ao96+oQe4dw+gvrx6LzSzIeQ2Ze7f7i/DnuLrHeGU9ewPD6yP4L7/+G0wzWmSIY7NO38zmkckbjsTI3jpwC3Hi9Dpw4F+O9esF5gFGnucnlnFhYW1VI4Sx11cEZfzA+1MnhM9rjmZkqmDhj30k7bt7GOTef5SgilTMcjZSpfmOXCbJT52e4HLduX+awzsGxhTUXwOapy44vl84VoCr0/PyAHb67zu/AMZfYDt35GKmct+FQGZKDjxB6rQv2MAO2L17h7YHkfHkQZyjHFPfXODte359LvJIAN9OXz2eZCrQCe59DKse2bWUqe+yiZ1AR+61r2GYPLVlg187o8jWaNUsk56glnGfwc+5Mek7MFvYo34KjNGakr6Ep7iggldMfqFPmcspCr+E8zIBsDetmGZL4d7Jk4syEPLs8PjrfxBl/mHNuM8u3J86eIYv9xN6zkOdm8Dpdhga/iypyOf2+MuVdutwmyfN2yJkcZHfpF5H/SbPGOYl0yd4L+fffhZlkJ50jic73tddy3AxFpHJ6OIw7UjndXi/2aDkRaDkRaDkRaDkRaDkRhMrpDuhf57jDPATkaIJoORFoOVJW8BefRtzLF47UPQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -245,7 +241,7 @@
                     <uix:NCheckState.Target>
                       <uix:TargetAnchorable BrowserURL="https://cnet.hacienda.gob.mx/servicios/consultaRUPC.jsf" CvElementArea="953, 586, 17, 15" CvTextArea="954, 587, 14, 12" CvTextArgument="P" CvType="Icon" DesignTimeRectangle="954, 585, 16, 16" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl parentid='formTabla:tabla' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='SPAN' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl parentid='formTabla:tabla' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-button-icon-left ui-icon ui-icon-search' aaname='' /&gt;" Guid="cf3c7fb8-17e6-4b87-8b81-ee9378d56650" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADYSURBVDhP5dJNDoIwEAXguf+JVFgYVhrcGyNtKeXfQzw7TSCKY1fdGBcfzQzzJhCg+fFASj+wcJpnpETTNCElGscRKdEwDIhxpxMuRB+4L81T1/eIWRbYPF8tPWme2q5DDAfrLENzu8FpHU6uuS/Nk2tbxHDQHA5olAo1n1xzfzvLqHEO3+jjMQT1fo/6eoWtqnByzX0pQ9ZaSExZhtBC73arpSflyNQ1ttT5/LZMUhXFR46RNgZbr8G7fz1p5hvS/sttrU/h/zXpfgwpf0mJKv8bpPR3CxWevv1z50WIRTMAAAAASUVORK5CYII=" InformativeScreenshot="39c22dc5c544766131297d8f4ea67893.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="962, 557, 22, 12" CvTextArgument="Ver" CvType="Text" DesignTimeRectangle="937, 553, 72, 22" FriendlyName="'Ver'" FullSelectorArgument="&lt;webctrl parentid='formTabla:tabla' tag='TABLE' /&gt;&lt;webctrl parentid='formTabla:tabla:j_idt63' tableRow='3' tag='DIV' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl parentid='formTabla:tabla' tag='TABLE' /&gt;&lt;webctrl parentid='formTabla:tabla:j_idt63' type='' tag='DIV' class='ui-dt-c' aaname='' check:innerText='Ver' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAaCAYAAAAdQLrBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH7SURBVFhH7ZNLTiJRFIbZRG/HgROQfSgL0KArEIdiqYk0vuatjYkmhMQJPQQpCtOdHsijeYMJC3Dy9z2nymuVWt3WoG4cnMGXv/5zz62EL0Xi7ssShP8zOD+HZVlI0IPwMVjY/PERvx+6oBTCIUciLAIiLCIiLCJa2Gw+50IphPMibDZzhakUwtHCptMpF0oz/MJhJovE8ldcB+Y/sLWs5pkrtALzz4EWNplMuFCawjnbUcKy2Kr45pUCz9JnPwO7nwUtbDwec6E0hlNCmr6m7aqeNVniDg4c6lVs0rnHZiV4L71dcO9nSmg+vzNmtLDhaMSF0hz32F8jGQVc+ftaCXbgeQT71BW531R7zRJWSJR39v6740ELGwyHXChN0mARWWTLqtvfWcTKaSv4TLtef7P36n1xo4X1BwMulEZ5/vEnLdyd5JS8HPZsNS8fscjX0J7/zrvvjBEt7E+/z4XSLA72+K93hA3OS9Rp3rhESklJHTtv7/zrLGa0sF6vx4XSNLUifVnuF5Qq2t7cRn5VzVYvUNM7OeTr6qx+4QrTu+bQwjrdLhdK49S+IcnCctit+c9use6JJNZvgvvJYsO3a4YXYZ2OK0ylEI4W1vYKpRCOFvbQbnOhFMIRYRERYRERYRERYRHRwuhB+BgsDE9PWCwWoBTCIUeWZeEvPV8gZVXJ+VMAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -261,18 +257,10 @@
                   <uix:NGetUrl CurrentUrl="[Url]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="713,87" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="713,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Frameworks/Guardar como - Internal.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="Url">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Url" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL + &quot;\&quot; &amp; contador &amp; &quot; - &quot; &amp; Busqueda &amp; &quot;.pdf&quot;" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ruta + NombreID_URL" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">
-                        <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="BrowserID" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Url">[Url]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Ruta">[ruta + NombreID_URL + "\" &amp; contador &amp; " - " &amp; Busqueda &amp; ".pdf"]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Carpeta">[ruta + NombreID_URL]</InArgument>
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="BrowserID">[BrowserID]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <If Condition="[Encontrado = &quot;No&quot;]" DisplayName="If Encontrado" sap:VirtualizedContainerService.HintSize="713,52" sap2010:WorkflowViewState.IdRef="If_16">
@@ -352,7 +340,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://cnet.hacienda.gob.mx/servicios/consultaRUPC.jsf" CvElementArea="483, 270, 302, 26" CvTextArea="488, 276, 90, 12" CvTextArgument="Inscrito al RUPC" CvType="InputBox" DesignTimeRectangle="765, 276, 16, 16" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-icon ui-icon-triangle-1-s' aaname='' /&gt;" Guid="008ded6b-fdfc-4fc7-832f-244e97f4296a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACGSURBVDhP5cxLDsIwDATQuf/VSnsC8iNJ8+khBoKEBJJTNt4gFi+W49GgHwc1/UBh652a0FqjJtRaqQmlFGpC3ndqQsqZMxdgSsoPiClxJmybWDb+pfyAW4w849f1o2zsUu4FIQR+45blWTamdH8H5z01wTpHTbDWUhPM49GEqzHU9HeFhnfhQJi04w82OQAAAABJRU5ErkJggg==" InformativeScreenshot="1c4416b4f9852c17933af64076c45193.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="363, 276, 100, 14" CvTextArgument="Tipo de solicitud:" CvType="Text" DesignTimeRectangle="363, 276, 100, 14" ElementType="Text" FriendlyName="'Tipo de solicitud'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -363,7 +351,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://cnet.hacienda.gob.mx/servicios/consultaRUPC.jsf" CvTextArea="494, 328, 235, 14" CvTextArgument="Proveedor O Contratista sin inscripcion al RUPC" CvType="Text" DesignTimeRectangle="489, 325, 291, 20" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'Proveedor o'" FullSelectorArgument="&lt;webctrl idx='2' tag='LI' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all' aaname='Proveedor o Contratista sin inscripción al RUPC' check:innerText='Proveedor o Contratista sin inscripción al RUPC' /&gt;" Guid="e6e8d320-8cf3-41fd-a901-15f7857b0c33" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAScAAAAYCAYAAAC4ATuNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUBSURBVHhe7ZjNalxHEIXzTnoM5xWsvICVvcnaZGvyDIbsDHkAg4MDwQsthAkBY0LAiwQbZKxNQJtJPsE3HFX6zlxJI/kyqsVhuqtO/XZ3zUhfrc7PV+Ds8+fV6elpo9FofFEwi5hJ6+HUaDQaS0IPp0ajsUj0cGo0GotED6dGo7FI9HBqNBqLRA+nRqOxSPRwatwL/PD06QVGusYysXU4caAHBweX8NPz50PuXYIc7uKyHb9+fal29iPeHFwnZ23+OTtbfff48cb4u+gJ/olDvJG+4jbP4aq5iGr36cOHdQ8r9zqYyosYeVeAPMCafslXhj/X1R6d/D/evl19/eDBWpe+9hGzhlNePhp0+PDhxWfy7hq3+SgEMb45PLy43Oz5ZJ8X5iqovZyDq9hcx/99AOdWB8lNsGk4Zf/zvswdTqlH7v1jzWDy3Y34+4YrD6dsKI1hTQNZq2Oq20jw7dHR+oFrA5e13wIZAxu/IXI4EFPf3z95srbxEiTfXODkoYqRTeqzzpTD09e2uMgBPswd/Prq1f9yS/0mG2QZd8RlnT0Eo0uc/cc3uWPL+tPHj8M6Rj7gkBPnzLnAzZ6nD9bI7FNy0wf1/fzixaVcfnz2bF2TuWSdcLIG1qM4yrbVlrZT/pOPP+tLGT3SV56DMvyN9PaDnPWjTr093kfc6JcTzcqHnVwaju7v9+/XByCHdR5wHlIeCHxiYIMcf3DkI6+Hyif7fFzIE1M2yOVkncoSc+Omb2SZc+Zmf7RRV23gpT77KBf5bycnF7LKYQ+yz+lb7qY69KEcjufDHrm54J846DNm+jMmdyV91FySn3crY7LWDq556C/tlGcu7MVf//EA68w9/Sc/Y2lT76y5AmVTevP98927tR919wE3+p9THmo2Gl29iAAZHD7ZV7/Egu83oeBg+BblE1tjw884yPlkXy9uYspG3yNOxdy49MMeeXlHF1Fu9gJZtYFDrPoLIrnuk2cO6uRXnfk6EEZ1pI88h3xAys07awKsa/3VR81Fub0/OT4entE2u9/fvLmQb6sNZP7+8pri28+ENesna1aGv4yTSJ113Bdc+ZdTgkZ7SLWB+XgBP9V/efly7cvLm/4AXOywTzl+73I4TV0I9sjxPyeufPzZS33LcS8ve1NtMh/WXGD7Ilc75ZmDtkK/+CGu3F0NJ3nqfXDo9F05+qi5KIdHr297OCE3X22JNcWnJmuutajPmu09HNe1J2LUr9G93SfsbDixTy4N93GgZzjxZ5KHxWf9HwD+PFQPwhg8eg9bPrHqocqvjysxZYM8ecitgX1euLlx4erb/lRb97U2dNUGDnba5gWVq50c1ubAHsBHZm3yzXdXw4n8OHvsag36Y49t/fPFmOaCP+Xw6hcBeqAdvpVtsks+e5Fy1nN+ORkLwM1/DWTN7NMnssypIrnst/H3ATsdTjaMb5tsJKC5XAwfg/ZwQT1U7JGnDT70zYXXxoeR/G2HN7IZ8TJHQA7q5sSFb4/05T+3Mzd11MY/fqds8Jd9BuYklz1Qj7/RN2xyjIeM9a6Gk2vj5DmzVo5d9VFzOXr06BIfzugMtCPX7JV3Utm22tI39w0O3Ck+9WR9gBj5FrJmYB01pxHgpu0m7j5g63BqNL405jzcxv6hh1Nj8ejhdD/Rw6nRaCwSPZwajcYi0cOp0WgsEj2cGo3GItHDqdFoLBI9nBqNxgJxvvoXJdQbyeoHBo8AAAAASUVORK5CYII=" InformativeScreenshot="530daeecdcbb5df9de65fe3e2ec1a8bc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="495, 306, 86, 11" CvTextArgument="Inscrito al RUPC" CvType="Text" DesignTimeRectangle="489, 301, 291, 22" ElementType="ListItem" FriendlyName="'Inscrito al RUPC'" FullSelectorArgument="&lt;webctrl tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LI' type='' class='ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all ui-state-active' aaname='Inscrito al RUPC' check:innerText='Inscrito al RUPC' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAScAAAAaCAYAAAD1yZqGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVHhe7Z09blNBFIXZBPtgBZRZAQUrCCugzypYAEugpKOABkVCiiKliARFClAiSw4gFEfRi85DJxxfj38gxpniKz555v7NneIejV7jR8NsNgAA9AbiBABdcidOl9PpMJlMAAAeFGnRnDjJ6DUAwENhLUKcAKArECcA6BLECQC6BHECgC5BnACgSzYWp5vp5fB5/2BE61bMtvj+7uNw9OTZ8Ov4dNxfvH4z2mrc3+I7nB28WvDpjMPHT+fIuyon9+pHMe5L/pqfPV9/PR9O9l7c+bSWzX4AmKdLcUokUBKqXYhTCobFRHbtNxGn9Gvveq6V56bfNgD4wz+Lk4br9PnLkfoSyFdI2i00svtl5Lone/ujTevp2/fj+seHT2O+a6mu423LgU8sHqKe1cqp4lRj9au97NqvEyfZfW6tDQDruZc4efgsOhpCDaAGUX6vq131PMzX387H3xzeHGzXThFwbJ7rPoXPUk6KTK4zXlQBqbXdb4rPKnHKPqsPANZzL3Hy2mKgQXacXy2OqSKzrK5simmJU57j/FWDL5/70NpnaV1jVdOxmWN/PaclTjU/fct6BIA2Wxcnx3t4heJ+Hh7vTJycI5/r17VjjWr6peP8Vedkjy1/krWrDwDabF2cqoA47urL2Wi3MHhgZc+68i0TJ9fzoLdExPl+ubgf5fkO7iGpAqJ9vn60TzGq8b6n75BkD7blPTIWAH7zX15OFgeRA20xSXut63z7XVs5qu94128JTcaojj62a+/vW62cKjaukTbl+Vxh4bJP8b5DJe8hsi4ALLKxOAEA7BLECQC6BHECgC5BnACgSxAnAOgSxAkAugRxAoAuWRAn/n0FAHpg4d9XAAD6YTbcAikNPqpcR2mQAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -559,7 +547,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://cnet.hacienda.gob.mx/servicios/consultaRUPC.jsf" DesignTimeRectangle="765, 276, 16, 16" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='consulta:pnlBuscar' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-icon ui-icon-triangle-1-s' aaname='' /&gt;" Guid="514860d2-d647-4e7d-beb1-9cab12347091" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACGSURBVDhP5cxLDsIwDATQuf/VSnsC8iNJ8+khBoKEBJJTNt4gFi+W49GgHwc1/UBh652a0FqjJtRaqQmlFGpC3ndqQsqZMxdgSsoPiClxJmybWDb+pfyAW4w849f1o2zsUu4FIQR+45blWTamdH8H5z01wTpHTbDWUhPM49GEqzHU9HeFhnfhQJi04w82OQAAAABJRU5ErkJggg==" InformativeScreenshot="a56a6e8a8f00f876937600c1f261ac6b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="363, 276, 100, 14" CvTextArgument="Tipo de solicitud:" CvType="Text" DesignTimeRectangle="363, 276, 100, 14" ElementType="Text" FriendlyName="'Tipo de solicitud'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -570,7 +558,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://cnet.hacienda.gob.mx/servicios/consultaRUPC.jsf" CvElementArea="482, 336, 313, 25" CvType="InputBox" DesignTimeRectangle="489, 344, 291, 22" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'Empresa registrada'" FullSelectorArgument="&lt;webctrl idx='3' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all' aaname='Empresa registrada en CompraNet' check:innerText='Empresa registrada en CompraNet' /&gt;" Guid="a9efc156-c84c-4f8b-8dab-597ed489ac2f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAScAAAAYCAYAAAC4ATuNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQVSURBVHhe7ZixThtBEIbzTjwGeQXIE5AepUZpUUqkdEjpkPIAFCkpKCKKSCAlBUUikEC4ieTmwmfpt36vFp/BGNaXv/h0u7MzszN7s3OGN9143MHo7q67ubkJIYRXhV5ET5o2pxBCaIk0pxBCk6Q5hRCaJM0phNAkaU4hhCZJcwohNEmaUwihSXqb06f9/W5jY2OGd9vb3e3VVVV/KJDf+52d7uf5eXUdOJuvR0fVtUXAFh+1tVXwdzTqPuzuTt8jY2Q13Zfk9ORkEg9Pl/XFt8g7CuvLQs3pJS/QuqCLvi7NiYvMR8XjZdxCg1Jz8lgWaU40pe2trTSngbJUc6K4P+7tTYqI4kIPGWP9ulKRoecFiJyvHsg/T3RAl4jCe7u5OZHxVCGqoAVzxQVqHviUnfvyX3/yxRpxYuNf5VoMypP599PTiS628uu59O3lclHmA/jAl+yJw/OcZ4tMZy8ZY/lgrpxA58/zud6xYtUeroevzwcH033LeD0/dNyX64Xh8KQ/61QMFIkuiS4wMl0iCgyw4amCQoe5bNkHGXsxxl6NQZeh1MGeZykX2qvm0208Vrfpi8FzkQ/pMP91cTETB/4f2gu9RfORHk/mt9fXM36wZY6+27Ne+nTwR2zE6HHi77ne8e/LywmMsdf5oocvzmyS0/0aMuXh5+F2kF9Ow2XpX04qIC8av0heZLLBnwoSO+TIvAGCCpyxF7nQGpQx+iVhji0+pA/s/+34eCYOxef51GJw/+jqomp/8JxYg9pe0p+Xj/bQOhDPj7OzmTzx4ectyr1KynXGyED+/EyUv/LyPeWrzBdkp/h1vtJjjL37xJfnDehgm+Y0XJpqTqy5f4c1ihJf+rUgv/Lp+opBPomL+PyiQBmHfHk+0q3FgAxdfOALPWy4eKyVZ1HbSzrwUD61eKDMkz3kx/VqctmyVu7JGBnIzmNw29K3fCH3fJlzfjzdl+vhgz8PvxweTn0qFsUmsE1zGi4v0pz0hZQcOy9I+dIcGKOjIkeHJ/ZqDMzls4zR92Iun5or9j/3f2ZoL/fl+cyLAT8eLzrYYIucMfmz5nq+l8alHF+ilKOLL+JXHJIzR9/ty/xBZ4Cu/KHncboO8mXeMXPfr/bLCT2dmXTxVYsNvTSn4fKk/znp6/eYwqWIsPPi9IIs98I3MhUjMhUzctYl86+sfCkG+QEVPXa+N7HIl/5J7fk8FAN6zPmHuC6M740+T3wqjtpeyPvygVocZZ74r9mW9orN9RQDyB9P6fmZaF/2A+Lpe8e+P7m7vesB5+LxzasN1wvDobc5LUut8FpFF07FHxZjnd5xWB/+++akr6++yvkKP540p7AKVt6cQgjhKaQ5hRCaJM0phNAkaU4hhCZJcwohNEmaUwihQcbdP0mxKXe6tVrrAAAAAElFTkSuQmCC" InformativeScreenshot="e74f67478e3407b83b8af506c75bcc03.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CvTextArea="494, 326, 235, 14" CvTextArgument="Proveedor o Contratista sin inscripcion al RUPC" CvType="Text" DesignTimeRectangle="489, 323, 291, 20" ElementType="ListItem" FriendlyName="'Proveedor o'" FullSelectorArgument="&lt;webctrl idx='2' tag='LI' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all' aaname='Proveedor o Contratista sin inscripción al RUPC' check:innerText='Proveedor o Contratista sin inscripción al RUPC' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAScAAAAYCAYAAAC4ATuNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS/SURBVHhe7ZhLTiNBDIbnTrkWcBOUkxBxD8Qih0BsEBKzzKanbFfZv+uRdEIIPYkXn5RU+W2XM8OfabebgiAIlkYspyAIFkkspyAIFkkspyAIFkkspyAIFkkspyAIFkkspyAIFkksp+Am2K5X02r92r0LlsnB5cRNXXkeNu9d2Uvysbm/zLC9PLrc1y8dmZmcErPpvE/Pd/v9n6UmlO/d0/TRu+vwo304Mhal0Xud1qfYGTGIq/dWTE76598O9lQ+1/qu329P0wPcLeEd/iTzlhMOHxfofnp+83KX5hLLiX2sHqetnqUhrwfmCE759T5G5xT7N8Hb+/kWE7FvObn647zMW07unvyU+ePP+O569q6L45cTFFQWxCM3QIokd7LZcyF5mdkDZ53cWHn8WR59uF8IWA7cILG9XuNykiHw8jnOFJ9vaqGng1ie7jwN+jYh3w/5lTu2obHT905scL9Xh+NBvz3Z9H3Gr6yrf3lsZIc/D/Lo2eA+UEy5LyxvNecZKn60Z2Lfy6KNVM86lo3lpLFgnk0OIz/zcvO6ia59o/fjQGf4Nnwfchzsu3cv9aCYzU65S7hZvD6+9S8nGW572E6WHwvdYQNEhj93BkhkrCEk74ffN1LOfVNZnu2ijNgyRjogA3maHjLPL9q2+rSxbV/ss+Xc6lD+eI91xPp/JHuaT/cxYZ3NtsmO8zAbGIv0p9RDY+E6lhkxn86e+vQ2mlhQHmYLffJnyBdrUusdym16e02Pv3yHeoF9lHe+GMkHZ1ZzY+RseK/xop3b4Vt/c/JNxUITfhBFh85kUFm3smvDXJ2TjjZK7LM+DwIMDd3pY+gNQ2Gks0emYabf7kMZxMY55pzzkNc6XF+oEQ5s8ziwlqPHVN9pvOM80Ibvg8Vj52IHcyLId9sbb6OOpZ2tQY8O6s3LTYD4i6+BvNYT0Zwrn3Am8aEfA+8sj9vghP/WGTyA2qS6gDA49EhIjpqabdnwFvlMd1EkSPeiy2kwEDqYM/3CIFst69jke5HD2tQ6Lh6uCQ2xxI69koeSc4IYVFfJvpMdjkdlx3mgvu+Dxdf2V+7Lg6P42t54G3UslnupfdWDwkG9ebnxucYDvgbyWP8ml3zvc8b4qpgquvUavZUr4YzLqZLlxpbCUeHTv55wUPi+DBY2RppaGmE+sNkiL758U01+X7NHOl6Oz13z2xgO+oVBtvrUscn3NrdWh2TIl+rCgGL96XOR4fMmP8rFclN5jXech9nIebNP/xj1nOJTPZ+D2tNZ8TbqWEpuJu9j1PwhVqzJSA/l+XsBz1n3mOWU4N7Y8nQ5E2izjqnGyRIH5K+Asy4nfVhpwHwhE1xcewyqz7K9phY7oMM2xPbcP4iPm9fTaXExJvThMDP8wiAXW+WP2xib+Ul124x1xD/W2WIy2ey33PMfkjs5goz2UeMd54E22Cf3YbCcyufiB/rMs5XPRW//cnpIP3Be3nTkPOfoYsVaDRbBIDdne/3EOlrbjnzvrUju9hYwZ8LyqGLqQX5Bd6/sFXBwOQXB7zPj4QZXRyyn4D8gltMtEsspCIJFEsspCIJFEsspCIJFEsspCIJFEsspCIJFosvp79fX9Pn5GQRB8KvQLpp2u+kf+YXgEemvgsAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -760,10 +748,16 @@
             <uix:NApplicationCard.TargetApp>
               <uix:TargetApp Area="-8, -1088, 1936, 1066" BrowserType="Edge" IconBase64="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" InformativeScreenshot="57878223988fb089b2fede7f063a96a3.jpg" Selector="&lt;html app='msedge.exe' title='Consulta folio RUPC' /&gt;" Title="Consulta folio RUPC" Url="[URL_Proceso]" />
             </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </uix:NApplicationCard>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="809,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_23">
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1060,163" sap2010:WorkflowViewState.IdRef="Sequence_23">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1378,7 +1372,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="875,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1389,7 +1383,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="496,857" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,877" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="FilePath" />
               </Sequence.Variables>

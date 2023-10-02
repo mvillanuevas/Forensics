@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1272,2575</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1272,2555</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Tau_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -98,7 +98,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Tau" sap:VirtualizedContainerService.HintSize="1282,2510" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Tau" sap:VirtualizedContainerService.HintSize="1282,2490" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
       <Variable x:TypeArguments="x:String" Name="Url" />
@@ -109,9 +109,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2399" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1220,2379" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1182,2171" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap:VirtualizedContainerService.HintSize="1182,2151" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
           </Sequence.Variables>
@@ -137,19 +137,19 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: CSL Search" sap:VirtualizedContainerService.HintSize="1120,1846" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[BrowserID]" ScopeGuid="2c13b8e3-aaa9-4e19-b779-143fdc96cc02" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: CSL Search" sap:VirtualizedContainerService.HintSize="1120,1826" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[BrowserID]" ScopeGuid="2c13b8e3-aaa9-4e19-b779-143fdc96cc02" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1086,1629" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1086,1609" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="0.25" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1024,217" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2c13b8e3-aaa9-4e19-b779-143fdc96cc02" Text="[Busqueda]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="0.25" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1024,197" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InUiElement="[BrowserID]" ScopeIdentifier="2c13b8e3-aaa9-4e19-b779-143fdc96cc02" Text="[Busqueda]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://internationaltradeadministration.github.io/csl-search/" DesignTimeRectangle="330, 614, 940, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT name'" FullSelectorArgument="&lt;webctrl src='https://internationaltradeadministration.github.io/csl-search/' tag='IFRAME' /&gt;&lt;webctrl id='name' tag='INPUT' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl src='https://internationaltradeadministration.github.io/csl-search/' tag='IFRAME' /&gt;&lt;webctrl id='name' tag='INPUT' type='text' class='explorer__form__input' aaname='Name' /&gt;" Guid="936ffdbd-85fb-4c15-9857-21b41104155d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA7AAAAAiCAYAAABm+zUXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJwSURBVHhe7dtNqhpBAIXR7NZ9vPWJK3AiqKgDf1FaUStced0oRJJA1BScA99Eq51fuvxR4InD4VB6vV75+vr6/gQAAOBzDFgAAACqYMACAABQhYcBu9/vy3A4LIPBoPT7fUmSJEmS3l42abZpNuq9bsDmixwajUZlOp2W2WxW5vN5WSwWkiRJkiS9vGzQbNHJZHLbptmo9yO2G7BZtzmQh5bLZdlsNmW73XbtdjtJkiRJkv5599tzvV7fNmnGbDZqtmqrG7BZtjmQw1m4TdOU4/FYTqeTJEmSJEkvLxs0WzSbNNs0GzVbtdUN2NwzzsrNwTx4Pp/L5XK5db1eJUmSJEl6We3+zBbNJs02zUbNVm09DNhcG87azQP5AQAAAHinbNFs0mzTbNSnAzb3jfPKNqsXAAAAPiGbNNs0G/XpgM2fZ/Oq1oAFAADgU/IWNts0G/W3A9b1YQAAAD7FgAUAAKAKBiwAAABVMGABAACoggELAABAFQxYAAAAqmDAAgAAUAUDFgAAgCoYsAAAAFTBgAUAAKAKBiwAAABVMGABAACoggELAABAFQxYAAAAqmDAAgAAUAUDFgAAgCr81YC9XC7fnwIAAMB7/dGA3W635Xg8GrAAAAB8TDZptmk26i8H7GAwKKvVqjRNU87ns2vEAAAAvF22aDZptmk2arZqqxuww+GwjMfjst/vb69q80BWb8oPSJIkSZL0qtr9mS2aTZptmo2ardrqBmy+zLKdTCa3e8ZZu3llmwclSZIkSXp12aDZotmk2abZqNmqrW7ARr7Ius2h3DOWJEmSJOndZZNmm96P13gYsAAAAPB/KuUnrkYoIzLkyFAAAAAASUVORK5CYII=" InformativeScreenshot="876aaeb8d2b6b792762cfbb62d2a4627.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='CSL Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>

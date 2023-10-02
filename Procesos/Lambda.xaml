@@ -14,7 +14,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1294,5183</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1182,1005</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Lambda_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -98,10 +98,9 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Lambda" sap:VirtualizedContainerService.HintSize="1304,5118" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Lambda" sap:VirtualizedContainerService.HintSize="596,940" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://intranet.ey.com/" Name="eyUrl" />
       <Variable x:TypeArguments="x:String" Name="Url" />
@@ -120,16 +119,17 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1242,5007" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,829" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:String" Name="FilePath" />
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1204,4779" sap2010:WorkflowViewState.IdRef="Sequence_22">
+        <Sequence sap:VirtualizedContainerService.HintSize="496,601" sap2010:WorkflowViewState.IdRef="Sequence_22">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="Resultado" />
             <Variable x:TypeArguments="x:Boolean" Name="blnResults" />
             <Variable x:TypeArguments="ui:UiElement" Name="BrowserID" />
+            <Variable x:TypeArguments="ui:UiElement" Name="DiscoverID" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -137,7 +137,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1142,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Lambda&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Lambda&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -145,7 +145,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign sap:VirtualizedContainerService.HintSize="1142,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[TaskConfirmation]</OutArgument>
             </Assign.To>
@@ -153,7 +153,7 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: D&amp;B Hoovers (website access) | Data Explorer" sap:VirtualizedContainerService.HintSize="1142,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="452a26f9-f3cc-42b6-85e4-d65150b464ec" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: D&amp;B Hoovers (website access) | Data Explorer" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" OutUiElement="[DiscoverID]" ScopeGuid="452a26f9-f3cc-42b6-85e4-d65150b464ec" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -212,7 +212,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </uix:NApplicationCard>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: Desktop" sap:VirtualizedContainerService.HintSize="1142,4322" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[BrowserID]" ScopeGuid="6ca23813-dad0-404d-8378-e994ffc1b830" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: Desktop" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[BrowserID]" ScopeGuid="6ca23813-dad0-404d-8378-e994ffc1b830" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -532,11 +532,43 @@
             <uix:NApplicationCard.TargetApp>
               <uix:TargetApp Area="-8, -1088, 1936, 1066" BrowserType="Edge" IconBase64="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" InformativeScreenshot="d346bc8a0bc49f2c509735e4a3ba49e9.jpg" Selector="&lt;html app='msedge.exe' title='Desktop' /&gt;" Title="Desktop" Url="https://app.dnbhoovers.com/" />
             </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="[DiscoverID]" OpenMode="Never" ScopeGuid="2b13a59c-9e33-42f3-8ac0-65f63b197030" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,195" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NNavigateBrowser Action="CloseTab" ContinueOnError="True" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </uix:NApplicationCard>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="840,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
