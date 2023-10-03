@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1691,7781</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1691,7344</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Guardar_como_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -105,7 +105,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Guardar_como" sap:VirtualizedContainerService.HintSize="1701,7716" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Guardar_como" sap:VirtualizedContainerService.HintSize="1701,7279" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="nombre" />
       <Variable x:TypeArguments="x:Boolean" Name="sobrescribir" />
@@ -206,27 +206,27 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use browser from arguments" sap:VirtualizedContainerService.HintSize="1639,6773" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[BrowserID]" ScopeGuid="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use browser from arguments" sap:VirtualizedContainerService.HintSize="1639,6336" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[BrowserID]" ScopeGuid="94e7968b-c668-4c5d-8de1-c4844c03888f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="1605,6636" sap2010:WorkflowViewState.IdRef="Sequence_51">
+          <Sequence sap:VirtualizedContainerService.HintSize="1605,6199" sap2010:WorkflowViewState.IdRef="Sequence_51">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1543,6521" sap2010:WorkflowViewState.IdRef="Sequence_46">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1543,6084" sap2010:WorkflowViewState.IdRef="Sequence_46">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Close restore button" sap:VirtualizedContainerService.HintSize="1481,489" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Timeout="3" Version="V3">
+              <uix:NCheckState DisplayName="Close restore button" sap:VirtualizedContainerService.HintSize="1481,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="94e7968b-c668-4c5d-8de1-c4844c03888f" Timeout="3" Version="V3">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_47">
                     <sap:WorkflowViewStateService.ViewState>
@@ -256,7 +256,7 @@
                 </uix:NCheckState.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -693,7 +693,7 @@
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="0.13" DisplayName="Type Into 'File name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,217" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e3061c1b-590c-4621-9dc5-f8592c268232" Text="[Ruta]" Version="V3">
+                                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="0.04" DisplayName="Type Into 'File name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,217" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e3061c1b-590c-4621-9dc5-f8592c268232" Text="[Ruta]" Version="V3">
                                                       <uix:NTypeInto.Target>
                                                         <uix:TargetAnchorable CvElementArea="136, 425, 812, 25" CvTextArea="139, 430, 60, 15" CvTextArgument="Google.pdf" CvType="InputBox" DesignTimeRectangle="136, 429, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Google.pdf'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="8449f865-3cf8-43ad-8ed4-a44d0e575edc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAxsAAAAVCAYAAAAuPPMkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHQSURBVHhe7dvrbcIwFAbQjsU0mSWzZJRswiRuHpQ4xgZC44DaY+lIVNfY9N/9ZPvrdDoFAACAvQkbAABAFcIGAABQhbABAABUIWwAAABV3A8bTRfOIRrnLjS5ebtoQz/s1jW52m8la7f9Af8PAAD8b+WwMQWNdfPf9n1o4zm7OipsjJ9D6Nt0DgAAsKdC2GhCdz66IT8ybNTaBwAA+JEPG9OpxoNTjOSK1SqYPFk7d105BKzWyP2Wy/w2Xq9Z6tl9xu8sYzUfAADYVTlsRO8ZmvGYY27Po2AQhYipsd9em9eNa7nPg3b46yYYzGsNhfl3vrQPAABQy4aTjahJz9THN9dTc/+otnqUHTf+6frJ6NvrerffnW3e51oHAAD2VnizkWvI0zBQO2ykYSeV/sbonYmwAQAAb1cIGz9Xj+KGP23YL439WFuFg+dr969RjTekclenCnNe2gcAAKilGDYm45FENEoPsJdG/olatObzD8SHMV2jSsPGEC/6ZdY14GzZBwAAqOJ+2KhtdRqxldAAAACf7K1hYzp8WL2t2ELYAACAT3Zw2JgfcS/j1VONkbABAACf7L3XqAAAgD9L2AAAAKoQNgAAgCqEDQAAoIJT+AZyjVictG/LIwAAAABJRU5ErkJggg==" InformativeScreenshot="1f3e9b1e507d5e9232658c5233743875.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='pdfsaver.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
                                                           <uix:TargetAnchorable.Anchors>
