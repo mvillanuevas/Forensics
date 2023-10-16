@@ -10,11 +10,12 @@
     <x:Property Name="Encontrado" Type="OutArgument(x:String)" />
     <x:Property Name="TaskConfirmation" Type="OutArgument(x:Boolean)" />
     <x:Property Name="ExceptionPath" Type="InArgument(x:String)" />
+    <x:Property Name="NombrePersonaFisica" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>588,1285</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1192,804</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Chi_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
@@ -102,7 +103,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Chi" sap:VirtualizedContainerService.HintSize="598,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Chi" sap:VirtualizedContainerService.HintSize="552,424" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="BusquedaNegativa" />
       <Variable x:TypeArguments="x:String" Default="[&quot;C:\Users\&quot; &amp; System.Environment.UserName &amp; &quot;\OneDrive - EY\Test Forensics\1.- Catálogos\Descargas Chi&quot;]" Name="rutaDescargas" />
@@ -112,7 +113,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,1109" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,313" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="ui:Image" Name="Screenshot" />
         <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
@@ -141,9 +142,9 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <If Condition="[System.IO.File.Exists(rutaDescargas + &quot;\0.- Chi.xlsx&quot;)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1832,5479" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[System.IO.File.Exists(rutaDescargas + &quot;\0.- Chi.xlsx&quot;)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="1832,5272" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Then>
-              <Sequence sap:VirtualizedContainerService.HintSize="1796,5290" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence sap:VirtualizedContainerService.HintSize="1796,5083" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="ui:UiElement" Name="ExcelID" />
                 </Sequence.Variables>
@@ -167,7 +168,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1734,184" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1734,381" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                   <TryCatch.Try>
                     <ui:CopyFile ContinueOnError="{x:Null}" Destination="[ruta + NombreID_URL + &quot;\0.- Chi.xlsx&quot;]" DisplayName="Copiar archivo" sap:VirtualizedContainerService.HintSize="334,153" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[rutaDescargas + &quot;\0.- Chi.xlsx&quot;]">
                       <sap:WorkflowViewStateService.ViewState>
@@ -179,7 +180,7 @@
                     </ui:CopyFile>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -195,13 +196,13 @@
                   </TryCatch.Catches>
                 </TryCatch>
                 <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="1734,25" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: 0.- Phi.xlsx - Excel - Acceder a Archivo Phi xlsx" sap:VirtualizedContainerService.HintSize="1734,4357" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OutUiElement="[ExcelID]" ScopeGuid="41e36a91-f281-46ae-9617-174c183bb107" Version="V2" WindowResize="Maximize">
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: 0.- Phi.xlsx - Excel - Acceder a Archivo Phi xlsx" sap:VirtualizedContainerService.HintSize="1734,3953" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OutUiElement="[ExcelID]" ScopeGuid="41e36a91-f281-46ae-9617-174c183bb107" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1700,4067" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1700,3663" sap2010:WorkflowViewState.IdRef="Sequence_26">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="systemLanguage" />
                         </Sequence.Variables>
@@ -290,6 +291,18 @@
                             </uix:TargetAnchorable>
                           </uix:NTypeInto.Target>
                         </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Match case'" sap:VirtualizedContainerService.HintSize="1638,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41e36a91-f281-46ae-9617-174c183bb107" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="73, 122, 91, 22" DesignTimeScaleFactor="1" FriendlyName="'Sheet'" FullSelectorArgument="&lt;ctrl name='Within:' role='combo box' text='*' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Within:' role='combo box' text='*' automationid='' /&gt;" Guid="3f29a63d-c86f-4565-b6c5-9b72fd0b141e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAaCAYAAADR2YAqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFVSURBVGhD7ZXBrYQgEIZti0YsgXYowBJePJlsJ548Wck8RkEHF8iKu8y6mS/5ExnQwzcIDQhsiHxGNvl//SCpFE8gX8jT9/3liPxCUN48z8UR+RcQ+YyIfEZEPiN15T80NE3josBMSxH09nyVd37r89STPxlQUTEi32cYhmBME5s7KV9bPUecMLP/FSqwh/Pub9H07WOdjG3Cb3wnVP44jtC2LXRdFwjGYA3ncA2tvy7fMhm1iAkcemm+uBxNe5Me2q+fwKh9V8frrpE33fmxBqTEY07JX3GylbHa/JgKo2O3lmQVnqvfVz6GNiAnHlMgH8HdmhJ2lB+Tebb+ncTkY3wDcuIxH5a/rns+v1P135CPQek58ZjX5S8XLjkqVvOWnHxL8B65sBN1vAuwdrcLtySFO19ARD4jIp8Rkc+IyGdE5DOC8q4mKV9SJ55NvlAfkc8GwD+vrxGXqqRmUAAAAABJRU5ErkJggg==" InformativeScreenshot="cbdc9812d482b92628c62724df27ea64.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='bosa_sdm_XL9' title='Find and Replace' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="189, 124, 58, 11" CvTextArgument="Match case" CvType="Text" DesignTimeRectangle="189, 124, 58, 13" ElementType="Text" FriendlyName="'Match case'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1638,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)]w[u(hk)]" Version="V3" />
                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fjnd All': Click en botón &quot;Buscar todas&quot;" sap:VirtualizedContainerService.HintSize="1638,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41e36a91-f281-46ae-9617-174c183bb107" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable CvElementArea="227, 168, 91, 25" CvTextArea="256, 175, 35, 12" CvTextArgument="Fjnd All" CvType="Button" DesignTimeRectangle="227, 168, 91, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Fjnd All'" Guid="abf33c64-4909-442a-be0d-2656fd20b2b5" InformativeScreenshot="bf3ad2c13e450b3a15417f1778273412.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='bosa_sdm_XL9' title='Find and Replace' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
@@ -297,7 +310,7 @@
                         </uix:NClick>
                         <uix:NCheckState DisplayName="Check App State 'Microsoft Excel' - Verificar si existe mensaje de &quot;Búsqueda Negativa&quot;" sap:VirtualizedContainerService.HintSize="1638,414" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="41e36a91-f281-46ae-9617-174c183bb107" Version="V3">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,197" sap2010:WorkflowViewState.IdRef="Sequence_30">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -347,10 +360,10 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
                         <uix:NTakeScreenshot ContinueOnError="True" DisplayName="Take Screenshot" FileName="screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="1638,212" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" InUiElement="[ExcelID]" OutImage="[Screenshot]" Version="V3" />
-                        <If Condition="[BusquedaNegativa]" DisplayName="If: Condicional: Si existe Búsqueda" sap:VirtualizedContainerService.HintSize="1638,871" sap2010:WorkflowViewState.IdRef="If_9">
+                        <If Condition="[BusquedaNegativa]" DisplayName="If: Condicional: Si existe Búsqueda" sap:VirtualizedContainerService.HintSize="1638,52" sap2010:WorkflowViewState.IdRef="If_9">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -446,14 +459,14 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <Sequence DisplayName="Screenshot" sap:VirtualizedContainerService.HintSize="1638,558" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                        <Sequence DisplayName="Screenshot" sap:VirtualizedContainerService.HintSize="1638,557" sap2010:WorkflowViewState.IdRef="Sequence_36">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[Not System.IO.File.Exists(ruta + NombreID_URL)]" sap:VirtualizedContainerService.HintSize="484,270" sap2010:WorkflowViewState.IdRef="If_10">
+                          <If Condition="[Not System.IO.File.Exists(ruta + NombreID_URL)]" sap:VirtualizedContainerService.HintSize="484,269" sap2010:WorkflowViewState.IdRef="If_10">
                             <If.Then>
                               <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[ruta + NombreID_URL]" />
                             </If.Then>
@@ -1034,7 +1047,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,946" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,150" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1045,17 +1058,18 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="496,877" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="FilePath" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[exception]" />
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Error de búsqueda&quot;,&quot;No&quot;,&quot;&quot;,&quot;\\5.- Exception_Screenshots&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{NombreID_URL,Busqueda,&quot;Error de búsqueda&quot;,&quot;No&quot;,NombrePersonaFisica,&quot;\\5.- Exception_Screenshots&quot;}]" DataTable="[LogProcesos]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Frameworks\TakeScreenshot.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="in_Folder">[ExceptionPath + "\5.- Exception_Screenshots"]</InArgument>
